@@ -1,0 +1,30 @@
+// Research Study 
+// The research study acts as the Umbrella that covers all details associated with
+// a single study. Currently, we treat all of DS-Connect as one study. Patients 
+// are tied to a study by way of the ResearchSubject. 
+
+// Definition: Build the ResearchStudy resource
+//
+// Argument:
+//  study - This is the full study object created by Whistler
+//
+def Study(study) {
+    title: study.title;
+    description: study.desc;
+    status: "completed"
+    enrollment[0]: Build_Reference("Group", study.id);
+    identifier[0].value: study.id;
+    identifier[0].system: "https://www.ncbi.nlm.nih.gov/gap/";
+    identifier[1].value: study.accession;
+    identifier[1].system: "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=";
+    identifier[2]: Key_Identifier(study, "ResearchStudy", study.id);
+    resourceType: "ResearchStudy";
+}
+
+// Description: Wrapper for all research studies in the dataset. For now, it's just the one
+//
+// Argument:
+//  study - This is the full study object created by Whistler
+def ProcessStudy(study) {
+    out entry: Study(study);
+}

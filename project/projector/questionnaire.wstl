@@ -1,0 +1,339 @@
+// Questionnaire is represented as Observations and Conditions. These
+// can represent both individual check-boxes as well as drop-down type
+// questions. 
+// 
+// A condition is only created when there is a formal code representation
+// (presumably from Mondo or HPO)
+// 
+
+// Definition: Uniform method for building Observation (and Condition) IDs associated with a patient
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  patient_id - The id assocaited with patient (this isn't likely to be an actual FHIR id)
+//  qcode - The code/question id associated with the observation 
+//  varname - Optional variable name if this is an observation representation of a checkbox
+//
+// Please note that varname can be an empty string, "", but it must be present due to 
+// the way Whistle works. 
+def BuildObservationId(study, patient_id, qcode, varname) {
+    $this (if $IsNotNil(varname)): $StrCat(study.id, ".", patient_id, ".", varname, ".", qcode);
+    $this (if $IsNil(varname)): $StrCat(study.id, ".", patient_id, ".", qcode);
+}
+
+// Definition: Construct a Condition record. These will have either Mondo or HP code
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  questionnaire - This is the entire JSON representation of the IHQ form
+//  qcode - The code/question id associated with the condition 
+//  qvalue - The actual value associated with qcode
+//  note - For some situations, we will want to embed a value inside a note. 
+//
+def Condition(study, questionnaire, qcode, qvalue, note) {
+    var subject_id: questionnaire.patient_id;
+    var age_at: questionnaire.age_at_survey_time;
+
+    if (~$IsNil(qvalue)) {
+        if (qvalue = "No" or qvalue = "0") {
+            var verifcode: "0";
+        } else {
+            if (qvalue = "Not Test" or qvalue = "Unsure") {
+                var verifcode: "2";
+            } else {
+                var verifcode: "1";
+            }
+        }
+        identifier[]: Key_Identifier(study, "Condition", BuildObservationId(study, subject_id, qcode, ""));
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+        verificationStatus: HarmonizeAsCoding(verifcode, "ConditionPresent");
+        verificationStatus.text: HarmonizedLocalDisplay(verifcode, "ConditionPresent");
+
+        category[0].coding[0].system: "http://terminology.hl7.org/CodeSystem/condition-category";
+        category[0].coding[0].code: "encounter-diagnosis";
+        category[0].coding[0].display: "Encounter Diagnosis";
+
+        code.text: HarmonizedLocalDisplay(qcode, "ihq");
+        code.coding[]: HarmonizeMapped(qcode, "ihq");
+        code.coding[]: LocalCodeSystemReference(study.study_id, "ihq", qcode);
+        note[].text: note;
+
+        onsetString (if qcode = "q000001"): questionnaire.q000002;
+        onsetString (if qcode = "q000017"): questionnaire.q000019;
+        onsetString (if qcode = "q000020"): questionnaire.q000021;
+        resourceType: "Condition";
+    }
+}
+
+// Definition: Build condition based on a "Checkbox" type response
+////
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  questionnaire - This is the entire JSON representation of the IHQ form
+//  varcode - The code/question id associated with the condition 
+//  qve - The value object associated with checkbox. 
+//     - code Is the code associated with the checkbox's definition
+//     - value is the response provided. This is likely "1" or missing
+//
+// We will ignore anything that doesn't have a value qv.value or an external code 
+// associated with it by harmonization (i.e. only Mondo and HP)
+//
+def ValueBasedCondition(study, questionnaire, varcode, qv) {
+    var qcode: qv.code;
+    var qvalue: qv.value;
+    var subject_id: questionnaire.patient_id;
+    var age_at: questionnaire.age_at_survey_time;
+    var formal_code: HarmonizeMapped(qcode, varcode);
+
+    if (formal_code? and ~$IsNil(qvalue)) {
+        if (qvalue = "No" or qvalue = "0") {
+            var verifcode: "0";
+        } else {
+            if (qvalue = "Not Test" or qvalue = "Unsure") {
+                var verifcode: "2";
+            } else {
+                var verifcode: "1";
+            }
+        }
+        identifier[]: Key_Identifier(study, "Condition", BuildObservationId(study, subject_id, varcode, qcode));
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+        verificationStatus: HarmonizeAsCoding(verifcode, "ConditionPresent");
+        verificationStatus.text: HarmonizedLocalDisplay(verifcode, "ConditionPresent");
+
+        category[0].coding[0].system: "http://terminology.hl7.org/CodeSystem/condition-category";
+        category[0].coding[0].code: "encounter-diagnosis";
+        category[0].coding[0].display: "Encounter Diagnosis";
+
+        code.text: HarmonizedLocalDisplay(qcode, varcode);
+        code.coding[]: formal_code;
+        code.coding[]: LocalCodeSystemReference(study.study_id, varcode, qcode);
+
+        resourceType: "Condition";
+    }
+}
+
+// Definition: Build up an Observation.component entry 
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  tablename - The table(form) from which the variable was found
+//  qcode - The code/question id associated with the observation 
+//  answer - This is the actual response object (Checkbox  with code and value)
+//     - code is the code associated with the checkbox
+//     - value is the response (almost certainly "1" if not empty)
+//
+// This is not currently used, but may prove useful for future design considerations
+//
+def ObservationComponent(study, tablename, qcode, answer) {
+    if (answer.value?) {
+        code.coding[]: HarmonizeMapped(answer.code, qcode);
+        code.coding[]: LocalVarCodeSystemReference(study.study_id, "ihq", qcode, answer.code);
+        code.text: HarmonizedLocalDisplay(answer.code, qcode);
+        valueString: answer.value;
+    }
+}
+
+// Rather than the usual 1 answer per question, these are a list of 
+// checkboxes. We'll use components to capture that information
+
+// Definition: Build complex observations to represent groups of related checkboxes
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  questionnaire - This is the entire JSON representation of the IHQ form
+//  qcode - The code/question id associated with the observation 
+//  qvalue - list of checkbox objects. Each should have the following fields
+//     - code Is the code associated with the checkbox's definition
+//     - value is the response provided. This is likely "1" or missing
+//  
+// This is not currently used but may be useful for future reference
+//
+def ComplexObservation(study, questionnaire, qcode, qvalue) {
+    var subject_id: questionnaire.patient_id;
+    var age_at: questionnaire.age_at_survey_time;
+    identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, qcode, ""));
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", qcode));
+    code.text: HarmonizedLocalDisplay(qcode, "ihq");
+    code.coding[]: HarmonizeMapped(qcode, "ihq");
+    code.coding[]: LocalCodeSystemReference(study.study_id, "ihq", qcode);
+    component[]: ObservationComponent(study, "ihq", qcode, qvalue[]);
+    status: "final";
+    resourceType: "Observation";
+}
+
+// Definition: Build an Observation associated with a 'positive' response for an individual checkbox
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  questionnaire - This is the entire JSON representation of the IHQ form
+//  tablename - The table(form) from which the variable was found
+//  qcode - The code/question id associated with the observation 
+//  answer - This is the actual response object (Checkbox  with code and value)
+//     - code is the code associated with the checkbox
+//     - value is the response (almost certainly "1" if not empty)
+//
+// All checkboxes that were "checked" (i.e. had a positive value indicated) will have
+// a corresponding Observation. Only those with an external vocabulary (HP and Mondo) 
+// will also result in becoming Conditions (which is not done here)
+//
+def ObservationCheckbox(study, questionnaire, table_name, qcode, answer) {
+    if ($IsNotNil(answer.value)) {
+        var subject_id: questionnaire.patient_id;
+        var age_at: questionnaire.age_at_survey_time;
+        var localcs: LocalCodeSystemReference(study.study_id, qcode, answer.code);
+
+        identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, qcode, answer.code));
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+        focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, qcode));
+        code.text: HarmonizedLocalDisplay(answer.code, qcode);
+        code.coding[]: HarmonizeMapped(answer.code, qcode);
+        code.coding[]: localcs;
+        
+        valueString: answer.value;
+        status: "final";
+        resourceType: "Observation";
+
+    }
+}
+
+// Definition: Construct basic Observation whose response is a code from a local vocabulary (i.e. categorial value)
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  questionnaire - This is the entire JSON representation of the IHQ form
+//  qcode - The code/question id associated with the observation 
+//  qvalue - list of checkbox objects. Each should have the following fields
+//     - code Is the code associated with the checkbox's definition
+//     - value is the response provided. This is likely "1" or missing
+//  
+def BasicObservation(study, questionnaire, qcode, qvalue) {
+    var subject_id: questionnaire.patient_id;
+    var age_at: questionnaire.age_at_survey_time;
+    identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, qcode, ""));
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", qcode));
+    code.text: HarmonizedLocalDisplay(qcode, "ihq");
+    code.coding[]: HarmonizeMapped(qcode, "ihq");
+    code.coding[]: LocalCodeSystemReference(study.study_id, "ihq", qcode);
+    valueCodeableConcept.text: qvalue;
+    valueCodeableConcept.coding[]: ValueCodeableConcept(study.id, "ihq", qcode, qvalue, qvalue);
+    status: "final";
+    resourceType: "Observation";
+}
+
+// Definition: Wrapper to build the IHQ data table as FHIR resources
+//  study - This is the full study object created by Whistler
+//  qst - This is the entire JSON representation of the IHQ form
+//
+// Each variable in the IHQ must be considered independently, but really
+// only fall into a small number of categories. 
+def ProcessQuestionnaire(study, qst) {
+
+    out entry: BasicObservation(study, qst, "q000001", qst.q000001);
+    out entry: Condition(study, qst, "q000001", qst.q000001, qst.q000001);
+
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-diagnosis", qst.q-diagnosis[]);
+    //out entry: ComplexObservation(study, qst, "q-diagnosis", qst.q-diagnosis);
+    out entry: ValueBasedCondition(study, qst, "q-diagnosis", qst.q-diagnosis[]);
+    out entry: BasicObservation(study, qst, "q000002", qst.q000002);
+    out entry: BasicObservation(study, qst, "q000003", qst.q000003);
+    out entry: BasicObservation(study, qst, "q000004", qst.q000004);
+    out entry: BasicObservation(study, qst, "q000005", qst.q000005);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-fam-mem", qst.q-fam-mem[]);
+
+    // I think this should ultimate spawn conditions for those with "1" in them...
+    // but there aren't any meaningful mappings associated with the at this time
+    out entry: BasicObservation(study, qst, "q000006", qst.q000006);
+    out entry: Condition(study, qst, "q000006", qst.q000006, qst.q000006);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-congen-heart", qst.q-congen-heart[]);
+    out entry: ValueBasedCondition(study, qst, "q-congen-heart", qst.q-congen-heart[]);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-heart-surgery", qst.q-heart-surgery[]);
+    out entry: ValueBasedCondition(study, qst, "q-heart-surgery", qst.q-heart-surgery[]);
+
+    out entry: BasicObservation(study, qst, "q000007", qst.q000007);
+    out entry: Condition(study, qst, "q000007", qst.q000007, qst.q000007);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-gastro", qst.q-gastro[]);
+    out entry: ValueBasedCondition(study, qst, "q-gastro", qst.q-gastro[]);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-gastro-surgery", qst.q-gastro-surgery[]);
+    out entry: ValueBasedCondition(study, qst, "q-gastro-surgery", qst.q-gastro-surgery[]);
+
+    out entry: BasicObservation(study, qst, "q000008", qst.q000008);
+
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-dental", qst.q-dental[]);
+
+    out entry: BasicObservation(study, qst, "q000009", qst.q000009);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-neurologic", qst.q-neurologic[]);
+    out entry: ValueBasedCondition(study, qst, "q-neurologic", qst.q-neurologic[]);
+    // We actually have valid conditions for some of these ...now, how do we handle them?
+
+    out entry: BasicObservation(study, qst, "q000010", qst.q000010);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-sleep", qst.q-sleep[]);
+    out entry: ValueBasedCondition(study, qst, "q-sleep", qst.q-sleep[]);
+
+    out entry: BasicObservation(study, qst, "q000011", qst.q000011);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-skeletal", qst.q-skeletal[]);
+    out entry: ValueBasedCondition(study, qst, "q-skeletal", qst.q-skeletal[]); 
+
+    out entry: BasicObservation(study, qst, "q000012", qst.q000012);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-cancer", qst.q-cancer[]);
+    out entry: ValueBasedCondition(study, qst, "q-cancer", qst.q-cancer[]); 
+
+    out entry: BasicObservation(study, qst, "q000013", qst.q000013);
+
+    out entry: BasicObservation(study, qst, "q000014", qst.q000014);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-thyroid", qst.q-thyroid[]);
+    out entry: ValueBasedCondition(study, qst, "q-thyroid", qst.q-thyroid[]);
+
+    out entry: BasicObservation(study, qst, "q000015", qst.q000015);
+    out entry: BasicObservation(study, qst, "q000016", qst.q000016);
+
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-metabolic", qst.q-metabolic[]);
+    out entry: ValueBasedCondition(study, qst, "q-metabolic", qst.q-metabolic[]);
+
+    out entry: BasicObservation(study, qst, "q000017", qst.q000017);
+    out entry: Condition(study, qst, "q000017", qst.q000017, qst.q000017);
+    out entry: BasicObservation(study, qst, "q000018", qst.q000018);
+    // 19 relates to age at #17 if it's a condition
+    out entry: BasicObservation(study, qst, "q000019", qst.q000019);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-hearing-loss", qst.q-hearing-loss[]);
+    out entry: ValueBasedCondition(study, qst, "q-hearing-loss", qst.q-hearing-loss[]);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-hearing-treatment", qst.q-hearing-treatment[]);
+    out entry: ValueBasedCondition(study, qst, "q-hearing-treatment", qst.q-hearing-treatment[]);
+
+    out entry: BasicObservation(study, qst, "q000020", qst.q000020);
+    // 21 relates back to age at
+    out entry: Condition(study, qst, "q000020", qst.q000020, qst.q000020);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-vision", qst.q-vision[]);
+    out entry: ValueBasedCondition(study, qst, "q-vision", qst.q-vision[]);
+    out entry: BasicObservation(study, qst, "q000021", qst.q000021);
+
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-behavioral", qst.q-behavioral[]);
+    out entry: ValueBasedCondition(study, qst, "q-behavioral", qst.q-behavioral[]);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-learning", qst.q-learning[]);
+    out entry: ValueBasedCondition(study, qst, "q-learning", qst.q-learning[]);
+
+    out entry: BasicObservation(study, qst, "q000022", qst.q000022);
+    out entry: BasicObservation(study, qst, "q000023", qst.q000023);    
+    out entry: BasicObservation(study, qst, "q000024", qst.q000024);
+    out entry: BasicObservation(study, qst, "q000025", qst.q000025);
+
+    out entry: BasicObservation(study, qst, "q000026", qst.q000026);
+
+    out entry: BasicObservation(study, qst, "q000027", qst.q000027);
+    out entry: BasicObservation(study, qst, "q000028", qst.q000028);
+    out entry: BasicObservation(study, qst, "q000029", qst.q000029);
+    out entry: BasicObservation(study, qst, "q000030", qst.q000030);
+
+    out entry: BasicObservation(study, qst, "q000031", qst.q000031);
+    out entry: ObservationCheckbox(study, qst, "ihq", "q-living-situation", qst.q-living-situation[]);
+    out entry: ValueBasedCondition(study, qst, "q-living-situation", qst.q-living-situation[]);
+
+    out entry: BasicObservation(study, qst, "q000032", qst.q000032);
+    out entry: BasicObservation(study, qst, "q000033", qst.q000033);
+    out entry: BasicObservation(study, qst, "q000034", qst.q000034);
+
+}
+

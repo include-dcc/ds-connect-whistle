@@ -1,0 +1,53 @@
+// Participant
+
+// We create both a Patient record as well as a basic ResearchSubject here for each
+// subject specified
+
+// I'm not seeing any specimen details in the data I have at the moment
+
+// Description: Research Subject 
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject - Must have a patient_id
+def ResearchSubject(study, subject) {
+    identifier[]: Key_Identifier(study, "ResearchSubject", subject.patient_id);
+    status: "on-study";
+    study: Reference_Key_Identifier(study, "ResearchStudy", study.id);
+    individual: Reference_Key_Identifier(study, "Patient", subject.patient_id);
+    resourceType: "ResearchSubject";
+}
+
+// Description: Our Participant is basically a limited Patient record
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject - Must have a patient_id
+// 
+def Participant(study, subject) {
+    identifier[]: Key_Identifier(study, "Patient", subject.patient_id);
+    gender (if subject.gender ~= "."): HarmonizeAsCode(subject.gender, "gender");
+    extension[]: RaceExtension(subject.race[]);
+    extension[]: EthnicityExtension(subject);
+    resourceType : "Patient"
+}
+
+// Description: Wrapper for generating Patient records
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  demo - Must have a patient_id
+// 
+def ProcessParticipant(study, demo) {
+    out entry: Participant(study, demo);
+}
+
+// Description: Wrapper for generating ResearchSubject records
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  demo - Must have a patient_id
+// 
+def ProcessResearchSubject(study, demo) {
+    out entry: ResearchSubject(study, demo);
+}

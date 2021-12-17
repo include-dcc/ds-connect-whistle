@@ -1,0 +1,78 @@
+// Transform the ds-connect dataset 
+// This is the entry point for the INCLUDE transformation.
+//
+// The JSON data into the function as resource (passed as $root 
+// from the wrapper wstl script function. ) This is the JSON formmatted
+// data extracted from the CSV. It has been transformed a bit, but mostly
+// just to tease it into a shape that lets the data work with the Whistler
+// pipeline. Changes to this particular dataset were largely to make the
+// column names a bit more manageable. For the checkboxes that apply to 
+// a single "question", those have been merged into a single json object
+// under a simplified question name. 
+//
+// All of the transformed names are mapped back to the original questions 
+// and column names inside the modified data-dictionary. 
+//
+// We have added data-dictionary and code-system/value-set details to 
+// the study. These are based on the contents of the data-dictionary and
+// will be propagated out as actual code systems. 
+// 
+
+
+
+// This version is just a handful to provide some tests while I do some cleanup
+// for public release of the code. 
+def Transform_DSC_Dataset(resource) {
+    if resource.study? {
+        $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
+        $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
+        if resource.demo? {
+
+            $this: ProcessParticipant(resource.study, resource.demo[1]);
+            $this: ProcessParticipant(resource.study, resource.demo[2]);
+            $this: ProcessParticipant(resource.study, resource.demo[3]);
+            $this: ProcessParticipant(resource.study, resource.demo[4]);
+            $this: ProcessParticipant(resource.study, resource.demo[5]);
+            $this: ProcessParticipant(resource.study, resource.demo[6]);
+            $this: ProcessParticipant(resource.study, resource.demo[8]);
+            $this: ProcessParticipant(resource.study, resource.demo[9]);
+            $this: ProcessGroup(resource.study, resource.demo[*]);
+            $this: ProcessStudy(resource.study);
+            $this: ProcessResearchSubject(resource.study, resource.demo[1]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[2]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[3]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[4]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[5]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[6]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[8]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[9]);
+        }        
+        if resource.ihq? {
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[1]);
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[2]);
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[3]);
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[4]);
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[5]);
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[6]);
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[8]);
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[9]);
+        }
+    }
+}
+
+// Transform the ds-connect dataset 
+def Transform_DSC_Dataset_(resource) {
+    if resource.study? {
+        $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
+        $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
+        if resource.demo? {
+            $this: ProcessParticipant(resource.study, resource.demo[]);
+            $this: ProcessGroup(resource.study, resource.demo[*]);
+            $this: ProcessStudy(resource.study);
+            $this: ProcessResearchSubject(resource.study, resource.demo[]);
+        }        
+        if resource.ihq? {
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[]);
+        }
+    }
+}
