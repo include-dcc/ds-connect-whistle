@@ -1,0 +1,58 @@
+study_id: ds-connect
+study_accession: TBD
+study_title: TBD
+study_desc: TBD
+identifier_prefix: https://include.org/ds-connect/fhir
+output_filename: ds-connect
+id_colname: patient_id
+whistle_src: project/ds-connect.wstl
+code_harmonization_dir: project/harmony
+projector_lib: project/projector
+dataset:
+  ihq: 
+    filename: data/ds-connect/dsconnect_ihq_20211023.csv
+    data_dictionary: 
+      filename: data/ds-connect/dd/ds-connect-ihq.csv
+      code_harmonization: project/harmony/include-fhir_concepts.csv
+      colnames:
+          varname: field
+          desc: description
+          type: data type
+          values: valid values
+    aggregator-splitter: ' - '
+    aggregators:    
+      q-test: ^How about this\?
+      q-diagnosis: ^How was the diagnosis of Down syndrome made\?
+      q-fam-mem: ^Does the participant have a family member with Down syndrome\?
+      q-congen-heart: ^Which of the following congenital heart defects have been diagnosed\?
+      q-heart-surgery: ^Has the participant ever had any cardiac or heart surgery\?
+      q-gastro: ^Which of the following gastrointestinal conditions have been diagnosed\?
+      q-gastro-surgery: ^Has the participant ever had any surgery for the gastrointestinal tract\?
+      q-dental: ^Has the participant ever been diagnosed with any of the following skin or dental problems\?
+      q-neurologic: ^Has the participant ever had any of the following neurologic conditions\?
+      q-sleep: ^Which of the following sleep problems have been diagnosed\?
+      q-skeletal: ^Which of the following skeletal problems have been diagnosed\?
+      q-cancer: ^Has the participant ever been diagnosed with any of the following forms of cancer\?
+      q-thyroid: ^What types of thyroid condition\(s\) have been diagnosed\?
+      q-metabolic: ^Has the participant ever been diagnosed with any of the following metabolic, hormonal, or autoimmune conditions\?
+      q-hearing-loss: ^Has the participant ever been diagnosed with any of the following types of hearing loss\?
+      q-hearing-treatment: ^What treatment\(s\) has the participant had for hearing loss\?
+      q-vision: ^Has the participant ever been diagnosed with any of the following eye or vision conditions\?
+      q-behavioral: ^Has the participant ever been diagnosed with any of the following behavioral or mental health conditions\?
+      q-learning: ^Has the participant ever been diagnosed with any of the following learning problems\?
+      q-living-situation: ^Select the current living situation for the participant\.
+  demo: 
+    filename: data/ds-connect/dsconnect_demographics_20211022.csv
+    data_dictionary: 
+      filename: data/ds-connect/dd/demographics.csv
+      colnames:
+        varname: field
+        desc: description
+        type: data type
+        values: valid values
+    code_harmonization: project/harmony/include-fhir_concepts.csv
+    aggregators:
+      race: ^race_*
+      consents: ^consent_*
+      language: ^language_*
+

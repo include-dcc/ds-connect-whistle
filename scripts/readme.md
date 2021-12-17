@@ -4,6 +4,8 @@ the data and massage it to fit into Whistler's expected formats. For now, this
 is a manual process, but that can be changed in the future. 
 
 ## scripts/fix_input_files.py
+(I'm using the configuration file: project/ds-connect-init.yaml)
+
 This file uses a special version of the Whistler configuration to find the 
 original data sources and data-dictionary files. It then renames long 
 column names, cleans up a few inconsistencies and outputs both new versions
