@@ -1,0 +1,6 @@
+# My personal mechanism for initializing the command line environment
+activate
+
+# Hosts file for managing FHIR server connections
+fhir_hosts
+
