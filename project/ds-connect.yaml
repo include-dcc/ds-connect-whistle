@@ -1,0 +1,59 @@
+study_id: ds-connect
+study_accession: TBD
+study_title: TBD
+study_desc: TBD
+identifier_prefix: https://include.org/ds-connect/fhir
+output_filename: ds-connect
+id_colname: patient_id
+whistle_src: project/ds-connect.wstl
+code_harmonization_dir: project/harmony
+projector_lib: project/projector
+dataset:
+  demo: 
+    filename: data/ds-connect/updated/dsconnect_demographics_20211022.csv
+    data_dictionary: 
+      filename: data/ds-connect/updated/dd/demographics.csv
+      colnames:
+          varname: field
+          desc: description
+          type: data type
+          values: valid values
+    code_harmonization: project/harmony/ds-connect-harmony.csv
+    aggregator-splitter: ' '
+    aggregators:
+      race: ^race
+      consents: ^consent
+      language: ^language
+  ihq: 
+    filename: data/ds-connect/updated/dsconnect_ihq_20211023.csv
+    data_dictionary: 
+      filename: data/ds-connect/updated/dd/ds-connect-ihq.csv
+      colnames:
+          varname: field
+          desc: description
+          type: data type
+          values: valid values
+    code_harmonization: project/harmony/ds-connect-harmony.csv
+    aggregator-splitter: ' '
+    aggregators:    
+      q-test: q-test
+      q-diagnosis: q-diagnosis
+      q-fam-mem: q-fam-mem
+      q-congen-heart: q-congen-heart
+      q-heart-surgery: q-heart-surgery
+      q-gastro: q-gastro
+      q-gastro-surgery: q-gastro-surgery
+      q-dental: q-dental
+      q-neurologic: q-neurologic
+      q-sleep: q-sleep
+      q-skeletal: q-skeletal
+      q-cancer: q-cancer
+      q-thyroid: q-thyroid
+      q-metabolic: q-metabolic
+      q-hearing-loss: q-hearing-loss
+      q-hearing-treatment: q-hearing-treatment
+      q-vision: q-vision
+      q-behavioral: q-behavioral
+      q-learning: q-learning
+      q-living-situation: q-living-situation
+
