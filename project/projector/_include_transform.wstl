@@ -22,7 +22,7 @@
 
 // This version is just a handful to provide some tests while I do some cleanup
 // for public release of the code. 
-def Transform_DSC_Dataset(resource) {
+def Transform_DSC_Dataset_Test_Subset(resource) {
     if resource.study? {
         $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
         $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
@@ -61,7 +61,7 @@ def Transform_DSC_Dataset(resource) {
 }
 
 // Transform the ds-connect dataset 
-def Transform_DSC_Dataset_(resource) {
+def Transform_DSC_Dataset(resource) {
     if resource.study? {
         $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
         $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
