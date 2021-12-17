@@ -35,3 +35,14 @@ portion of whistler for categorical values.
 
 * Typos and inconsenstencies between data dictionary and dataset are corrected
 
+# scripts/harmonize_dd.py
+This script is a one-off script used to build up the initial data harmonization
+CSV file used by whistler to build the concept maps necessary to associate 
+do the data transformation of the various values in the dataset to those 
+formal terminologies from HP and Mondo (among other things). 
+
+Going forward, we should create something a bit more automated to extract 
+changes from the live google sheet and update the data current harmonization
+CSV itself. This will make updating much cleaner than trying to reuse this 
+one. However, it's here for historical purposes and can probably provide 
+some example code for when the rewrite happens. 
