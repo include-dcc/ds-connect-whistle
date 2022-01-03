@@ -1,6 +1,9 @@
 # My personal mechanism for initializing the command line environment
 activate
 
+# Until we decide either that the data can be stored in github or to make this a private repo (and then data can be stored), let's just ignore it
+data 
+
 # Hosts file for managing FHIR server connections
 fhir_hosts
 
