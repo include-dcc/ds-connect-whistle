@@ -24,10 +24,9 @@
 // for public release of the code. 
 def Transform_DSC_Dataset_Test_Subset(resource) {
     if resource.study? {
-        $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
-        $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
+        // $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
+        // $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
         if resource.demo? {
-
             $this: ProcessParticipant(resource.study, resource.demo[1]);
             $this: ProcessParticipant(resource.study, resource.demo[2]);
             $this: ProcessParticipant(resource.study, resource.demo[3]);
@@ -36,6 +35,34 @@ def Transform_DSC_Dataset_Test_Subset(resource) {
             $this: ProcessParticipant(resource.study, resource.demo[6]);
             $this: ProcessParticipant(resource.study, resource.demo[8]);
             $this: ProcessParticipant(resource.study, resource.demo[9]);
+            $this: ProcessParticipant(resource.study, resource.demo[10]);
+            $this: ProcessParticipant(resource.study, resource.demo[11]);
+            $this: ProcessParticipant(resource.study, resource.demo[12]);
+            $this: ProcessParticipant(resource.study, resource.demo[13]);
+            $this: ProcessParticipant(resource.study, resource.demo[14]);
+            $this: ProcessParticipant(resource.study, resource.demo[15]);
+            $this: ProcessParticipant(resource.study, resource.demo[16]);
+            $this: ProcessParticipant(resource.study, resource.demo[18]);
+            $this: ProcessParticipant(resource.study, resource.demo[19]);
+            $this: ProcessParticipant(resource.study, resource.demo[20]);
+            $this: ProcessParticipant(resource.study, resource.demo[21]);
+            $this: ProcessParticipant(resource.study, resource.demo[22]);
+            $this: ProcessParticipant(resource.study, resource.demo[23]);
+            $this: ProcessParticipant(resource.study, resource.demo[24]);
+            $this: ProcessParticipant(resource.study, resource.demo[25]);
+            $this: ProcessParticipant(resource.study, resource.demo[26]);
+            $this: ProcessParticipant(resource.study, resource.demo[28]);
+            $this: ProcessParticipant(resource.study, resource.demo[29]);
+            $this: ProcessParticipant(resource.study, resource.demo[30]);
+            $this: ProcessParticipant(resource.study, resource.demo[31]);
+            $this: ProcessParticipant(resource.study, resource.demo[32]);
+            $this: ProcessParticipant(resource.study, resource.demo[33]);
+            $this: ProcessParticipant(resource.study, resource.demo[34]);
+            $this: ProcessParticipant(resource.study, resource.demo[35]);
+            $this: ProcessParticipant(resource.study, resource.demo[36]);
+            $this: ProcessParticipant(resource.study, resource.demo[38]);
+            $this: ProcessParticipant(resource.study, resource.demo[39]);
+            $this: ProcessParticipant(resource.study, resource.demo[40]);
             $this: ProcessGroup(resource.study, resource.demo[*]);
             $this: ProcessStudy(resource.study);
             $this: ProcessResearchSubject(resource.study, resource.demo[1]);
@@ -46,6 +73,35 @@ def Transform_DSC_Dataset_Test_Subset(resource) {
             $this: ProcessResearchSubject(resource.study, resource.demo[6]);
             $this: ProcessResearchSubject(resource.study, resource.demo[8]);
             $this: ProcessResearchSubject(resource.study, resource.demo[9]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[10]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[11]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[12]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[13]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[14]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[15]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[16]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[18]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[19]);
+
+            $this: ProcessResearchSubject(resource.study, resource.demo[20]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[21]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[22]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[23]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[24]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[25]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[26]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[28]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[29]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[30]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[31]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[32]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[33]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[34]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[35]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[36]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[38]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[39]);
+            $this: ProcessResearchSubject(resource.study, resource.demo[40]);
         }        
         if resource.ihq? {
             $this: ProcessQuestionnaire(resource.study, resource.ihq[1]);
@@ -56,6 +112,35 @@ def Transform_DSC_Dataset_Test_Subset(resource) {
             $this: ProcessQuestionnaire(resource.study, resource.ihq[6]);
             $this: ProcessQuestionnaire(resource.study, resource.ihq[8]);
             $this: ProcessQuestionnaire(resource.study, resource.ihq[9]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[10]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[11]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[12]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[13]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[14]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[15]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[16]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[18]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[19]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[20]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[21]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[22]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[23]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[24]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[25]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[26]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[28]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[29]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[30]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[31]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[32]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[33]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[34]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[35]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[36]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[38]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[39]);
+            $this: ProcessQuestionnaire(resource.study, resource.demo[40]);
+
         }
     }
 }
