@@ -56,7 +56,7 @@ def Condition(study, questionnaire, qcode, qvalue, note) {
 
         code.text: HarmonizedLocalDisplay(qcode, "ihq");
         code.coding[]: HarmonizeMapped(qcode, "ihq");
-        code.coding[]: LocalCodeSystemReference(study.study_id, "ihq", qcode);
+        code.coding[]: LocalCodeSystemReference(study.id, "ihq", qcode);
         note[].text: note;
 
         onsetString (if qcode = "q000001"): questionnaire.q000002;
@@ -108,7 +108,7 @@ def ValueBasedCondition(study, questionnaire, varcode, qv) {
 
         code.text: HarmonizedLocalDisplay(qcode, varcode);
         code.coding[]: formal_code;
-        code.coding[]: LocalCodeSystemReference(study.study_id, varcode, qcode);
+        code.coding[]: LocalCodeSystemReference(study.id, varcode, qcode);
 
         resourceType: "Condition";
     }
@@ -129,7 +129,7 @@ def ValueBasedCondition(study, questionnaire, varcode, qv) {
 def ObservationComponent(study, tablename, qcode, answer) {
     if (answer.value?) {
         code.coding[]: HarmonizeMapped(answer.code, qcode);
-        code.coding[]: LocalVarCodeSystemReference(study.study_id, "ihq", qcode, answer.code);
+        code.coding[]: LocalVarCodeSystemReference(study.id, "ihq", qcode, answer.code);
         code.text: HarmonizedLocalDisplay(answer.code, qcode);
         valueString: answer.value;
     }
@@ -158,7 +158,7 @@ def ComplexObservation(study, questionnaire, qcode, qvalue) {
     focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", qcode));
     code.text: HarmonizedLocalDisplay(qcode, "ihq");
     code.coding[]: HarmonizeMapped(qcode, "ihq");
-    code.coding[]: LocalCodeSystemReference(study.study_id, "ihq", qcode);
+    code.coding[]: LocalCodeSystemReference(study.id, "ihq", qcode);
     component[]: ObservationComponent(study, "ihq", qcode, qvalue[]);
     status: "final";
     resourceType: "Observation";
@@ -183,7 +183,7 @@ def ObservationCheckbox(study, questionnaire, table_name, qcode, answer) {
     if ($IsNotNil(answer.value)) {
         var subject_id: questionnaire.patient_id;
         var age_at: questionnaire.age_at_survey_time;
-        var localcs: LocalCodeSystemReference(study.study_id, qcode, answer.code);
+        var localcs: LocalCodeSystemReference(study.id, qcode, answer.code);
 
         identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, qcode, answer.code));
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
@@ -217,7 +217,7 @@ def BasicObservation(study, questionnaire, qcode, qvalue) {
     focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", qcode));
     code.text: HarmonizedLocalDisplay(qcode, "ihq");
     code.coding[]: HarmonizeMapped(qcode, "ihq");
-    code.coding[]: LocalCodeSystemReference(study.study_id, "ihq", qcode);
+    code.coding[]: LocalCodeSystemReference(study.id, "ihq", qcode);
     valueCodeableConcept.text: qvalue;
     valueCodeableConcept.coding[]: ValueCodeableConcept(study.id, "ihq", qcode, qvalue, qvalue);
     status: "final";
