@@ -3,7 +3,7 @@ study_accession: TBD
 study_title: TBD
 study_desc: TBD
 identifier_prefix: https://include.org/ds-connect/fhir
-output_filename: ds-connect
+output_filename: ds-connect-subset
 id_colname: patient_id
 whistle_src: project/ds-connect-subset.wstl
 code_harmonization_dir: project/harmony
