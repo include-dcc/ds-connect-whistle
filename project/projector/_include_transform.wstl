@@ -24,8 +24,8 @@
 // for public release of the code. 
 def Transform_DSC_Dataset_Test_Subset(resource) {
     if resource.study? {
-        // $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
-        // $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
+        $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
+        $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
         if resource.demo? {
             $this: ProcessParticipant(resource.study, resource.demo[1]);
             $this: ProcessParticipant(resource.study, resource.demo[2]);

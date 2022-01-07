@@ -39,7 +39,7 @@ def Participant(study, subject) {
 //  demo - Must have a patient_id
 // 
 def ProcessParticipant(study, demo) {
-    out entry: Participant(study, demo);
+    out patient: Participant(study, demo);
 }
 
 // Description: Wrapper for generating ResearchSubject records
@@ -49,5 +49,5 @@ def ProcessParticipant(study, demo) {
 //  demo - Must have a patient_id
 // 
 def ProcessResearchSubject(study, demo) {
-    out entry: ResearchSubject(study, demo);
+    out research_study: ResearchSubject(study, demo);
 }

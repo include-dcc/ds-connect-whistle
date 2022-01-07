@@ -26,5 +26,5 @@ def Study(study) {
 // Argument:
 //  study - This is the full study object created by Whistler
 def ProcessStudy(study) {
-    out entry: Study(study);
+    out research_study: Study(study);
 }
