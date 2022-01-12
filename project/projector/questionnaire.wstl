@@ -17,7 +17,7 @@
 // Please note that varname can be an empty string, "", but it must be present due to 
 // the way Whistle works. 
 def BuildObservationId(study, patient_id, survey_date, qcode, varname) {
-    var sdate: $ReformatTime("1/2/06 15:04", survey_date, "Jan022006");
+    var sdate: $ReformatTime("1/2/06 15:04", survey_date, "Jan0220061504");
     $this (if $IsNotNil(varname)): $StrCat(study.id, ".", patient_id, ".", sdate, ".", varname, ".", qcode);
     $this (if $IsNil(varname)): $StrCat(study.id, ".", patient_id, ".", sdate, ".", qcode);
 }
