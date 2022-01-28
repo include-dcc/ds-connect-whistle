@@ -31,6 +31,86 @@ def Participant(study, subject) {
     extension[]: EthnicityExtension(subject);
     resourceType : "Patient"
 }
+def AgeAtExtension(study, subject, age, age_unit) {
+    if (age_unit = "years"){
+        url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
+        extension[0].url: "target";
+        extension[0].valueReference: subject;
+        extension[1].url: "targetPath";
+        extension[1].valueString: "birthDate";
+        extension[2].url: "relationship";
+        extension[2].valueCode: "after";
+        extension[3].url: "offset";
+        extension[3].valueDuration.value: $ParseInt(age);
+        //extension[3].valueDuration.unit: "a";
+        extension[3].valueDuration.system: "http://unitsofmeasure.org";
+        extension[3].valueDuration.code: "a";
+        //extension[3].display: "years";
+    }
+    if (age_unit = "days"){
+        
+        url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
+        extension[0].url: "target";
+        extension[0].valueReference: subject;
+        extension[1].url: "targetPath";
+        extension[1].valueString: "birthDate";
+        extension[2].url: "relationship";
+        extension[2].valueCode: "after";
+        extension[3].url: "offset";
+        extension[3].valueDuration.value: $ParseInt(age);
+        extension[3].valueDuration.unit: "d";
+        extension[3].valueDuration.system: "http://unitsofmeasure.org";
+        extension[3].valueDuration.code: "days";
+        //extension[3].display: "days";
+    }
+    if (age_unit = "YearsAsDays"){
+        var days: $ParseFloat(age) * 365.25;
+        var m: $Mod(days, 1);
+        
+        url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
+        extension[0].url: "target";
+        extension[0].valueReference: subject;
+        extension[1].url: "targetPath";
+        extension[1].valueString: "birthDate";
+        extension[2].url: "relationship";
+        extension[2].valueCode: "after";
+        extension[3].url: "offset";
+        extension[3].valueDuration.value: days - m;
+        extension[3].valueDuration.unit: "d";
+        extension[3].valueDuration.system: "http://unitsofmeasure.org";
+        extension[3].valueDuration.code: "days";
+        //extension[3].display: "days";
+    }    
+}
+// Definition: Construct basic Observation whose response is a code from a local vocabulary (i.e. categorial value)
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  questionnaire - This is the entire JSON representation of the IHQ form
+//  qcode - The code/question id associated with the observation 
+//  qvalue - list of checkbox objects. Each should have the following fields
+//     - code Is the code associated with the checkbox's definition
+//     - value is the response provided. This is likely "1" or missing
+//  
+def AtAtRegistrationObservation(study, subject) {
+    var subject_id: subject.patient_id;
+    var age_at: subject.age_at_registration;
+
+    if (age_at?) {
+        identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, "age_at_registration"));
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+        focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "demo", "age_at_registration"));
+        code.text: HarmonizedLocalDisplay("age_at_registration", "demo");
+        code.coding[]: HarmonizeMapped("age_at_registration", "demo");
+        code.coding[]: LocalCodeSystemReference(study.id, "demo", "age_at_registration");
+        
+        var subref: Reference_Key_Identifier(study, "Patient", subject_id);
+        _valueDateTime.extension[0]: AgeAtExtension(study, subref, age_at, "years");
+        status: "final";
+        resourceType: "Observation";
+    }
+}
+
 
 // Description: Wrapper for generating Patient records
 //
@@ -39,7 +119,8 @@ def Participant(study, subject) {
 //  demo - Must have a patient_id
 // 
 def ProcessParticipant(study, demo) {
-    out entry: Participant(study, demo);
+    out patient: Participant(study, demo);
+    out observation: AtAtRegistrationObservation(study, demo);
 }
 
 // Description: Wrapper for generating ResearchSubject records
@@ -49,5 +130,5 @@ def ProcessParticipant(study, demo) {
 //  demo - Must have a patient_id
 // 
 def ProcessResearchSubject(study, demo) {
-    out entry: ResearchSubject(study, demo);
+    out research_study: ResearchSubject(study, demo);
 }

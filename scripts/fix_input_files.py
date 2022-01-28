@@ -48,7 +48,8 @@ MAX_COLNAME_SIZE = 40
 wonky_colnames = {
     "register_year": "registration_year",
     "How was the diagnosis of Down syndrome made? (Select all that apply.) - Genetic testing in baby after birth (such as chromosome analysis, cytogenomic array, or fluorescence in situ hybridization (FISH))": 
-    "How was the diagnosis of Down syndrome made? (Select all that apply.) - Genetic testing in baby after birth (such as chromosome analysis, cytogenomic array, or fluorescence in situ hybridization (FISH)"
+    "How was the diagnosis of Down syndrome made? (Select all that apply.) - Genetic testing in baby after birth (such as chromosome analysis, cytogenomic array, or fluorescence in situ hybridization (FISH)",
+    "language_preferred ": "language_preferred"
 }
 
 # Keep track of our new column names
@@ -158,6 +159,13 @@ for table_name in config['dataset']:
     aggregators = BuildAggregators(config['dataset'][table_name]['aggregators'])
     agg_splitter =  config['dataset'][table_name].get('aggregator-splitter')
 
+    ignore_columns = config['dataset'][table_name].get('ignore_columns')
+    if ignore_columns is not None:
+        pdb.set_trace()
+        ignore_columns = set(ignore_columns)
+    else:
+        ignore_columns = set()
+
     # For each normal var, we'll push it into the queue as we finish it up
     data_dictionary_vars = []
     # For the aggregated vars, we will need a way to find them as we encounter related values
@@ -210,6 +218,7 @@ for table_name in config['dataset']:
                 data_dictionary_vars.append(newvar)
             
             variables[varname] = data_dictionary_vars[-1]
+            #pdb.set_trace()
             column_lookup[orig_name] = varname
 
     # This is going to be useful for     
@@ -258,8 +267,13 @@ for table_name in config['dataset']:
 
                         if varname in column_lookup:
                             newrow.append(column_lookup[varname])
+                        elif varname in ignore_columns:
+                            # Drop these columns 
+                            print(f"Dropping invalid column: {varname}")
                         else:
-                            print(f"{varname} doesn't seem to be there in our list of columns")
+                            print(sorted(row))
+                            print(sorted(column_lookup.keys()))
+                            print(f"\n\n{ds_filename}:'{varname}' doesn't seem to be there in our list of columns")
                             pdb.set_trace()
                             newrow.append(varname)
                     header = [x for x in newrow]
@@ -270,7 +284,12 @@ for table_name in config['dataset']:
                         varname = header[idx]
                         value = variables[varname].translate(row[idx])
                         newrow.append(value)
-                    writer.writerow(newrow)
+
+                    # There may be some weird stuff in there that needs to be filtered out:
+                    if newrow[0].strip() == "" or newrow[0][0:16] == "ACKNOWLEDGMENTS:":
+                        print(f"Skipping invalid row: {newrow}")
+                    else:
+                        writer.writerow(newrow)
                 rownum += 1 
         
 

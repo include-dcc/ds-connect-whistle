@@ -119,8 +119,8 @@ def BuildValueSet(study, cs_entry) {
 def ProcessCodeSystem(study, cs_entry) {
     var codesystem: BuildCodeSystem(study, cs_entry);
     if (codesystem?) {
-        out entry: codesystem;
-        out entry: BuildValueSet(study, cs_entry);
+        out ddmeta: codesystem;
+        out ddmeta: BuildValueSet(study, cs_entry);
     } 
 
 }

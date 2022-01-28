@@ -38,6 +38,6 @@ def Group(study, subjects) {
 //  study - This is the full study object created by Whistler
 //  demo - Array of demo objects  
 def ProcessGroup(study, demo) {
-    out entry: Group(study, demo[*]);
+    out research_study: Group(study, demo[*]);
 }
 

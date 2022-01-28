@@ -92,7 +92,7 @@ def ProcessDatasetDefinition(study, table_name, dd_entry) {
     if ($IsNil(entry)) {
         out broken: entry;
     } else {
-        out entry: entry;
+        out ddmeta: entry;
     }
 }
 
@@ -105,6 +105,6 @@ def ProcessDatasetDefinition(study, table_name, dd_entry) {
 //      - variables is an array with all contained varables
 
 def ProcessDatasetDefinitions(study, dd_table) {
-    out entry: ProcessDatasetDefinition(study, dd_table.table_name, dd_table.variables[]);
-    out entry: DdTable(study, dd_table);
+    out ddmeta: ProcessDatasetDefinition(study, dd_table.table_name, dd_table.variables[]);
+    out ddmeta: DdTable(study, dd_table);
 }

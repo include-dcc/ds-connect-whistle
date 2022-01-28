@@ -231,6 +231,56 @@
     },
     {
       "source": "gender",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "gender",
       "target": "self",
       "element": [
         {
@@ -262,6 +312,17 @@
             {
               "code": "Other",
               "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
               "equivalence": "equivalent"
             }
           ]
@@ -357,33 +418,33 @@
       "target": "self",
       "element": [
         {
-          "code": "v000200",
+          "code": "language_v000200",
           "display": "language_preferred",
           "target": [
             {
-              "code": "v000200",
+              "code": "language_v000200",
               "display": "language_preferred",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "v000214",
+          "code": "language_v000214",
           "display": "language_spoken_english",
           "target": [
             {
-              "code": "v000214",
+              "code": "language_v000214",
               "display": "language_spoken_english",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "v000215",
+          "code": "language_v000215",
           "display": "language_spoken_spanish",
           "target": [
             {
-              "code": "v000215",
+              "code": "language_v000215",
               "display": "language_spoken_spanish",
               "equivalence": "equivalent"
             }
@@ -684,7 +745,7 @@
       "target": "urn:oid:2.16.840.1.113883.6.238",
       "element": [
         {
-          "code": "v000208",
+          "code": "race_v000208",
           "display": "race_american_indian",
           "target": [
             {
@@ -695,7 +756,7 @@
           ]
         },
         {
-          "code": "v000209",
+          "code": "race_v000209",
           "display": "race_asian",
           "target": [
             {
@@ -706,7 +767,7 @@
           ]
         },
         {
-          "code": "v000210",
+          "code": "race_v000210",
           "display": "race_black",
           "target": [
             {
@@ -717,7 +778,7 @@
           ]
         },
         {
-          "code": "v000211",
+          "code": "race_v000211",
           "display": "race_pacific_islander",
           "target": [
             {
@@ -728,7 +789,7 @@
           ]
         },
         {
-          "code": "v000212",
+          "code": "race_v000212",
           "display": "race_white",
           "target": [
             {
@@ -745,66 +806,66 @@
       "target": "self",
       "element": [
         {
-          "code": "v000208",
+          "code": "race_v000208",
           "display": "race_american_indian",
           "target": [
             {
-              "code": "v000208",
+              "code": "race_v000208",
               "display": "race_american_indian",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "v000209",
+          "code": "race_v000209",
           "display": "race_asian",
           "target": [
             {
-              "code": "v000209",
+              "code": "race_v000209",
               "display": "race_asian",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "v000210",
+          "code": "race_v000210",
           "display": "race_black",
           "target": [
             {
-              "code": "v000210",
+              "code": "race_v000210",
               "display": "race_black",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "v000211",
+          "code": "race_v000211",
           "display": "race_pacific_islander",
           "target": [
             {
-              "code": "v000211",
+              "code": "race_v000211",
               "display": "race_pacific_islander",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "v000212",
+          "code": "race_v000212",
           "display": "race_white",
           "target": [
             {
-              "code": "v000212",
+              "code": "race_v000212",
               "display": "race_white",
               "equivalence": "equivalent"
             }
           ]
         },
         {
-          "code": "v000213",
+          "code": "race_v000213",
           "display": "race_unknown",
           "target": [
             {
-              "code": "v000213",
+              "code": "race_v000213",
               "display": "race_unknown",
               "equivalence": "equivalent"
             }
@@ -817,7 +878,7 @@
       "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
       "element": [
         {
-          "code": "v000213",
+          "code": "race_v000213",
           "display": "race_unknown",
           "target": [
             {

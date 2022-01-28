@@ -10,10 +10,10 @@ code_harmonization_dir: project/harmony
 projector_lib: project/projector
 dataset:
   ihq: 
-    filename: data/ds-connect/dsconnect_ihq_20211023.csv
+    filename: data/ds-connect-20220121/dsconnect_ihq.csv
     data_dictionary: 
       filename: data/ds-connect/dd/ds-connect-ihq.csv
-      code_harmonization: project/harmony/include-fhir_concepts.csv
+      code_harmonization: project/harmony/ds-connect-harmony.csv
       colnames:
           varname: field
           desc: description
@@ -42,7 +42,7 @@ dataset:
       q-learning: ^Has the participant ever been diagnosed with any of the following learning problems\?
       q-living-situation: ^Select the current living situation for the participant\.
   demo: 
-    filename: data/ds-connect/dsconnect_demographics_20211022.csv
+    filename: data/ds-connect-20220121/dsconnect_demo.csv
     data_dictionary: 
       filename: data/ds-connect/dd/demographics.csv
       colnames:
@@ -50,7 +50,7 @@ dataset:
         desc: description
         type: data type
         values: valid values
-    code_harmonization: project/harmony/include-fhir_concepts.csv
+      code_harmonization: project/harmony/ds-connect-harmony.csv
     aggregators:
       race: ^race_*
       consents: ^consent_*
