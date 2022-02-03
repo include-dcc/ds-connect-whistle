@@ -1,653 +1,636 @@
 local code,text,local code system,code,display,code system,comment
-patient_id,patient_id,demo,,,,
-registration_year,registration_year,demo,,,,
-age_at_registration,age_at_registration,demo,,,,
-gender,gender,demo,,,,
+"$100,000 - $149,999","$100,000 - $149,999",q000034
+"$25,000 - $49,999","$25,000 - $49,999",q000034
+"$50,000 - $74,999","$50,000 - $74,999",q000034
+"$75,000 - $99,999","$75,000 - $99,999",q000034
+"(Any combination of letters and numbers starting with ""NDAR"")","(Any combination of letters and numbers starting with ""NDAR"")",guid
+"Above $150,000","Above $150,000",q000034
+"Bachelor's degree (e.g., BA, AB, BS, BBA)","Bachelor's degree (e.g., BA, AB, BS, BBA)",q000032
+"Bachelor's degree (e.g., BA, AB, BS, BBA)","Bachelor's degree (e.g., BA, AB, BS, BBA)",q000033
+"Diagnosed with any of the following: leukemia, TMD, or leukemoid reaction","Diagnosed with any of the following: leukemia, TMD, or leukemoid reaction",q000012
+"Doctoral degree (e.g., PhD, EdD)","Doctoral degree (e.g., PhD, EdD)",q000032
+"Doctoral degree (e.g., PhD, EdD)","Doctoral degree (e.g., PhD, EdD)",q000033
+"Less than $25,000 (USD)","Less than $25,000 (USD)",q000034
+"Master's degree (e.g., MA, MS, MEng, Med, MBA)","Master's degree (e.g., MA, MS, MEng, Med, MBA)",q000032
+"Master's degree (e.g., MA, MS, MEng, Med, MBA)","Master's degree (e.g., MA, MS, MEng, Med, MBA)",q000033
+"More than eighth grade, but did not graduate from high school","More than eighth grade, but did not graduate from high school",q000025
+"Not diagnosed with leukemia, TMD or leukemoid reaction","Not diagnosed with leukemia, TMD or leukemoid reaction",q000012
+"Participant went to school, but unsure what level","Participant went to school, but unsure what level",q000025
+"Preschool, nursery school or kindergarten","Preschool, nursery school or kindergarten",q000032
+"Preschool, nursery school or kindergarten","Preschool, nursery school or kindergarten",q000033
+"Professional school degree (e.g., MD, DDS, DVM, JD)","Professional school degree (e.g., MD, DDS, DVM, JD)",q000032
+"Professional school degree (e.g., MD, DDS, DVM, JD)","Professional school degree (e.g., MD, DDS, DVM, JD)",q000033
+"Some college, no degree","Some college, no degree",q000032
+"Some college, no degree","Some college, no degree",q000033
+"Went to a business, trade, or vocational school after high school","Went to a business, trade, or vocational school after high school",q000025
+"Went to a business, trade, or vocational school instead of high school","Went to a business, trade, or vocational school instead of high school",q000025
+"Went to college, but did not graduate","Went to college, but did not graduate",q000025
+###,###,address_postal_code
+(All US State abbreviations),(All US State abbreviations),address_state
+(Any country),(Any country),address_country
+(Any country),(Any country),birth_country
+0,Condition Absent,ConditionPresent,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+1 year,1 year,q000002
+1 year,1 year,q000019
+1 year,1 year,q000021
+1,Condition Present,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+10 - 20 years,10 - 20 years,q000019
+10 - 20 years,10 - 20 years,q000021
+10 or more,10 or more,q000031
+10 years or older,10 years or older,q000002
+10th Grade,10th Grade,q000022
+10th Grade,10th Grade,q000023
+10th Grade,10th Grade,q000024
+11th Grade,11th Grade,q000022
+11th Grade,11th Grade,q000023
+11th Grade,11th Grade,q000024
+12th Grade,12th Grade,q000022
+12th Grade,12th Grade,q000023
+12th Grade,12th Grade,q000024
+15 years,15 years,q000004
+15 years,15 years,q000005
+16 years,16 years,q000004
+16 years,16 years,q000005
+17 years,17 years,q000004
+17 years,17 years,q000005
+18 years,18 years,q000004
+18 years,18 years,q000005
+19 years,19 years,q000004
+19 years,19 years,q000005
+1st Grade,1st Grade,q000022
+1st Grade,1st Grade,q000023
+1st Grade,1st Grade,q000024
+2 years,2 years,q000002
+2 years,2 years,q000019
+2 years,2 years,q000021
+2,Condition Unconfirmed,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+20 years,20 years,q000004
+20 years,20 years,q000005
+21 - 30 years,21 - 30 years,q000019
+21 - 30 years,21 - 30 years,q000021
+21 years,21 years,q000004
+21 years,21 years,q000005
+22 years,22 years,q000004
+22 years,22 years,q000005
+23 years,23 years,q000004
+23 years,23 years,q000005
+24 years,24 years,q000004
+24 years,24 years,q000005
+25 years,25 years,q000004
+25 years,25 years,q000005
+26 years,26 years,q000004
+26 years,26 years,q000005
+27 years,27 years,q000004
+27 years,27 years,q000005
+28 years,28 years,q000004
+28 years,28 years,q000005
+29 years,29 years,q000004
+29 years,29 years,q000005
+2nd Grade,2nd Grade,q000022
+2nd Grade,2nd Grade,q000023
+2nd Grade,2nd Grade,q000024
+3 years,3 years,q000002
+3 years,3 years,q000019
+3 years,3 years,q000021
+30 years,30 years,q000004
+30 years,30 years,q000005
+31 - 40 years,31 - 40 years,q000019
+31 - 40 years,31 - 40 years,q000021
+31 years,31 years,q000004
+31 years,31 years,q000005
+32 years,32 years,q000004
+32 years,32 years,q000005
+33 years,33 years,q000004
+33 years,33 years,q000005
+34 years,34 years,q000004
+34 years,34 years,q000005
+35 years,35 years,q000004
+35 years,35 years,q000005
+36 years,36 years,q000004
+36 years,36 years,q000005
+37 years,37 years,q000004
+37 years,37 years,q000005
+38 years,38 years,q000004
+38 years,38 years,q000005
+39 years,39 years,q000004
+39 years,39 years,q000005
+3rd Grade,3rd Grade,q000022
+3rd Grade,3rd Grade,q000023
+3rd Grade,3rd Grade,q000024
+4 years,4 years,q000002
+4 years,4 years,q000019
+4 years,4 years,q000021
+40 years,40 years,q000004
+40 years,40 years,q000005
+41 - 50 years,41 - 50 years,q000019
+41 - 50 years,41 - 50 years,q000021
+41 years,41 years,q000004
+41 years,41 years,q000005
+42 years,42 years,q000004
+42 years,42 years,q000005
+43 years,43 years,q000004
+43 years,43 years,q000005
+44 years,44 years,q000004
+44 years,44 years,q000005
+45 years,45 years,q000004
+45 years,45 years,q000005
+46 years,46 years,q000004
+46 years,46 years,q000005
+47 years,47 years,q000004
+47 years,47 years,q000005
+48 years,48 years,q000004
+48 years,48 years,q000005
+49 years,49 years,q000004
+49 years,49 years,q000005
+4th Grade,4th Grade,q000022
+4th Grade,4th Grade,q000023
+4th Grade,4th Grade,q000024
+5 or more,5 or more,q000008
+5 years,5 years,q000002
+5 years,5 years,q000019
+5 years,5 years,q000021
+50 years,50 years,q000004
+50 years,50 years,q000005
+51 - 60 years,51 - 60 years,q000019
+51 - 60 years,51 - 60 years,q000021
+51 years,51 years,q000004
+51 years,51 years,q000005
+52 years,52 years,q000004
+52 years,52 years,q000005
+53 years,53 years,q000004
+53 years,53 years,q000005
+54 years,54 years,q000004
+54 years,54 years,q000005
+55 years,55 years,q000004
+55 years,55 years,q000005
+56 years,56 years,q000004
+56 years,56 years,q000005
+57 years,57 years,q000004
+57 years,57 years,q000005
+58 years,58 years,q000004
+58 years,58 years,q000005
+59 years,59 years,q000004
+59 years,59 years,q000005
+5th Grade,5th Grade,q000022
+5th Grade,5th Grade,q000023
+5th Grade,5th Grade,q000024
+6 years,6 years,q000019
+6 years,6 years,q000021
+60 years,60 years,q000004
+60 years,60 years,q000005
+61 years or older,61 years or older,q000004
+61 years or older,61 years or older,q000005
+61 years or older,61 years or older,q000019
+61 years or older,61 years or older,q000021
+6th Grade,6th Grade,q000022
+6th Grade,6th Grade,q000023
+6th Grade,6th Grade,q000024
+7 years,7 years,q000002
+7 years,7 years,q000019
+7 years,7 years,q000021
+7th Grade,7th Grade,q000022
+7th Grade,7th Grade,q000023
+7th Grade,7th Grade,q000024
+8 years,8 years,q000002
+8 years,8 years,q000019
+8 years,8 years,q000021
+8th Grade,8th Grade,q000022
+8th Grade,8th Grade,q000023
+8th Grade,8th Grade,q000024
+9 years,9 years,q000002
+9 years,9 years,q000019
+9 years,9 years,q000021
+9th Grade,9th Grade,q000022
+9th Grade,9th Grade,q000023
+9th Grade,9th Grade,q000024
+Adoptive Parent,Adoptive Parent,relationship_to_participant
+Associate degree - academic program,Associate degree - academic program,q000032
+Associate degree - academic program,Associate degree - academic program,q000033
+Associate degree - occupational/technical/vocational program,Associate degree - occupational/technical/vocational program,q000032
+Associate degree - occupational/technical/vocational program,Associate degree - occupational/technical/vocational program,q000033
+At birth,At birth,q000002
+At birth,At birth,q000019
+At birth,At birth,q000021
+Aunt/Uncle,Aunt/Uncle,relationship_to_participant
+Biological Parent,Biological Parent,relationship_to_participant
+Brother/Sister,Brother/Sister,relationship_to_participant
+Certificate of attendance from high school,Certificate of attendance from high school,q000022
+Certificate of attendance from high school,Certificate of attendance from high school,q000025
+College,College,q000022
+College,College,q000023
+College,College,q000024
+Complete trisomy 21,Complete trisomy 21,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Complete trisomy 21,Complete trisomy 21,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl
+Completed a GED (General Education Development Test for high school equivalent),Completed a GED (General Education Development Test for high school equivalent),q000025
+Diagnosed with dementia or Alzheimer's disease,Diagnosed with dementia or Alzheimer's disease,q000026
+Diagnosed with mild cognitive decline or mild cognitive impairment,Diagnosed with mild cognitive decline or mild cognitive impairment,q000026
+Don't know,Don't know,relationship_to_participant
+Eighth grade or less,Eighth grade or less,q000025
+Exhibiting early signs of dementia or loss of skills that are being monitored,Exhibiting early signs of dementia or loss of skills that are being monitored,q000026
 Female,Female,gender,female,Female,http://hl7.org/fhir/administrative-gender,
-Male,Male,gender,male,Male,http://hl7.org/fhir/administrative-gender,
-Other,Other,gender,other,Other,http://hl7.org/fhir/administrative-gender,
-Unknown,Unknown,gender,unknown,Unknown,http://hl7.org/fhir/administrative-gender,
-birth_year,birth_year,demo,,,,
-ethnicity,ethnicity,demo,,,,
+Foster Parent,Foster Parent,relationship_to_participant
+GED (General Education Development test for high school equivalent),GED (General Education Development test for high school equivalent),q000022
+Graduated from a college or university,Graduated from a college or university,q000025
+Grandparent,Grandparent,relationship_to_participant
+Had hearing tests in childhood but not in the past several years,Had hearing tests in childhood but not in the past several years,q000018
+Has hearing tests at least once a year,Has hearing tests at least once a year,q000018
+Has hearing tests less often than once a year,Has hearing tests less often than once a year,q000018
+High school graduate,High school graduate,q000025
+High school or GED (General Education Development Test for high school equivalent),High school or GED (General Education Development Test for high school equivalent),q000032
+High school or GED (General Education Development Test for high school equivalent),High school or GED (General Education Development Test for high school equivalent),q000033
 Hispanic or Latino,Hispanic or Latino,ethnicity,2135-2,Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+Kilograms,Kilograms,units,kg,Kilograms,http://ucum.org,
+Kindergarten,Kindergarten,q000022
+Kindergarten,Kindergarten,q000023
+Kindergarten,Kindergarten,q000024
+Legal Guardian,Legal Guardian,relationship_to_participant
+Less than 1 year,Less than 1 year,q000002
+Less than 1 year,Less than 1 year,q000019
+Less than 1 year,Less than 1 year,q000021
+Less than 15 years,Less than 15 years,q000004
+Less than 15 years,Less than 15 years,q000005
+Less than high school,Less than high school,q000032
+Less than high school,Less than high school,q000033
+Male,Male,gender,male,Male,http://hl7.org/fhir/administrative-gender,
+Medical Caregiver,Medical Caregiver,relationship_to_participant
+Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Mosaic trisomy 21,Mosaic trisomy 21,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic trisomy 21,Mosaic trisomy 21,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Multiple ages for different eye conditions,Multiple ages for different eye conditions,q000021
+N/A,N/A,family_group_code
+Never attended,Never attended,q000032
+Never attended,Never attended,q000033
+Never had a hearing test,Never had a hearing test,q000018
+No Surveys Completed - Contacted,No Surveys Completed - Contacted,clinical_status
+No eye condition,No eye condition,q000021
+No hearing loss,No hearing loss,q000019
+No schooling,No schooling,q000022
+No schooling,No schooling,q000023
+No schooling,No schooling,q000024
+No,Condition Absent,ConditionPresent,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Not Accepted,Not Accepted,clinical_status
+Not Applicable - Participant is 18 years or older,Not Applicable - Participant is 18 years or older,q000022
+Not Applicable - Participant is 18 years or older,Not Applicable - Participant is 18 years or older,q000023
+Not Applicable - Participant is 18 years or older,Not Applicable - Participant is 18 years or older,q000024
+Not Applicable - Participant is younger than 18 years,Not Applicable - Participant is younger than 18 years,q000025
 Not Hispanic or Latino,Not Hispanic or Latino,ethnicity,2186-5,Not Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+Not Reviewed,Not Reviewed,clinical_status
+Not tested,Not tested,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Not tested,Not tested,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Other Relative,Other Relative,relationship_to_participant
+Other non-relative,Other non-relative,relationship_to_participant
+Other,Other,gender
+Other,Other,gender,other,Other,http://hl7.org/fhir/administrative-gender,
+Parental Lab Reports Received,Parental Lab Reports Received,genetic_status
+Parental Testing Needed,Parental Testing Needed,genetic_status
+Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),DS_diagnosis,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Pending Clarification - First Attempt,Pending Clarification - First Attempt,clinical_status
+Pending Clarification - Second Attempt,Pending Clarification - Second Attempt,clinical_status
+Prefer not to answer,Prefer not to answer,q000034
+Prenatal,Prenatal,q000002
+Preschool or nursery school,Preschool or nursery school,q000022
+Preschool or nursery school,Preschool or nursery school,q000023
+Preschool or nursery school,Preschool or nursery school,q000024
+Proband Lab Report Approved,Proband Lab Report Approved,genetic_status
+Proband Lab Report Received,Proband Lab Report Received,genetic_status
+Proband Lab Report Review Pending,Proband Lab Report Review Pending,genetic_status
+Professional training beyond a four-year college or university,Professional training beyond a four-year college or university,q000025
+Self,Self,relationship_to_participant
+Translocation Down syndrome,Translocation Down syndrome,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Translocation Down syndrome,Translocation Down syndrome,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
 Unknown,Unknown,ethnicity,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
-language,language,demo,,,,
-language_v000200,language_preferred,language,,,,
-language_v000214,language_spoken_english,language,,,,
-language_v000215,language_spoken_spanish,language,,,,
-birth_country,birth_country,demo,,,,
-consents,consents,demo,,,,
-relationship_to_participant,relationship_to_participant,demo,,,,
-Self,Self,relationship_to_participant,,,,
-Adoptive Parent,Adoptive Parent,relationship_to_participant,,,,
-Biological Parent,Biological Parent,relationship_to_participant,,,,
-Grandparent,Grandparent,relationship_to_participant,,,,
-Aunt/Uncle,Aunt/Uncle,relationship_to_participant,,,,
-Brother/Sister,Brother/Sister,relationship_to_participant,,,,
-Other Relative,Other Relative,relationship_to_participant,,,,
-Legal Guardian,Legal Guardian,relationship_to_participant,,,,
-Foster Parent,Foster Parent,relationship_to_participant,,,,
-Medical Caregiver,Medical Caregiver,relationship_to_participant,,,,
-Other non-relative,Other non-relative,relationship_to_participant,,,,
-Don't know,Don't know,relationship_to_participant,,,,
-jconnect_code,jconnect_code,demo,,,,
-family_group_code,family_group_code,demo,,,,
-N/A,N/A,family_group_code,,,,
-address_state,address_state,demo,,,,
-address_postal_code,address_postal_code,demo,,,,
-address_country,address_country,demo,,,,
-guid,guid,demo,,,,
-clinical_status,clinical_status,demo,,,,
-Not Reviewed,Not Reviewed,clinical_status,,,,
-Verified,Verified,clinical_status,,,,
-Pending Clarification - First Attempt,Pending Clarification - First Attempt,clinical_status,,,,
-Pending Clarification - Second Attempt,Pending Clarification - Second Attempt,clinical_status,,,,
-No Surveys Completed - Contacted,No Surveys Completed - Contacted,clinical_status,,,,
-Not Accepted,Not Accepted,clinical_status,,,,
-genetic_status,genetic_status,demo,,,,
-Proband Lab Report Received,Proband Lab Report Received,genetic_status,,,,
-Proband Lab Report Review Pending,Proband Lab Report Review Pending,genetic_status,,,,
-Proband Lab Report Approved,Proband Lab Report Approved,genetic_status,,,,
-Parental Testing Needed,Parental Testing Needed,genetic_status,,,,
-Parental Lab Reports Received,Parental Lab Reports Received,genetic_status,,,,
-deceased_year,deceased_year,demo,,,,
-race,race,demo,,,,
+Unknown,Unknown,gender,unknown,Unknown,http://hl7.org/fhir/administrative-gender,
+Unsure,Condition Unconfirmed,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,,
+Unsure,Unsure,q000002
+Unsure,Unsure,q000003
+Unsure,Unsure,q000004
+Unsure,Unsure,q000005
+Unsure,Unsure,q000006
+Unsure,Unsure,q000007
+Unsure,Unsure,q000008
+Unsure,Unsure,q000009
+Unsure,Unsure,q000010
+Unsure,Unsure,q000011
+Unsure,Unsure,q000012
+Unsure,Unsure,q000013
+Unsure,Unsure,q000014
+Unsure,Unsure,q000015
+Unsure,Unsure,q000016
+Unsure,Unsure,q000017
+Unsure,Unsure,q000018
+Unsure,Unsure,q000019
+Unsure,Unsure,q000020
+Unsure,Unsure,q000021
+Unsure,Unsure,q000022
+Unsure,Unsure,q000023
+Unsure,Unsure,q000024
+Unsure,Unsure,q000025
+Unsure,Unsure,q000026
+Unsure,Unsure,q000027
+Unsure,Unsure,q000028
+Unsure,Unsure,q000029
+Unsure,Unsure,q000030
+Unsure,Unsure,q000031
+Unsure,Unsure,q000032
+Unsure,Unsure,q000033
+Unsure,Unsure,q000034
+Verified,Verified,clinical_status
+Yes,Condition Present,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+address_country,address_country,demo
+address_postal_code,address_postal_code,demo
+address_state,address_state,demo
+age_at_registration,age_at_registration,demo
+age_at_survey_time,age_at_survey_time,ihq
+birth_country,birth_country,demo
+birth_year,birth_year,demo
+birth_year,birth_year,ihq
+clinical_status,clinical_status,demo
+cm,cm,units,cm,cm,http://ucum.org,
+consents,consents,demo
+deceased_year,deceased_year,demo
+ethnicity,ethnicity,demo
+family_group_code,family_group_code,demo
+gender,gender,demo
+genetic_status,genetic_status,demo
+guid,guid,demo
+jconnect_code,jconnect_code,demo
+kg/m2,kg/m2,units,kg/m2,kg/m2,http://ucum.org,
+language,language,demo
+nih_consent_group,nih_consent_group,ihq
+parent_id,parent_id,ihq
+patient_id,patient_id,demo
+patient_id,patient_id,ihq
+q-behavioral,Has the participant ever been diagnosed with any of the following behavioral or mental health conditions? (Select all that apply.),ihq
+q-cancer,Has the participant ever been diagnosed with any of the following forms of cancer? (Select all that apply.),ihq
+q-congen-heart,Which of the following congenital heart defects have been diagnosed? (Select all that apply.) ,ihq
+q-dental,Has the participant ever been diagnosed with any of the following skin or dental problems? (Select all that apply.),ihq
+q-diagnosis,How was the diagnosis of Down syndrome made? (Select all that apply.),ihq
+q-fam-mem,Does the participant have a family member with Down syndrome? (Select all that apply.),ihq
+q-gastro,Which of the following gastrointestinal conditions have been diagnosed? (Select all that apply.) ,ihq
+q-gastro-surgery,Has the participant ever had any surgery for the gastrointestinal tract? (Select all that apply.),ihq
+q-hearing-loss,Has the participant ever been diagnosed with any of the following types of hearing loss? (Select all that apply.),ihq
+q-hearing-treatment,What treatment(s) has the participant had for hearing loss? (Select all that apply.),ihq
+q-heart-surgery,Has the participant ever had any cardiac or heart surgery? (Select all that apply.),ihq
+q-learning,Has the participant ever been diagnosed with any of the following learning problems? (Select all that apply.),ihq
+q-living-situation,Select the current living situation for the participant. (Select all that apply.),ihq
+q-metabolic,"Has the participant ever been diagnosed with any of the following metabolic, hormonal, or autoimmune conditions? (Select all that apply.)",ihq
+q-neurologic,Has the participant ever had any of the following neurologic conditions? (Select all that apply.),ihq
+q-skeletal,Which of the following skeletal problems have been diagnosed? (Select all that apply.),ihq
+q-sleep,Which of the following sleep problems have been diagnosed? (Select all that apply.),ihq
+q-thyroid,What types of thyroid condition(s) have been diagnosed? (Select all that apply.),ihq
+q-vision,Has the participant ever been diagnosed with any of the following eye or vision conditions? (Select all that apply.) ,ihq
+q000001,What is the participant's Down syndrome diagnosis?,ihq,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,I just found this code for Down Syndrome using Mondo's website search
+q000002,What was the participant's age in years when the diagnosis of Down syndrome was made?,ihq
+q000003,Is the participant with Down syndrome still living? ,ihq
+q000004,What was the mother's age in years at the time of the participant's birth? ,ihq
+q000005,What was the father's age in years at the time of the participant's birth?,ihq
+q000006,Has the participant been diagnosed with a congenital heart defect (a birth defect of the heart)?,ihq
+q000007,Has the participant ever been diagnosed with any gastrointestinal (gut or intestinal) conditions?,ihq
+q000008,"In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",ihq
+q000009,Has the participant ever been diagnosed with any form of seizures or epilepsy?,ihq
+q000010,Has the participant ever been diagnosed with any sleep problems?,ihq
+q000011,Has the participant ever been diagnosed with a skeletal problem (problems with the bones or joints)? ,ihq
+q000012,"Has the participant been diagnosed with any form of leukemia, or transient myeloproliferative disorder (TMD, also known as transient abnormal myelopoiesis or transient leukemia), or a leukemoid reaction?",ihq
+q000013,Has the participant ever been diagnosed with COVID-19 (novel coronavirus disease)?,ihq
+q000014,Has the participant ever been diagnosed with a thyroid condition?,ihq
+q000015,Has the participant ever been diagnosed with diabetes?,ihq
+q000016,Has participant ever been diagnosed with celiac disease (gluten or wheat intolerance)?,ihq
+q000017,Has the participant ever seen an audiologist for hearing testing? ,ihq
+q000018,How often does the participant have his or her hearing tested?  ,ihq
+q000019,"If the participant has hearing loss, what was the age in years when the diagnosis was made?",ihq
+q000020,Has the participant ever had an eye exam performed by an eye doctor or an ophthalmologist?  ,ihq
+q000021,"If the participant has an eye condition, what was the age in years when the diagnosis was made?",ihq
+q000022,"If the participant is less than 18 years old, what is the highest grade in school that the participant has started?",ihq
+q000023,"If the participant is less than 18 years old, what is the grade at which the participant is academically functioning for reading skills?",ihq
+q000024,"If the participant is less than 18 years old, what is the grade at which the participant is academically functioning for math skills?",ihq
+q000025,"If the participant is 18 years or older, what is the highest grade or level of school the participant has completed or the highest degree the participant has received? ",ihq
+q000026,"Has the participant ever been diagnosed with Dementia, Alzheimer's disease, or cognitive decline?",ihq
+q000027,Has the participant ever had a formal IQ (intelligence) test?,ihq
+q000028,Is the participant currently participating in any clinical trial or research study related to Down syndrome?,ihq
+q000029,Has the participant ever participated in any clinical trial or research study related to Down syndrome (and is not currently participating in a clinical trial)?,ihq
+q000030,Has the participant ever participated in any clinical trial or research study related to any other condition (aside from Down syndrome)?,ihq
+q000031,How many people (including the participant) currently live in the participant's household?,ihq
+q000032,What is the education level of the mother of the participant?,ihq
+q000033,What is the education level of the father of the participant?,ihq
+q000034,What is the annual gross income for the household in which the participant lives (in U.S. dollars)?,ihq
+race,race,demo
 race_v000208,race_american_indian,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 race_v000209,race_asian,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 race_v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 race_v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 race_v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 race_v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-patient_id,patient_id,ihq,,,,
-parent_id,parent_id,ihq,,,,
-nih_consent_group,nih_consent_group,ihq,,,,
-session_id,session_id,ihq,,,,
-survey_time,survey_time,ihq,,,,
-birth_year,birth_year,ihq,,,,
-age_at_survey_time,age_at_survey_time,ihq,,,,
-survey_complete,survey_complete,ihq,,,,
-q000001,What is the participant's Down syndrome diagnosis?,ihq,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,I just found this code for Down Syndrome using Mondo's website search
-Complete trisomy 21,Complete trisomy 21,q000001,,,,
-Mosaic trisomy 21,Mosaic trisomy 21,q000001,,,,
-Translocation Down syndrome,Translocation Down syndrome,q000001,,,,
-Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,q000001,,,,
-Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),q000001,,,,
-Not tested,Not tested,q000001,,,,
-Unsure,Unsure,q000001,,,,
-q-diagnosis,How was the diagnosis of Down syndrome made? (Select all that apply.),ihq,,,,
-v000001,"Prenatal genetic testing (such as triple screen, quad screen, integrated screen, amniocentesis, chorionic villus sampling (CVS), or test of mother's blood for baby's DNA)",q-diagnosis,,,,
-v000002,"Genetic testing in baby after birth (such as chromosome analysis, cytogenomic array, or fluorescence in situ hybridization (FISH)",q-diagnosis,,,,
-v000003,Physical examination by a physician,q-diagnosis,,,,
-v000004,Unsure,q-diagnosis,,,,
-v000005,Other,q-diagnosis,,,,
-q000002,What was the participant's age in years when the diagnosis of Down syndrome was made?,ihq,,,,
-Prenatal,Prenatal,q000002,,,,
-At birth,At birth,q000002,,,,
-Less than 1 year,Less than 1 year,q000002,,,,
-1 year,1 year,q000002,,,,
-2 years,2 years,q000002,,,,
-3 years,3 years,q000002,,,,
-4 years,4 years,q000002,,,,
-5 years,5 years,q000002,,,,
-7 years,7 years,q000002,,,,
-8 years,8 years,q000002,,,,
-9 years,9 years,q000002,,,,
-10 years or older,10 years or older,q000002,,,,
-Unsure,Unsure,q000002,,,,
-q000003,Is the participant with Down syndrome still living? ,ihq,,,,
-Unsure,Unsure,q000003,,,,
-q000004,What was the mother's age in years at the time of the participant's birth? ,ihq,,,,
-Less than 15 years,Less than 15 years,q000004,,,,
-15 years,15 years,q000004,,,,
-16 years,16 years,q000004,,,,
-17 years,17 years,q000004,,,,
-18 years,18 years,q000004,,,,
-19 years,19 years,q000004,,,,
-20 years,20 years,q000004,,,,
-21 years,21 years,q000004,,,,
-22 years,22 years,q000004,,,,
-23 years,23 years,q000004,,,,
-24 years,24 years,q000004,,,,
-25 years,25 years,q000004,,,,
-26 years,26 years,q000004,,,,
-27 years,27 years,q000004,,,,
-28 years,28 years,q000004,,,,
-29 years,29 years,q000004,,,,
-30 years,30 years,q000004,,,,
-31 years,31 years,q000004,,,,
-32 years,32 years,q000004,,,,
-33 years,33 years,q000004,,,,
-34 years,34 years,q000004,,,,
-35 years,35 years,q000004,,,,
-36 years,36 years,q000004,,,,
-37 years,37 years,q000004,,,,
-38 years,38 years,q000004,,,,
-39 years,39 years,q000004,,,,
-40 years,40 years,q000004,,,,
-41 years,41 years,q000004,,,,
-42 years,42 years,q000004,,,,
-43 years,43 years,q000004,,,,
-44 years,44 years,q000004,,,,
-45 years,45 years,q000004,,,,
-46 years,46 years,q000004,,,,
-47 years,47 years,q000004,,,,
-48 years,48 years,q000004,,,,
-49 years,49 years,q000004,,,,
-50 years,50 years,q000004,,,,
-51 years,51 years,q000004,,,,
-52 years,52 years,q000004,,,,
-53 years,53 years,q000004,,,,
-54 years,54 years,q000004,,,,
-55 years,55 years,q000004,,,,
-56 years,56 years,q000004,,,,
-57 years,57 years,q000004,,,,
-58 years,58 years,q000004,,,,
-59 years,59 years,q000004,,,,
-60 years,60 years,q000004,,,,
-61 years or older,61 years or older,q000004,,,,
-Unsure,Unsure,q000004,,,,
-q000005,What was the father's age in years at the time of the participant's birth?,ihq,,,,
-Less than 15 years,Less than 15 years,q000005,,,,
-15 years,15 years,q000005,,,,
-16 years,16 years,q000005,,,,
-17 years,17 years,q000005,,,,
-18 years,18 years,q000005,,,,
-19 years,19 years,q000005,,,,
-20 years,20 years,q000005,,,,
-21 years,21 years,q000005,,,,
-22 years,22 years,q000005,,,,
-23 years,23 years,q000005,,,,
-24 years,24 years,q000005,,,,
-25 years,25 years,q000005,,,,
-26 years,26 years,q000005,,,,
-27 years,27 years,q000005,,,,
-28 years,28 years,q000005,,,,
-29 years,29 years,q000005,,,,
-30 years,30 years,q000005,,,,
-31 years,31 years,q000005,,,,
-32 years,32 years,q000005,,,,
-33 years,33 years,q000005,,,,
-34 years,34 years,q000005,,,,
-35 years,35 years,q000005,,,,
-36 years,36 years,q000005,,,,
-37 years,37 years,q000005,,,,
-38 years,38 years,q000005,,,,
-39 years,39 years,q000005,,,,
-40 years,40 years,q000005,,,,
-41 years,41 years,q000005,,,,
-42 years,42 years,q000005,,,,
-43 years,43 years,q000005,,,,
-44 years,44 years,q000005,,,,
-45 years,45 years,q000005,,,,
-46 years,46 years,q000005,,,,
-47 years,47 years,q000005,,,,
-48 years,48 years,q000005,,,,
-49 years,49 years,q000005,,,,
-50 years,50 years,q000005,,,,
-51 years,51 years,q000005,,,,
-52 years,52 years,q000005,,,,
-53 years,53 years,q000005,,,,
-54 years,54 years,q000005,,,,
-55 years,55 years,q000005,,,,
-56 years,56 years,q000005,,,,
-57 years,57 years,q000005,,,,
-58 years,58 years,q000005,,,,
-59 years,59 years,q000005,,,,
-60 years,60 years,q000005,,,,
-61 years or older,61 years or older,q000005,,,,
-Unsure,Unsure,q000005,,,,
-q-fam-mem,Does the participant have a family member with Down syndrome? (Select all that apply.),ihq,,,,
-v000007,"Yes, a sibling or twin has Down syndrome",q-fam-mem,,,,
-v000008,"Yes, a more distant relative has Down syndrome",q-fam-mem,,,,
-v000009,Unsure,q-fam-mem,,,,
-q000006,Has the participant been diagnosed with a congenital heart defect (a birth defect of the heart)?,ihq,0005453,congenital heart disease,http://purl.obolibrary.org/obo/mondo.owl,Added using mondo browser
-Unsure,Unsure,q000006,,,,
-q-congen-heart,Which of the following congenital heart defects have been diagnosed? (Select all that apply.) ,ihq,,,,
-v000010,No congenital heart defect,q-congen-heart,,,,
-v000011,Atrial septal defect (ASD),q-congen-heart,,,,
-v000012,Ventricular septal defect (VSD),q-congen-heart,,,,
-v000013,Atrioventricular septal defect (or AV Canal Defect),q-congen-heart,,,,
-v000014,Tetralogy of Fallot,q-congen-heart,,,,
-v000015,Patent Ductus Arteriosus (PDA),q-congen-heart,,,,
-v000016,Patent Foramen Ovale (PFO),q-congen-heart,,,,
-v000017,Unsure,q-congen-heart,,,,
-v000018,Other,q-congen-heart,,,,
-q-heart-surgery,Has the participant ever had any cardiac or heart surgery? (Select all that apply.),ihq,,,,
-v000019,None,q-heart-surgery,,,,
-v000020,"Yes, surgery for a congenital heart defect in the first year of life",q-heart-surgery,,,,
-v000021,"Yes, surgery for a congenital heart defect after the first year of life",q-heart-surgery,,,,
-v000022,Cardiac surgery for other reason later in life,q-heart-surgery,,,,
-v000023,Unsure,q-heart-surgery,,,,
-q000007,Has the participant ever been diagnosed with any gastrointestinal (gut or intestinal) conditions?,ihq,,,,
-Unsure,Unsure,q000007,,,,
-q-gastro,Which of the following gastrointestinal conditions have been diagnosed? (Select all that apply.) ,ihq,,,,
-v000024,None,q-gastro,,,,
-v000025,"Duodenal atresia, stenosis or web (blockage or narrowing of intestines beyond the stomach)",q-gastro,,,,
-v000026,Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out),q-gastro,,,,
-v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),q-gastro,,,,
-v000028,Hirschsprung disease (the gut doesn't move the stool and becomes enlarged inside),q-gastro,,,,
-v000029,Chronic constipation,q-gastro,,,,
-v000030,Dysphagia (difficulty swallowing),q-gastro,,,,
-v000031,"Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",q-gastro,2835,Aspiration,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000032,Celiac disease (gluten or wheat intolerance),q-gastro,,,,
-v000033,Other feeding problem,q-gastro,,,,
-v000034,Chronic diarrhea,q-gastro,,,,
-v000035,Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns),q-gastro,,,,
-v000036,Gastroesophageal reflux (GERD acid reflux),q-gastro,,,,
-v000037,Irritable bowel syndrome (IBS),q-gastro,,,,
-v000038,Peptic ulcers,q-gastro,,,,
-v000039,Gallstones,q-gastro,,,,
-v000040,Hemorrhoids,q-gastro,,,,
-v000041,Diverticulitis or diverticulosis,q-gastro,,,,
-v000042,Colorectal carcinoma (cancer of the bowel),q-gastro,,,,
-v000043,Inflammatory bowel disease (Crohn's disease or ulcerative colitis),q-gastro,,,,
-v000044,Unsure,q-gastro,,,,
-v000045,Other,q-gastro,,,,
-q-gastro-surgery,Has the participant ever had any surgery for the gastrointestinal tract? (Select all that apply.),ihq,,,,
-v000046,None,q-gastro-surgery,,,,
-v000047,"Repair of duodenal atresia, stenosis, or web",q-gastro-surgery,,,,
-v000048,Repair of anal stenosis/atresia,q-gastro-surgery,,,,
-v000049,Gastrostomy tube placement (feeding tube),q-gastro-surgery,,,,
-v000050,Surgery for Hirschsprung disease,q-gastro-surgery,,,,
-v000051,Fundoplication (wrap top of stomach around esophagus to prevent acid reflux),q-gastro-surgery,,,,
-v000052,Unsure,q-gastro-surgery,,,,
-v000053,Other,q-gastro-surgery,,,,
-q000008,"In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",ihq,,,,
-5 or more,5 or more,q000008,,,,
-Unsure,Unsure,q000008,,,,
-q-dental,Has the participant ever been diagnosed with any of the following skin or dental problems? (Select all that apply.),ihq,,,,
-v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental,2232,Patchy alopecia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental,5340,alopecia areata,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000056,Folliculitis (red rash where the hair comes out of the skin),q-dental,25084,Folliculitis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000056,Folliculitis (red rash where the hair comes out of the skin),q-dental,6552,folliculitis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000057,Vitiligo (white patches of skin without any pigment),q-dental,1045,Vitiligo,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000057,Vitiligo (white patches of skin without any pigment),q-dental,8661,vitiligo,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000058,Multiple dental caries (cavities),q-dental,,,,
-v000059,Wears dentures,q-dental,,,,
-v000060,Other dental problems,q-dental,,,,
-v000061,Other skin problems,q-dental,951,Abnormality of the skin,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000061,Other skin problems,q-dental,5093,skin disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000062,Unsure,q-dental,,,,
-q000009,Has the participant ever been diagnosed with any form of seizures or epilepsy?,ihq,,,,
-Unsure,Unsure,q000009,,,,
-q-neurologic,Has the participant ever had any of the following neurologic conditions? (Select all that apply.),ihq,,,,
-v000064,"Regression or loss of previously attained skills (speech-language, social, self-help or motor skills)",q-neurologic,,,,
-v000065,Swallowing disorder (required a gastrostomy tube or nasogastric tube for more than 1 month),q-neurologic,,,,
-v000066,Cerebral palsy,q-neurologic,100021,Cerebral palsy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000066,Cerebral palsy,q-neurologic,6497,cerebral palsy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000067,Stroke,q-neurologic,1297,Stroke,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000067,Stroke,q-neurologic,5098,stroke disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000068,Brain malformation,q-neurologic,12443,Abnormality of brain morphology,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000069,Unsure,q-neurologic,,,,
-v000070,Other,q-neurologic,707,Abnormality of the nervous system,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000070,Other,q-neurologic,5071,nervous system disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-q000010,Has the participant ever been diagnosed with any sleep problems?,ihq,,,,
-Unsure,Unsure,q000010,,,,
-q-sleep,Which of the following sleep problems have been diagnosed? (Select all that apply.),ihq,,,,
-v000071,None,q-sleep,,,,
-v000072,Sleep apnea,q-sleep,10535,Sleep apnea,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000072,Sleep apnea,q-sleep,5296,sleep apnea syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000073,Sleep-disordered breathing,q-sleep,,,,
-v000074,Snoring,q-sleep,25267,Snoring,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000075,Narcolepsy,q-sleep,30050,Narcolepsy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000075,Narcolepsy,q-sleep,21107,narcolepsy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000076,Restless legs syndrome,q-sleep,12452,Restless legs,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000076,Restless legs syndrome,q-sleep,5391,restless legs syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000077,Excessive daytime sleepiness,q-sleep,,,,
-v000078,Insomnia (difficulty falling asleep or staying asleep),q-sleep,,,,
-v000079,Unsure,q-sleep,,,,
-v000080,Other,q-sleep,,,,
-q000011,Has the participant ever been diagnosed with a skeletal problem (problems with the bones or joints)? ,ihq,,,,
-Unsure,Unsure,q000011,,,,
-q-skeletal,Which of the following skeletal problems have been diagnosed? (Select all that apply.),ihq,,,,
-v000081,No skeletal problems,q-skeletal,,,,
-v000082,Atlanto-axial instability or (neck spine is weak or unstable),q-skeletal,3467,Atlantoaxial instability,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000083,Cervical spine degeneration (pain or numbness in the neck or extremities from weakness in the neck bones),q-skeletal,,,,
-v000084,Osteopenia (low bone mineral density),q-skeletal,938,Osteopenia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal,939,Osteoporosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal,5298,osteoporosis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000086,Fractures (broken bones),q-skeletal,20110,Bone fracture,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000086,Fractures (broken bones),q-skeletal,5315,bone fracture,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000087,Arthritis,q-skeletal,1369,Arthritis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000087,Arthritis,q-skeletal,6816,arthropathy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000088,Unsure,q-skeletal,,,,
-v000089,Other,q-skeletal,33127,Abnormality of the musculoskeletal system,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000089,Other,q-skeletal,2081,musculoskeletal system disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-q000012,"Has the participant been diagnosed with any form of leukemia, or transient myeloproliferative disorder (TMD, also known as transient abnormal myelopoiesis or transient leukemia), or a leukemoid reaction?",ihq,,,,
-"Not diagnosed with leukemia, TMD or leukemoid reaction","Not diagnosed with leukemia, TMD or leukemoid reaction",q000012,,,,
-"Diagnosed with any of the following: leukemia, TMD, or leukemoid reaction","Diagnosed with any of the following: leukemia, TMD, or leukemoid reaction",q000012,,,,
-Unsure,Unsure,q000012,,,,
-q-cancer,Has the participant ever been diagnosed with any of the following forms of cancer? (Select all that apply.),ihq,,,,
-v000090,Not diagnosed with any of  these cancers,q-cancer,,,,
-v000091,Diagnosed with breast cancer,q-cancer,,,,
-v000092,Diagnosed with cervical cancer (for females),q-cancer,,,,
-v000093,Diagnosed with ovarian cancer (for females),q-cancer,,,,
-v000094,Diagnosed with testicular cancer (for males),q-cancer,5447,testicular cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000095,Diagnosed with prostate cancer (for males),q-cancer,,,,
-v000096,Diagnosed with cancer other than leukemia during childhood,q-cancer,2664,Neoplasm,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000096,Diagnosed with cancer other than leukemia during childhood,q-cancer,6517,childhood malignant neoplasm,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000097,Diagnosed with other adulthood cancer not named above,q-cancer,,,,
-v000098,Unsure,q-cancer,,,,
-v000099,Other,q-cancer,,,,
-q000013,Has the participant ever been diagnosed with COVID-19 (novel coronavirus disease)?,ihq,,,,
-Unsure,Unsure,q000013,,,,
-q000014,Has the participant ever been diagnosed with a thyroid condition?,ihq,,,,
-Unsure,Unsure,q000014,,,,
-q-thyroid,What types of thyroid condition(s) have been diagnosed? (Select all that apply.),ihq,,,,
-v000100,None,q-thyroid,,,,
-v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",q-thyroid,821,Hypothyroidism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",q-thyroid,5420,hypothyroidism,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000102,"Subclinical or compensated hypothyroidism (hyperthyrotropinemia) high TSH, normal T4 levels",q-thyroid,8223,Compensated hypothyroidism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000103,"Hyperthyroidism (overactive thyroid) low TSH,  high T4 levels",q-thyroid,,,,
-v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),q-thyroid,872,Hashimoto thyroiditis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),q-thyroid,7699,Hashimoto thyroiditis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000105,Positive thyroglobulin  or thyroid peroxidase (TPO) antibodies,q-thyroid,,,,
-v000106,Positive antimicrosomal antibodies,q-thyroid,,,,
-v000107,Unsure,q-thyroid,,,,
-v000108,Other,q-thyroid,820,Abnormality of the thyroid gland,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000108,Other,q-thyroid,3240,thyroid gland disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-q000015,Has the participant ever been diagnosed with diabetes?,ihq,,,,
-Unsure,Unsure,q000015,,,,
-q000016,Has participant ever been diagnosed with celiac disease (gluten or wheat intolerance)?,ihq,,,,
-Unsure,Unsure,q000016,,,,
-q-metabolic,"Has the participant ever been diagnosed with any of the following metabolic, hormonal, or autoimmune conditions? (Select all that apply.)",ihq,,,,
-v000109,"No other metabolic, hormonal, or autoimmune conditions diagnosed",q-metabolic,,,,
-v000110,Calcium deficiency,q-metabolic,2901,Hypocalcemia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000111,Obesity,q-metabolic,1513,Obesity,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000111,Obesity,q-metabolic,11122,obesity disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000112,Delayed/late puberty,q-metabolic,823,Delayed puberty,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000113,Growth hormone deficiency,q-metabolic,824,Decreased response to growth hormone stimuation test,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000114,High cortisol,q-metabolic,,,,
-v000115,Hypoglycemia (low blood sugar),q-metabolic,1943,Hypoglycemia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000115,Hypoglycemia (low blood sugar),q-metabolic,4946,hypoglycemia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000116,Low testosterone,q-metabolic,,,,
-v000117,Cushing's disease,q-metabolic,9050,Cushing disease due to pituitary adenoma,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000118,Precocious/early puberty,q-metabolic,826,Precocious puberty,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000119,Vitamin D deficiency,q-metabolic,100512,Low levels of vitamin D,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000119,Vitamin D deficiency,q-metabolic,24298,vitamin deficiency disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000120,"Metabolic syndrome (combination of at least 2-3 of the following:  high blood pressure, high blood sugar, unhealthy cholesterol levels, and increased abdominal fat)",q-metabolic,,,,
-v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,q-metabolic,2725,Systemic lupus erythematosus,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,q-metabolic,7915,systemic lupus erythematosus,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000122,Unsure,q-metabolic,,,,
-v000123,Other,q-metabolic,2960,Autoimmunity,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000123,Other,q-metabolic,7179,autoimmune disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000123,Other,q-metabolic,818,Abnormality of the endocrine system,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000123,Other,q-metabolic,5151,endocrine system disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-q000017,Has the participant ever seen an audiologist for hearing testing? ,ihq,,,,
-Unsure,Unsure,q000017,,,,
-q000018,How often does the participant have his or her hearing tested?  ,ihq,,,,
-Never had a hearing test,Never had a hearing test,q000018,,,,
-Had hearing tests in childhood but not in the past several years,Had hearing tests in childhood but not in the past several years,q000018,,,,
-Has hearing tests less often than once a year,Has hearing tests less often than once a year,q000018,,,,
-Has hearing tests at least once a year,Has hearing tests at least once a year,q000018,,,,
-Unsure,Unsure,q000018,,,,
-q-hearing-loss,Has the participant ever been diagnosed with any of the following types of hearing loss? (Select all that apply.),ihq,,,,
-v000124,No hearing loss,q-hearing-loss,,,,
-v000125,Transient hearing loss (hearing loss went away),q-hearing-loss,,,,
-v000126,Conductive hearing loss,q-hearing-loss,,,,
-v000127,Mixed hearing loss,q-hearing-loss,,,,
-v000128,Sensorineural hearing loss (permanent nerve hearing loss),q-hearing-loss,,,,
-v000129,Hearing loss - unknown type,q-hearing-loss,,,,
-v000130,Unsure,q-hearing-loss,,,,
-v000131,Other,q-hearing-loss,,,,
-q-hearing-treatment,What treatment(s) has the participant had for hearing loss? (Select all that apply.),ihq,,,,
-v000132,No treatment needed (or no hearing loss),q-hearing-treatment,,,,
-v000133,Tympanostomy tubes (myringotomy tubes PE or pressure equalization tubes) in eardrum to allow fluid to drain from middle ear,q-hearing-treatment,,,,
-v000134,Hearing aid,q-hearing-treatment,,,,
-v000135,FM amplification system,q-hearing-treatment,,,,
-v000136,Cochlear implant,q-hearing-treatment,,,,
-v000137,Uses sign language,q-hearing-treatment,,,,
-v000138,Uses lip reading,q-hearing-treatment,,,,
-v000139,Unsure,q-hearing-treatment,,,,
-v000140,Other,q-hearing-treatment,,,,
-q000019,"If the participant has hearing loss, what was the age in years when the diagnosis was made?",ihq,,,,
-No hearing loss,No hearing loss,q000019,,,,
-At birth,At birth,q000019,,,,
-Less than 1 year,Less than 1 year,q000019,,,,
-1 year,1 year,q000019,,,,
-2 years,2 years,q000019,,,,
-3 years,3 years,q000019,,,,
-4 years,4 years,q000019,,,,
-5 years,5 years,q000019,,,,
-6 years,6 years,q000019,,,,
-7 years,7 years,q000019,,,,
-8 years,8 years,q000019,,,,
-9 years,9 years,q000019,,,,
-10 - 20 years,10 - 20 years,q000019,,,,
-21 - 30 years,21 - 30 years,q000019,,,,
-31 - 40 years,31 - 40 years,q000019,,,,
-41 - 50 years,41 - 50 years,q000019,,,,
-51 - 60 years,51 - 60 years,q000019,,,,
-61 years or older,61 years or older,q000019,,,,
-Unsure,Unsure,q000019,,,,
-q000020,Has the participant ever had an eye exam performed by an eye doctor or an ophthalmologist?  ,ihq,,,,
-Unsure,Unsure,q000020,,,,
-q-vision,Has the participant ever been diagnosed with any of the following eye or vision conditions? (Select all that apply.) ,ihq,,,,
-v000141,None,q-vision,,,,
-v000142,Cataract,q-vision,,,,
-v000143,Strabismus (eye turns in or out),q-vision,,,,
-v000144,Amblyopia (lazy eye),q-vision,,,,
-v000145,Nearsighted (myopia),q-vision,,,,
-v000146,Farsighted (hyperopia),q-vision,,,,
-v000147,Astigmatism (blurry vision),q-vision,,,,
-v000148,Ptosis (droopy eyelid),q-vision,,,,
-v000149,Lacrimal duct stenosis (blockage of tear duct),q-vision,,,,
-v000150,Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision),q-vision,,,,
-v000151,Depth perception problems,q-vision,,,,
-v000152,Blindness,q-vision,,,,
-v000153,Glaucoma,q-vision,,,,
-v000154,Retinal detachment,q-vision,,,,
-v000155,"Presbyopia (""old eyes"" requiring magnifying lenses or reading glasses)",q-vision,,,,
-v000156,Unsure,q-vision,,,,
-v000157,Other,q-vision,,,,
-q000021,"If the participant has an eye condition, what was the age in years when the diagnosis was made?",ihq,,,,
-No eye condition,No eye condition,q000021,,,,
-At birth,At birth,q000021,,,,
-Less than 1 year,Less than 1 year,q000021,,,,
-1 year,1 year,q000021,,,,
-2 years,2 years,q000021,,,,
-3 years,3 years,q000021,,,,
-4 years,4 years,q000021,,,,
-5 years,5 years,q000021,,,,
-6 years,6 years,q000021,,,,
-7 years,7 years,q000021,,,,
-8 years,8 years,q000021,,,,
-9 years,9 years,q000021,,,,
-10 - 20 years,10 - 20 years,q000021,,,,
-21 - 30 years,21 - 30 years,q000021,,,,
-31 - 40 years,31 - 40 years,q000021,,,,
-41 - 50 years,41 - 50 years,q000021,,,,
-51 - 60 years,51 - 60 years,q000021,,,,
-61 years or older,61 years or older,q000021,,,,
-Multiple ages for different eye conditions,Multiple ages for different eye conditions,q000021,,,,
-Unsure,Unsure,q000021,,,,
-q-behavioral,Has the participant ever been diagnosed with any of the following behavioral or mental health conditions? (Select all that apply.),ihq,,,,
-v000158,None,q-behavioral,,,,
-v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral,7018,Attention deficit hyperactivity disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral,7743,attention deficit-hyperactivity disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000160,Autism or Autism Spectrum Disorder (ASD),q-behavioral,717,Autism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000160,Autism or Autism Spectrum Disorder (ASD),q-behavioral,5260,autism,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000161,Anxiety disorder,q-behavioral,739,Anxiety,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000161,Anxiety disorder,q-behavioral,5618,anxiety disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000162,Depression,q-behavioral,716,Depression,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000162,Depression,q-behavioral,2050,depressive disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000163,Conduct or disruptive behavior disorder,q-behavioral,,,,
-v000164,Regression (loss of previously stable functional skills),q-behavioral,,,,
-v000165,Adjustment disorder,q-behavioral,3265,adjustment disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000166,Obsessive-Compulsive Disorder (OCD),q-behavioral,722,Obsessive-compulsive behavior,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000166,Obsessive-Compulsive Disorder (OCD),q-behavioral,8114,obsessive-compulsive disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000167,Oppositional defiant disorder,q-behavioral,10865,Oppositional defiant disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000167,Oppositional defiant disorder,q-behavioral,495,oppositional defiant disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000168,Bipolar/manic depression,q-behavioral,7302,Bipolar affective disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000168,Bipolar/manic depression,q-behavioral,4985,bipolar disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000169,Panic attacks,q-behavioral,25269,Panic attack,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000169,Panic attacks,q-behavioral,5383,panic disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000170,Schizophrenia,q-behavioral,100753,Schizophrenia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000170,Schizophrenia,q-behavioral,5090,schizophrenia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000171,Addiction,q-behavioral,,,,
-v000172,Eating disorder,q-behavioral,5451,eating disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000173,Intermittent explosive disorder,q-behavioral,1521,intermittent explosive disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000174,Suicidal thoughts or plans,q-behavioral,31589,Suicidal ideation,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000175,Unsure,q-behavioral,,,,
-v000176,Other,q-behavioral,708,Behavioral abnormality,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000176,Other,q-behavioral,2025,psychiatric disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-q-learning,Has the participant ever been diagnosed with any of the following learning problems? (Select all that apply.),ihq,,,,
-v000177,None,q-learning,,,,
-v000178,Global developmental delay,q-learning,1263,Global developmental delay,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000179,Intellectual disability,q-learning,1249,Intellectual disability,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000179,Intellectual disability,q-learning,1071,Intellectual disability,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000180,Language delay: difficulty understanding what others are saying as well as those of the same age,q-learning,1276,expressive language disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000181,Speech delay: difficulty speaking as clearly as those of the same age,q-learning,750,Delayed speech and language development,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000182,Mixed receptive and expressive language impairment,q-learning,1568,mixed receptive-expressive language disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000183,Minimal speech,q-learning,,,,
-v000184,Auditory processing disorder (difficulty recognizing and interpreting sounds),q-learning,24422,auditory perceptual disorders,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000185,Verbal apraxia/dyspraxia (difficulty saying what he/she intends correctly and consistently),q-learning,11098,Speech apraxia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000186,"Visual processing deficits (difficulty seeing differences between colors, shapes, patterns)",q-learning,,,,
-v000187,Hearing loss,q-learning,,,,
-v000188,Unsure,q-learning,,,,
-v000189,Other,q-learning,4681,learning disability,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-q000022,"If the participant is less than 18 years old, what is the highest grade in school that the participant has started?",ihq,,,,
-No schooling,No schooling,q000022,,,,
-Preschool or nursery school,Preschool or nursery school,q000022,,,,
-Kindergarten,Kindergarten,q000022,,,,
-1st Grade,1st Grade,q000022,,,,
-2nd Grade,2nd Grade,q000022,,,,
-3rd Grade,3rd Grade,q000022,,,,
-4th Grade,4th Grade,q000022,,,,
-5th Grade,5th Grade,q000022,,,,
-6th Grade,6th Grade,q000022,,,,
-7th Grade,7th Grade,q000022,,,,
-8th Grade,8th Grade,q000022,,,,
-9th Grade,9th Grade,q000022,,,,
-10th Grade,10th Grade,q000022,,,,
-11th Grade,11th Grade,q000022,,,,
-12th Grade,12th Grade,q000022,,,,
-GED (General Education Development test for high school equivalent),GED (General Education Development test for high school equivalent),q000022,,,,
-Certificate of attendance from high school,Certificate of attendance from high school,q000022,,,,
-College,College,q000022,,,,
-Not Applicable - Participant is 18 years or older,Not Applicable - Participant is 18 years or older,q000022,,,,
-Unsure,Unsure,q000022,,,,
-q000023,"If the participant is less than 18 years old, what is the grade at which the participant is academically functioning for reading skills?",ihq,,,,
-No schooling,No schooling,q000023,,,,
-Preschool or nursery school,Preschool or nursery school,q000023,,,,
-Kindergarten,Kindergarten,q000023,,,,
-1st Grade,1st Grade,q000023,,,,
-2nd Grade,2nd Grade,q000023,,,,
-3rd Grade,3rd Grade,q000023,,,,
-4th Grade,4th Grade,q000023,,,,
-5th Grade,5th Grade,q000023,,,,
-6th Grade,6th Grade,q000023,,,,
-7th Grade,7th Grade,q000023,,,,
-8th Grade,8th Grade,q000023,,,,
-9th Grade,9th Grade,q000023,,,,
-10th Grade,10th Grade,q000023,,,,
-11th Grade,11th Grade,q000023,,,,
-12th Grade,12th Grade,q000023,,,,
-College,College,q000023,,,,
-Not Applicable - Participant is 18 years or older,Not Applicable - Participant is 18 years or older,q000023,,,,
-Unsure,Unsure,q000023,,,,
-q000024,"If the participant is less than 18 years old, what is the grade at which the participant is academically functioning for math skills?",ihq,,,,
-No schooling,No schooling,q000024,,,,
-Preschool or nursery school,Preschool or nursery school,q000024,,,,
-Kindergarten,Kindergarten,q000024,,,,
-1st Grade,1st Grade,q000024,,,,
-2nd Grade,2nd Grade,q000024,,,,
-3rd Grade,3rd Grade,q000024,,,,
-4th Grade,4th Grade,q000024,,,,
-5th Grade,5th Grade,q000024,,,,
-6th Grade,6th Grade,q000024,,,,
-7th Grade,7th Grade,q000024,,,,
-8th Grade,8th Grade,q000024,,,,
-9th Grade,9th Grade,q000024,,,,
-10th Grade,10th Grade,q000024,,,,
-11th Grade,11th Grade,q000024,,,,
-12th Grade,12th Grade,q000024,,,,
-College,College,q000024,,,,
-Not Applicable - Participant is 18 years or older,Not Applicable - Participant is 18 years or older,q000024,,,,
-Unsure,Unsure,q000024,,,,
-q000025,"If the participant is 18 years or older, what is the highest grade or level of school the participant has completed or the highest degree the participant has received? ",ihq,,,,
-Eighth grade or less,Eighth grade or less,q000025,,,,
-"More than eighth grade, but did not graduate from high school","More than eighth grade, but did not graduate from high school",q000025,,,,
-"Went to a business, trade, or vocational school instead of high school","Went to a business, trade, or vocational school instead of high school",q000025,,,,
-High school graduate,High school graduate,q000025,,,,
-Completed a GED (General Education Development Test for high school equivalent),Completed a GED (General Education Development Test for high school equivalent),q000025,,,,
-Certificate of attendance from high school,Certificate of attendance from high school,q000025,,,,
-"Went to a business, trade, or vocational school after high school","Went to a business, trade, or vocational school after high school",q000025,,,,
-"Went to college, but did not graduate","Went to college, but did not graduate",q000025,,,,
-Graduated from a college or university,Graduated from a college or university,q000025,,,,
-Professional training beyond a four-year college or university,Professional training beyond a four-year college or university,q000025,,,,
-"Participant went to school, but unsure what level","Participant went to school, but unsure what level",q000025,,,,
-Not Applicable - Participant is younger than 18 years,Not Applicable - Participant is younger than 18 years,q000025,,,,
-Unsure,Unsure,q000025,,,,
-q000026,"Has the participant ever been diagnosed with Dementia, Alzheimer's disease, or cognitive decline?",ihq,,,,
-Exhibiting early signs of dementia or loss of skills that are being monitored,Exhibiting early signs of dementia or loss of skills that are being monitored,q000026,,,,
-Diagnosed with dementia or Alzheimer's disease,Diagnosed with dementia or Alzheimer's disease,q000026,,,,
-Diagnosed with mild cognitive decline or mild cognitive impairment,Diagnosed with mild cognitive decline or mild cognitive impairment,q000026,,,,
-Unsure,Unsure,q000026,,,,
-q000027,Has the participant ever had a formal IQ (intelligence) test?,ihq,,,,
-Unsure,Unsure,q000027,,,,
-q000028,Is the participant currently participating in any clinical trial or research study related to Down syndrome?,ihq,,,,
-Unsure,Unsure,q000028,,,,
-q000029,Has the participant ever participated in any clinical trial or research study related to Down syndrome (and is not currently participating in a clinical trial)?,ihq,,,,
-Unsure,Unsure,q000029,,,,
-q000030,Has the participant ever participated in any clinical trial or research study related to any other condition (aside from Down syndrome)?,ihq,,,,
-Unsure,Unsure,q000030,,,,
-q000031,How many people (including the participant) currently live in the participant's household?,ihq,,,,
-10 or more,10 or more,q000031,,,,
-Unsure,Unsure,q000031,,,,
-q-living-situation,Select the current living situation for the participant. (Select all that apply.),ihq,,,,
-v000190,Lives with parents (may include siblings),q-living-situation,,,,
-v000191,Lives with sibling,q-living-situation,,,,
-v000192,Lives with other family member,q-living-situation,,,,
-v000193,Lives in a group home,q-living-situation,,,,
-v000194,Lives in a supported apartment,q-living-situation,,,,
-v000195,Lives with spouse or with partner,q-living-situation,,,,
-v000196,Lives independently,q-living-situation,,,,
-v000197,Lives in a long-term care facility,q-living-situation,,,,
-v000198,Unsure,q-living-situation,,,,
-v000199,Other,q-living-situation,,,,
-q000032,What is the education level of the mother of the participant?,ihq,,,,
-Never attended,Never attended,q000032,,,,
-"Preschool, nursery school or kindergarten","Preschool, nursery school or kindergarten",q000032,,,,
-Less than high school,Less than high school,q000032,,,,
-High school or GED (General Education Development Test for high school equivalent),High school or GED (General Education Development Test for high school equivalent),q000032,,,,
-"Some college, no degree","Some college, no degree",q000032,,,,
-Associate degree - occupational/technical/vocational program,Associate degree - occupational/technical/vocational program,q000032,,,,
-Associate degree - academic program,Associate degree - academic program,q000032,,,,
-"Bachelor's degree (e.g., BA, AB, BS, BBA)","Bachelor's degree (e.g., BA, AB, BS, BBA)",q000032,,,,
-"Master's degree (e.g., MA, MS, MEng, Med, MBA)","Master's degree (e.g., MA, MS, MEng, Med, MBA)",q000032,,,,
-"Professional school degree (e.g., MD, DDS, DVM, JD)","Professional school degree (e.g., MD, DDS, DVM, JD)",q000032,,,,
-"Doctoral degree (e.g., PhD, EdD)","Doctoral degree (e.g., PhD, EdD)",q000032,,,,
-Unsure,Unsure,q000032,,,,
-q000033,What is the education level of the father of the participant?,ihq,,,,
-Never attended,Never attended,q000033,,,,
-"Preschool, nursery school or kindergarten","Preschool, nursery school or kindergarten",q000033,,,,
-Less than high school,Less than high school,q000033,,,,
-High school or GED (General Education Development Test for high school equivalent),High school or GED (General Education Development Test for high school equivalent),q000033,,,,
-"Some college, no degree","Some college, no degree",q000033,,,,
-Associate degree - occupational/technical/vocational program,Associate degree - occupational/technical/vocational program,q000033,,,,
-Associate degree - academic program,Associate degree - academic program,q000033,,,,
-"Bachelor's degree (e.g., BA, AB, BS, BBA)","Bachelor's degree (e.g., BA, AB, BS, BBA)",q000033,,,,
-"Master's degree (e.g., MA, MS, MEng, Med, MBA)","Master's degree (e.g., MA, MS, MEng, Med, MBA)",q000033,,,,
-"Professional school degree (e.g., MD, DDS, DVM, JD)","Professional school degree (e.g., MD, DDS, DVM, JD)",q000033,,,,
-"Doctoral degree (e.g., PhD, EdD)","Doctoral degree (e.g., PhD, EdD)",q000033,,,,
-Unsure,Unsure,q000033,,,,
-q000034,What is the annual gross income for the household in which the participant lives (in U.S. dollars)?,ihq,,,,
-"Less than $25,000 (USD)","Less than $25,000 (USD)",q000034,,,,
-"$25,000 - $49,999","$25,000 - $49,999",q000034,,,,
-"$50,000 - $74,999","$50,000 - $74,999",q000034,,,,
-"$75,000 - $99,999","$75,000 - $99,999",q000034,,,,
-"$100,000 - $149,999","$100,000 - $149,999",q000034,,,,
-"Above $150,000","Above $150,000",q000034,,,,
-Prefer not to answer,Prefer not to answer,q000034,,,,
-Unsure,Unsure,q000034,,,,
-0,Condition Absent,ConditionPresent,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-1,Condition Present,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-2,Condition Unconfirmed,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-No,Condition Absent,ConditionPresent,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Yes,Condition Present,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Unsure,Condition Unconfirmed,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Kilograms,Kilograms,units,kg,Kilograms,http://ucum.org,
-cm,cm,units,cm,cm,http://ucum.org,
-kg/m2,kg/m2,units,kg/m2,kg/m2,http://ucum.org,
+v000208,race_american_indian,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000209,race_asian,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+registration_year,registration_year,demo
+relationship_to_participant,relationship_to_participant,demo
+session_id,session_id,ihq
+survey_complete,survey_complete,ihq
+survey_time,survey_time,ihq
+v000001,"Prenatal genetic testing (such as triple screen, quad screen, integrated screen, amniocentesis, chorionic villus sampling (CVS), or test of mother's blood for baby's DNA)",q-diagnosis
+v000002,"Genetic testing in baby after birth (such as chromosome analysis, cytogenomic array, or fluorescence in situ hybridization (FISH)",q-diagnosis
+v000003,Physical examination by a physician,q-diagnosis
+v000004,Unsure,q-diagnosis
+v000005,Other,q-diagnosis
+v000007,"Yes, a sibling or twin has Down syndrome",q-fam-mem
+v000008,"Yes, a more distant relative has Down syndrome",q-fam-mem
+v000009,Unsure,q-fam-mem
+v000010,No congenital heart defect,q-congen-heart
+v000011,Atrial septal defect (ASD),q-congen-heart
+v000012,Ventricular septal defect (VSD),q-congen-heart
+v000013,Atrioventricular septal defect (or AV Canal Defect),q-congen-heart
+v000014,Tetralogy of Fallot,q-congen-heart
+v000015,Patent Ductus Arteriosus (PDA),q-congen-heart
+v000016,Patent Foramen Ovale (PFO),q-congen-heart
+v000017,Unsure,q-congen-heart
+v000018,Other,q-congen-heart
+v000019,None,q-heart-surgery
+v000020,"Yes, surgery for a congenital heart defect in the first year of life",q-heart-surgery
+v000021,"Yes, surgery for a congenital heart defect after the first year of life",q-heart-surgery
+v000022,Cardiac surgery for other reason later in life,q-heart-surgery
+v000023,Unsure,q-heart-surgery
+v000024,None,q-gastro
+v000025,"Duodenal atresia, stenosis or web (blockage or narrowing of intestines beyond the stomach)",q-gastro
+v000026,Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out),q-gastro
+v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),q-gastro
+v000028,Hirschsprung disease (the gut doesn't move the stool and becomes enlarged inside),q-gastro
+v000029,Chronic constipation,q-gastro
+v000030,Dysphagia (difficulty swallowing),q-gastro
+v000031,"Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",q-gastro
+v000032,Celiac disease (gluten or wheat intolerance),q-gastro
+v000033,Other feeding problem,q-gastro
+v000034,Chronic diarrhea,q-gastro
+v000035,Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns),q-gastro
+v000036,Gastroesophageal reflux (GERD acid reflux),q-gastro
+v000037,Irritable bowel syndrome (IBS),q-gastro
+v000038,Peptic ulcers,q-gastro
+v000039,Gallstones,q-gastro
+v000040,Hemorrhoids,q-gastro
+v000041,Diverticulitis or diverticulosis,q-gastro
+v000042,Colorectal carcinoma (cancer of the bowel),q-gastro
+v000043,Inflammatory bowel disease (Crohn's disease or ulcerative colitis),q-gastro
+v000044,Unsure,q-gastro
+v000045,Other,q-gastro
+v000046,None,q-gastro-surgery
+v000047,"Repair of duodenal atresia, stenosis, or web",q-gastro-surgery
+v000048,Repair of anal stenosis/atresia,q-gastro-surgery
+v000049,Gastrostomy tube placement (feeding tube),q-gastro-surgery
+v000050,Surgery for Hirschsprung disease,q-gastro-surgery
+v000051,Fundoplication (wrap top of stomach around esophagus to prevent acid reflux),q-gastro-surgery
+v000052,Unsure,q-gastro-surgery
+v000053,Other,q-gastro-surgery
+v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental
+v000056,Folliculitis (red rash where the hair comes out of the skin),q-dental
+v000057,Vitiligo (white patches of skin without any pigment),q-dental
+v000058,Multiple dental caries (cavities),q-dental
+v000059,Wears dentures,q-dental
+v000060,Other dental problems,q-dental
+v000061,Other skin problems,q-dental
+v000062,Unsure,q-dental
+v000064,"Regression or loss of previously attained skills (speech-language, social, self-help or motor skills)",q-neurologic
+v000065,Swallowing disorder (required a gastrostomy tube or nasogastric tube for more than 1 month),q-neurologic
+v000066,Cerebral palsy,q-neurologic
+v000067,Stroke,q-neurologic
+v000068,Brain malformation,q-neurologic
+v000069,Unsure,q-neurologic
+v000070,Other,q-neurologic
+v000071,None,q-sleep
+v000072,Sleep apnea,q-sleep
+v000073,Sleep-disordered breathing,q-sleep
+v000074,Snoring,q-sleep
+v000075,Narcolepsy,q-sleep
+v000076,Restless legs syndrome,q-sleep
+v000077,Excessive daytime sleepiness,q-sleep
+v000078,Insomnia (difficulty falling asleep or staying asleep),q-sleep
+v000079,Unsure,q-sleep
+v000080,Other,q-sleep
+v000081,No skeletal problems,q-skeletal
+v000082,Atlanto-axial instability or (neck spine is weak or unstable),q-skeletal
+v000083,Cervical spine degeneration (pain or numbness in the neck or extremities from weakness in the neck bones),q-skeletal
+v000084,Osteopenia (low bone mineral density),q-skeletal
+v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal
+v000086,Fractures (broken bones),q-skeletal
+v000087,Arthritis,q-skeletal
+v000088,Unsure,q-skeletal
+v000089,Other,q-skeletal
+v000090,Not diagnosed with any of  these cancers,q-cancer
+v000091,Diagnosed with breast cancer,q-cancer
+v000092,Diagnosed with cervical cancer (for females),q-cancer
+v000093,Diagnosed with ovarian cancer (for females),q-cancer
+v000094,Diagnosed with testicular cancer (for males),q-cancer
+v000095,Diagnosed with prostate cancer (for males),q-cancer
+v000096,Diagnosed with cancer other than leukemia during childhood,q-cancer
+v000097,Diagnosed with other adulthood cancer not named above,q-cancer
+v000098,Unsure,q-cancer
+v000099,Other,q-cancer
+v000100,None,q-thyroid
+v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",q-thyroid
+v000102,"Subclinical or compensated hypothyroidism (hyperthyrotropinemia) high TSH, normal T4 levels",q-thyroid
+v000103,"Hyperthyroidism (overactive thyroid) low TSH,  high T4 levels",q-thyroid
+v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),q-thyroid
+v000105,Positive thyroglobulin  or thyroid peroxidase (TPO) antibodies,q-thyroid
+v000106,Positive antimicrosomal antibodies,q-thyroid
+v000107,Unsure,q-thyroid
+v000108,Other,q-thyroid
+v000109,"No other metabolic, hormonal, or autoimmune conditions diagnosed",q-metabolic
+v000110,Calcium deficiency,q-metabolic
+v000111,Obesity,q-metabolic
+v000112,Delayed/late puberty,q-metabolic
+v000113,Growth hormone deficiency,q-metabolic
+v000114,High cortisol,q-metabolic
+v000115,Hypoglycemia (low blood sugar),q-metabolic
+v000116,Low testosterone,q-metabolic
+v000117,Cushing's disease,q-metabolic
+v000118,Precocious/early puberty,q-metabolic
+v000119,Vitamin D deficiency,q-metabolic
+v000120,"Metabolic syndrome (combination of at least 2-3 of the following:  high blood pressure, high blood sugar, unhealthy cholesterol levels, and increased abdominal fat)",q-metabolic
+v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,q-metabolic
+v000122,Unsure,q-metabolic
+v000123,Other,q-metabolic
+v000124,No hearing loss,q-hearing-loss
+v000125,Transient hearing loss (hearing loss went away),q-hearing-loss
+v000126,Conductive hearing loss,q-hearing-loss
+v000127,Mixed hearing loss,q-hearing-loss
+v000128,Sensorineural hearing loss (permanent nerve hearing loss),q-hearing-loss
+v000129,Hearing loss - unknown type,q-hearing-loss
+v000130,Unsure,q-hearing-loss
+v000131,Other,q-hearing-loss
+v000132,No treatment needed (or no hearing loss),q-hearing-treatment
+v000133,Tympanostomy tubes (myringotomy tubes PE or pressure equalization tubes) in eardrum to allow fluid to drain from middle ear,q-hearing-treatment
+v000134,Hearing aid,q-hearing-treatment
+v000135,FM amplification system,q-hearing-treatment
+v000136,Cochlear implant,q-hearing-treatment
+v000137,Uses sign language,q-hearing-treatment
+v000138,Uses lip reading,q-hearing-treatment
+v000139,Unsure,q-hearing-treatment
+v000140,Other,q-hearing-treatment
+v000141,None,q-vision
+v000142,Cataract,q-vision
+v000143,Strabismus (eye turns in or out),q-vision
+v000144,Amblyopia (lazy eye),q-vision
+v000145,Nearsighted (myopia),q-vision
+v000146,Farsighted (hyperopia),q-vision
+v000147,Astigmatism (blurry vision),q-vision
+v000148,Ptosis (droopy eyelid),q-vision
+v000149,Lacrimal duct stenosis (blockage of tear duct),q-vision
+v000150,Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision),q-vision
+v000151,Depth perception problems,q-vision
+v000152,Blindness,q-vision
+v000153,Glaucoma,q-vision
+v000154,Retinal detachment,q-vision
+v000155,"Presbyopia (""old eyes"" requiring magnifying lenses or reading glasses)",q-vision
+v000156,Unsure,q-vision
+v000157,Other,q-vision
+v000158,None,q-behavioral
+v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral
+v000160,Autism or Autism Spectrum Disorder (ASD),q-behavioral
+v000161,Anxiety disorder,q-behavioral
+v000162,Depression,q-behavioral
+v000163,Conduct or disruptive behavior disorder,q-behavioral
+v000164,Regression (loss of previously stable functional skills),q-behavioral
+v000165,Adjustment disorder,q-behavioral
+v000166,Obsessive-Compulsive Disorder (OCD),q-behavioral
+v000167,Oppositional defiant disorder,q-behavioral
+v000168,Bipolar/manic depression,q-behavioral
+v000169,Panic attacks,q-behavioral
+v000170,Schizophrenia,q-behavioral
+v000171,Addiction,q-behavioral
+v000172,Eating disorder,q-behavioral
+v000173,Intermittent explosive disorder,q-behavioral
+v000174,Suicidal thoughts or plans,q-behavioral
+v000175,Unsure,q-behavioral
+v000176,Other,q-behavioral
+v000177,None,q-learning
+v000178,Global developmental delay,q-learning
+v000179,Intellectual disability,q-learning
+v000180,Language delay: difficulty understanding what others are saying as well as those of the same age,q-learning
+v000181,Speech delay: difficulty speaking as clearly as those of the same age,q-learning
+v000182,Mixed receptive and expressive language impairment,q-learning
+v000183,Minimal speech,q-learning
+v000184,Auditory processing disorder (difficulty recognizing and interpreting sounds),q-learning
+v000185,Verbal apraxia/dyspraxia (difficulty saying what he/she intends correctly and consistently),q-learning
+v000186,"Visual processing deficits (difficulty seeing differences between colors, shapes, patterns)",q-learning
+v000187,Hearing loss,q-learning
+v000188,Unsure,q-learning
+v000189,Other,q-learning
+v000190,Lives with parents (may include siblings),q-living-situation
+v000191,Lives with sibling,q-living-situation
+v000192,Lives with other family member,q-living-situation
+v000193,Lives in a group home,q-living-situation
+v000194,Lives in a supported apartment,q-living-situation
+v000195,Lives with spouse or with partner,q-living-situation
+v000196,Lives independently,q-living-situation
+v000197,Lives in a long-term care facility,q-living-situation
+v000198,Unsure,q-living-situation
+v000199,Other,q-living-situation
+v000200,language_preferred,language
+v000214,language_spoken_english,language
+v000215,language_spoken_spanish,language
