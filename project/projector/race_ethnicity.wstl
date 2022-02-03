@@ -38,7 +38,7 @@ def RaceExtension(race) {
 // We will ignore any race details that are not checked 
 // Add the ethnicity extension
 def EthnicityExtension(subject) {
-    if (subject.ethnicity?) {
+    if (subject.ethnicity? and subject.ethnicity ~= "NA") {
         var EthnicityValueCoding : HarmonizeMappedFirst(subject.ethnicity, "ethnicity");
         if (EthnicityValueCoding.system ~= "ds-connect-harmony-unharmonized") {
             url : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity";
