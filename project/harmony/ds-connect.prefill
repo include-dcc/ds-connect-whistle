@@ -1,0 +1,44 @@
+local code,text,local code system,code,display,code system,comment
+Female,Female,gender,female,Female,http://hl7.org/fhir/administrative-gender,
+Male,Male,gender,male,Male,http://hl7.org/fhir/administrative-gender,
+Other,Other,gender,other,Other,http://hl7.org/fhir/administrative-gender,
+Unknown,Unknown,gender,unknown,Unknown,http://hl7.org/fhir/administrative-gender,
+Hispanic or Latino,Hispanic or Latino,ethnicity,2135-2,Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+Not Hispanic or Latino,Not Hispanic or Latino,ethnicity,2186-5,Not Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+Unknown,Unknown,ethnicity,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
+race_v000208,race_american_indian,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+race_v000209,race_asian,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+race_v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+race_v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+race_v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+race_v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000208,race_american_indian,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000209,race_asian,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+q000001,What is the participant's Down syndrome diagnosis?,ihq,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,I just found this code for Down Syndrome using Mondo's website search
+0,Condition Absent,ConditionPresent,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+1,Condition Present,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+2,Condition Unconfirmed,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,Condition Absent,ConditionPresent,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Condition Present,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Condition Unconfirmed,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Kilograms,Kilograms,units,kg,Kilograms,http://ucum.org,
+cm,cm,units,cm,cm,http://ucum.org,
+kg/m2,kg/m2,units,kg/m2,kg/m2,http://ucum.org,
+Complete trisomy 21,Complete trisomy 21,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl
+Mosaic trisomy 21,Mosaic trisomy 21,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Translocation Down syndrome,Translocation Down syndrome,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),DS_diagnosis,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Not tested,Not tested,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,,
+Complete trisomy 21,Complete trisomy 21,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic trisomy 21,Mosaic trisomy 21,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Translocation Down syndrome,Translocation Down syndrome,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Not tested,Not tested,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
