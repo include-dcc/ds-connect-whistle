@@ -21,11 +21,13 @@ def Reference_Enrollment(study, subject) {
 // We don't currently have access to consent details, so this just builds the 
 // entire enrollment for the study. 
 def Group(study, subjects) {
-    identifier[0].value: study.id;
-    identifier[0].system: "https://www.ncbi.nlm.nih.gov/gap/";
-    identifier[1].value: study.accession;
-    identifier[1].system: "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id="
-    identifier[2]: Key_Identifier(study, "Group", study.id);
+    meta.tag[]: StudyMeta(study);
+
+    identifier[0]: Key_Identifier(study, "Group", study.id);
+
+    identifier[1].value(if study.accession?): study.id;
+    identifier[1].system(if study.accession?): "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=";
+
     type: "person";
     actual: true;
     member: Reference_Enrollment(study, subjects[]);
