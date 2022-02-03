@@ -11,6 +11,8 @@
 //  study - This is the full study object created by Whistler
 //  subject - Must have a patient_id
 def ResearchSubject(study, subject) {
+    meta.tag[]: StudyMeta(study);
+
     identifier[]: Key_Identifier(study, "ResearchSubject", subject.patient_id);
     status: "on-study";
     study: Reference_Key_Identifier(study, "ResearchStudy", study.id);
@@ -25,6 +27,8 @@ def ResearchSubject(study, subject) {
 //  subject - Must have a patient_id
 // 
 def Participant(study, subject) {
+    meta.tag[]: StudyMeta(study);
+
     identifier[]: Key_Identifier(study, "Patient", subject.patient_id);
     gender (if subject.gender ~= "."): HarmonizeAsCode(subject.gender, "gender");
     extension[]: RaceExtension(subject.race[]);
@@ -97,6 +101,8 @@ def AtAtRegistrationObservation(study, subject) {
     var age_at: subject.age_at_registration;
 
     if (age_at?) {
+        meta.tag[]: StudyMeta(study);
+        
         identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, "age_at_registration"));
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
         focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "demo", "age_at_registration"));
