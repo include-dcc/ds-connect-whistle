@@ -12,12 +12,22 @@ def Study(study) {
     title: study.title;
     description: study.desc;
     status: "completed"
-    enrollment[0]: Build_Reference("Group", study.id);
+    
+    enrollment[0]: Reference_Key_Identifier(study, "Group", study.id);
     identifier[0]: Key_Identifier(study, "ResearchStudy", study.id);
     identifier[1].value(if study.accession?): study.id;
     identifier[1].system(if study.accession?): "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=";
     resourceType: "ResearchStudy";
 }
+
+// Portal team has asked that we provide a tag for the study to simplify
+// their data pulls
+def StudyMeta(study) {
+    var study_identifier: Key_Identifier(study, "ResearchStudy", study.id);
+    code: study.id;
+    system: study_identifier.system;
+}
+
 
 // Description: Wrapper for all research studies in the dataset. For now, it's just the one
 //
