@@ -88,8 +88,12 @@ def Condition(study, questionnaire, qcode, qvalue, note) {
 // associated with it by harmonization (i.e. only Mondo and HP)
 //
 def ValueBasedCondition(study, questionnaire, varcode, qv) {
+
     var qcode: qv.code;
+    var codeparts: $StrSplit(qv.code, "_");
+    var qcode (if $ListLen(codeparts) > 1): codeparts[1];
     var qvalue: qv.value;
+
     var subject_id: questionnaire.patient_id;
     var age_at: questionnaire.age_at_survey_time;
     var formal_code: HarmonizeMapped(qcode, varcode);
@@ -287,6 +291,7 @@ def ProcessQuestionnaire(study, qst) {
         out observations: BasicObservation(study, qst, "q000008", qst.q000008);
 
         out observations: ObservationCheckbox(study, qst, "ihq", "q-dental", qst.q-dental[]);
+        out conditions: ValueBasedCondition(study, qst, "q-dental", qst.q-dental[]);
 
         out observations: BasicObservation(study, qst, "q000009", qst.q000009);
         out observations: ObservationCheckbox(study, qst, "ihq", "q-neurologic", qst.q-neurologic[]);

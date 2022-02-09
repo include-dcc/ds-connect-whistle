@@ -25,8 +25,11 @@ def DdVariable(study, table_name, dd_entry, permDataType) {
 
     identifier[]: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, dd_entry.varname));
     permittedDataType: permDataType;
-    //name: dd_entry.varname;
-    //text: dd_entry.desc;
+    // These entries are a bit wonky. They don't really make sense to regularly
+    // have external mappings and there is no internal system that is added to the 
+    // harmony stuff ATM, so we have to cobble together meaningful representations 
+    // that will properly match the generated CS and VS entries as well as provide 
+    // useful information when seen by a user. 
     code.coding[0].code: dd_entry.varname;
     code.coding[0].system: VocabularyURL(study.id, table_name, "");
     code.coding[0].display: dd_entry.desc;
@@ -36,9 +39,10 @@ def DdVariable(study, table_name, dd_entry, permDataType) {
         quantitativeDetails.unit[] (if dd_entry.units?):  HarmonizeMappedFirst(dd_entry.units, "Units");
         qualifiedInterval.range.low (if dd_entry.min?): dd_entry.min;
         qualifiedInterval.range.high (if dd_entry.max?): dd_entry.max;
-    }
-    if ($ListLen(dd_entry.values[*]) > 1) {
-        validCodedValueSet: Reference_Key_Identifier(study, "ValueSet", BuildVariableTerminologyId(study.id, dd_entry.values-details.table-name, dd_entry.values-details.varname));
+    } else {
+        if ($ListLen(dd_entry.values[*]) > 1) {
+            validCodedValueSet: Reference_Key_Identifier(study, "ValueSet", BuildVariableTerminologyId(study.id, dd_entry.values-details.table-name, dd_entry.values-details.varname));
+        }
     }
     resourceType: "ObservationDefinition";
 }
@@ -96,7 +100,7 @@ def ProcessDatasetDefinition(study, table_name, dd_entry) {
     
     var entry (if $IsNil(dd_entry.type)): DdVariable(study, table_name, dd_entry, ["CodeableConcept"]);
     if ($IsNil(entry)) {
-        out broken: entry;
+        out error: entry;
     } else {
         out ddmeta: entry;
     }

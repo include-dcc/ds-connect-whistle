@@ -104,6 +104,7 @@ def AtAtRegistrationObservation(study, subject) {
         meta.tag[]: StudyMeta(study);
 
         identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, "age_at_registration"));
+
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
         focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "demo", "age_at_registration"));
         code.text: HarmonizedLocalDisplay("age_at_registration", "demo");
