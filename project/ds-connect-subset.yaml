@@ -10,7 +10,7 @@ code_harmonization_dir: project/harmony
 projector_lib: project/projector
 dataset:
   demo: 
-    filename: data/ds-connect/updated/dsconnect_demographics_20211022.csv
+    filename: data/ds-connect/updated/dsconnect_demo.csv
     data_dictionary: 
       filename: data/ds-connect/updated/dd/demographics.csv
       colnames:
@@ -25,7 +25,7 @@ dataset:
       consents: ^consent
       language: ^language
   ihq: 
-    filename: data/ds-connect/updated/dsconnect_ihq_20211023.csv
+    filename: data/ds-connect/updated/dsconnect_ihq.csv
     data_dictionary: 
       filename: data/ds-connect/updated/dd/ds-connect-ihq.csv
       colnames:
