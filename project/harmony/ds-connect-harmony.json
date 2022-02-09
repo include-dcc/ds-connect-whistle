@@ -3718,11 +3718,6 @@
               "code": "Other",
               "display": "Other",
               "equivalence": "equivalent"
-            },
-            {
-              "code": "Other",
-              "display": "Other",
-              "equivalence": "equivalent"
             }
           ]
         },
@@ -6146,6 +6141,23 @@
       ]
     },
     {
+      "source": "q-gastro",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000031",
+          "display": "Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",
+          "target": [
+            {
+              "code": "0002835",
+              "display": "Aspiration",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "q-gastro-surgery",
       "target": "self",
       "element": [
@@ -6236,6 +6248,67 @@
               "equivalence": "equivalent"
             }
           ]
+        },
+        {
+          "code": "v000054",
+          "display": "No",
+          "target": [
+            {
+              "code": "v000054",
+              "display": "No",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-dental",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000055",
+          "display": "Alopecia areata (loss of hair on scalp at a young age)",
+          "target": [
+            {
+              "code": "0002232",
+              "display": "Patchy alopecia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000056",
+          "display": "Folliculitis (red rash where the hair comes out of the skin)",
+          "target": [
+            {
+              "code": "0025084",
+              "display": "Folliculitis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000057",
+          "display": "Vitiligo (white patches of skin without any pigment)",
+          "target": [
+            {
+              "code": "0001045",
+              "display": "Vitiligo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000061",
+          "display": "Other skin problems",
+          "target": [
+            {
+              "code": "0000951",
+              "display": "Abnormality of the skin",
+              "equivalence": "equivalent"
+            }
+          ]
         }
       ]
     },
@@ -6251,6 +6324,11 @@
               "code": "v000055",
               "display": "Alopecia areata (loss of hair on scalp at a young age)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000055",
+              "display": "Alopecia areata (loss of hair on scalp at a young age)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6262,6 +6340,11 @@
               "code": "v000056",
               "display": "Folliculitis (red rash where the hair comes out of the skin)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000056",
+              "display": "Folliculitis (red rash where the hair comes out of the skin)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6269,6 +6352,11 @@
           "code": "v000057",
           "display": "Vitiligo (white patches of skin without any pigment)",
           "target": [
+            {
+              "code": "v000057",
+              "display": "Vitiligo (white patches of skin without any pigment)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000057",
               "display": "Vitiligo (white patches of skin without any pigment)",
@@ -6317,6 +6405,11 @@
               "code": "v000061",
               "display": "Other skin problems",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000061",
+              "display": "Other skin problems",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6334,9 +6427,70 @@
       ]
     },
     {
+      "source": "q-dental",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000055",
+          "display": "Alopecia areata (loss of hair on scalp at a young age)",
+          "target": [
+            {
+              "code": "0005340",
+              "display": "alopecia areata",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000056",
+          "display": "Folliculitis (red rash where the hair comes out of the skin)",
+          "target": [
+            {
+              "code": "0006552",
+              "display": "folliculitis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000057",
+          "display": "Vitiligo (white patches of skin without any pigment)",
+          "target": [
+            {
+              "code": "0008661",
+              "display": "vitiligo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000061",
+          "display": "Other skin problems",
+          "target": [
+            {
+              "code": "0005093",
+              "display": "skin disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "q-neurologic",
       "target": "self",
       "element": [
+        {
+          "code": "v000063",
+          "display": "No",
+          "target": [
+            {
+              "code": "v000063",
+              "display": "No",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
         {
           "code": "v000064",
           "display": "Regression or loss of previously attained skills (speech-language, social, self-help or motor skills)",
@@ -6367,6 +6521,11 @@
               "code": "v000066",
               "display": "Cerebral palsy",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000066",
+              "display": "Cerebral palsy",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6374,6 +6533,11 @@
           "code": "v000067",
           "display": "Stroke",
           "target": [
+            {
+              "code": "v000067",
+              "display": "Stroke",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000067",
               "display": "Stroke",
@@ -6411,6 +6575,100 @@
               "code": "v000070",
               "display": "Other",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000070",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-neurologic",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000066",
+          "display": "Cerebral palsy",
+          "target": [
+            {
+              "code": "0006497",
+              "display": "cerebral palsy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000067",
+          "display": "Stroke",
+          "target": [
+            {
+              "code": "0005098",
+              "display": "stroke disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000070",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0005071",
+              "display": "nervous system disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-neurologic",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000066",
+          "display": "Cerebral palsy",
+          "target": [
+            {
+              "code": "0100021",
+              "display": "Cerebral palsy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000067",
+          "display": "Stroke",
+          "target": [
+            {
+              "code": "0001297",
+              "display": "Stroke",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000068",
+          "display": "Brain malformation",
+          "target": [
+            {
+              "code": "0012443",
+              "display": "Abnormality of brain morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000070",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0000707",
+              "display": "Abnormality of the nervous system",
+              "equivalence": "equivalent"
             }
           ]
         }
@@ -6439,6 +6697,11 @@
               "code": "v000072",
               "display": "Sleep apnea",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000072",
+              "display": "Sleep apnea",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6446,6 +6709,11 @@
           "code": "v000073",
           "display": "Sleep-disordered breathing",
           "target": [
+            {
+              "code": "v000073",
+              "display": "Sleep-disordered breathing",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000073",
               "display": "Sleep-disordered breathing",
@@ -6472,6 +6740,11 @@
               "code": "v000075",
               "display": "Narcolepsy",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000075",
+              "display": "Narcolepsy",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6479,6 +6752,11 @@
           "code": "v000076",
           "display": "Restless legs syndrome",
           "target": [
+            {
+              "code": "v000076",
+              "display": "Restless legs syndrome",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000076",
               "display": "Restless legs syndrome",
@@ -6505,6 +6783,11 @@
               "code": "v000078",
               "display": "Insomnia (difficulty falling asleep or staying asleep)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000078",
+              "display": "Insomnia (difficulty falling asleep or staying asleep)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6526,6 +6809,150 @@
             {
               "code": "v000080",
               "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-sleep",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000072",
+          "display": "Sleep apnea",
+          "target": [
+            {
+              "code": "0005296",
+              "display": "sleep apnea syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000073",
+          "display": "Sleep-disordered breathing",
+          "target": [
+            {
+              "code": "0005296",
+              "display": "sleep apnea syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000075",
+          "display": "Narcolepsy",
+          "target": [
+            {
+              "code": "0021107",
+              "display": "narcolepsy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000076",
+          "display": "Restless legs syndrome",
+          "target": [
+            {
+              "code": "0005391",
+              "display": "restless legs syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000078",
+          "display": "Insomnia (difficulty falling asleep or staying asleep)",
+          "target": [
+            {
+              "code": "0013600",
+              "display": "Insomnia",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-sleep",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000072",
+          "display": "Sleep apnea",
+          "target": [
+            {
+              "code": "0010535",
+              "display": "Sleep apnea",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000073",
+          "display": "Sleep-disordered breathing",
+          "target": [
+            {
+              "code": "0010535",
+              "display": "Sleep apnea",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000074",
+          "display": "Snoring",
+          "target": [
+            {
+              "code": "0025267",
+              "display": "Snoring",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000075",
+          "display": "Narcolepsy",
+          "target": [
+            {
+              "code": "0030050",
+              "display": "Narcolepsy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000076",
+          "display": "Restless legs syndrome",
+          "target": [
+            {
+              "code": "0012452",
+              "display": "Restless legs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000077",
+          "display": "Excessive daytime sleepiness",
+          "target": [
+            {
+              "code": "0001262",
+              "display": "Excessive daytime somnolence",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000078",
+          "display": "Insomnia (difficulty falling asleep or staying asleep)",
+          "target": [
+            {
+              "code": "0100785",
+              "display": "Insomnia",
               "equivalence": "equivalent"
             }
           ]
@@ -6588,6 +7015,11 @@
               "code": "v000085",
               "display": "Osteoporosis (weak, brittle bones that are easy to break)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000085",
+              "display": "Osteoporosis (weak, brittle bones that are easy to break)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6599,6 +7031,11 @@
               "code": "v000086",
               "display": "Fractures (broken bones)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000086",
+              "display": "Fractures (broken bones)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6606,6 +7043,16 @@
           "code": "v000087",
           "display": "Arthritis",
           "target": [
+            {
+              "code": "v000087",
+              "display": "Arthritis",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "v000087",
+              "display": "Arthritis",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000087",
               "display": "Arthritis",
@@ -6631,6 +7078,149 @@
             {
               "code": "v000089",
               "display": "Other",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "v000089",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-skeletal",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000082",
+          "display": "Atlanto-axial instability or (neck spine is weak or unstable)",
+          "target": [
+            {
+              "code": "0003467",
+              "display": "Atlantoaxial instability",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000083",
+          "display": "Cervical spine degeneration (pain or numbness in the neck or extremities from weakness in the neck bones)",
+          "target": [
+            {
+              "code": "0008480",
+              "display": "Cervical spondylosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000084",
+          "display": "Osteopenia (low bone mineral density)",
+          "target": [
+            {
+              "code": "0000938",
+              "display": "Osteopenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000085",
+          "display": "Osteoporosis (weak, brittle bones that are easy to break)",
+          "target": [
+            {
+              "code": "0000939",
+              "display": "Osteoporosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000086",
+          "display": "Fractures (broken bones)",
+          "target": [
+            {
+              "code": "0020110",
+              "display": "Bone fracture",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000087",
+          "display": "Arthritis",
+          "target": [
+            {
+              "code": "0001369",
+              "display": "Arthritis; Arthropathy",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "0003040",
+              "display": "Arthritis; Arthropathy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000089",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0033127",
+              "display": "Abnormality of the musculoskeletal system",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-skeletal",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000085",
+          "display": "Osteoporosis (weak, brittle bones that are easy to break)",
+          "target": [
+            {
+              "code": "0005298",
+              "display": "osteoporosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000086",
+          "display": "Fractures (broken bones)",
+          "target": [
+            {
+              "code": "0005315",
+              "display": "bone fracture",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000087",
+          "display": "Arthritis",
+          "target": [
+            {
+              "code": "0006816",
+              "display": "arthropathy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000089",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0002081",
+              "display": "musculoskeletal system disease",
               "equivalence": "equivalent"
             }
           ]
@@ -6715,6 +7305,11 @@
               "code": "v000096",
               "display": "Diagnosed with cancer other than leukemia during childhood",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000096",
+              "display": "Diagnosed with cancer other than leukemia during childhood",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6754,6 +7349,95 @@
       ]
     },
     {
+      "source": "q-cancer",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000091",
+          "display": "Diagnosed with breast cancer",
+          "target": [
+            {
+              "code": "0007254",
+              "display": "breast cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000092",
+          "display": "Diagnosed with cervical cancer (for females)",
+          "target": [
+            {
+              "code": "0002974",
+              "display": "cervical cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000093",
+          "display": "Diagnosed with ovarian cancer (for females)",
+          "target": [
+            {
+              "code": "0008170",
+              "display": "ovarian cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000094",
+          "display": "Diagnosed with testicular cancer (for males)",
+          "target": [
+            {
+              "code": "0005447",
+              "display": "testicular cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000095",
+          "display": "Diagnosed with prostate cancer (for males)",
+          "target": [
+            {
+              "code": "0008315",
+              "display": "prostate cancer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000096",
+          "display": "Diagnosed with cancer other than leukemia during childhood",
+          "target": [
+            {
+              "code": "0006517",
+              "display": "childhood malignant neoplasm",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-cancer",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000096",
+          "display": "Diagnosed with cancer other than leukemia during childhood",
+          "target": [
+            {
+              "code": "0002664",
+              "display": "Neoplasm",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "q-thyroid",
       "target": "self",
       "element": [
@@ -6772,6 +7456,11 @@
           "code": "v000101",
           "display": "Hypothyroidism (low thyroid function) high TSH, low T4 levels",
           "target": [
+            {
+              "code": "v000101",
+              "display": "Hypothyroidism (low thyroid function) high TSH, low T4 levels",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000101",
               "display": "Hypothyroidism (low thyroid function) high TSH, low T4 levels",
@@ -6805,6 +7494,11 @@
           "code": "v000104",
           "display": "Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4)",
           "target": [
+            {
+              "code": "v000104",
+              "display": "Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000104",
               "display": "Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4)",
@@ -6853,6 +7547,100 @@
               "code": "v000108",
               "display": "Other",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000108",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-thyroid",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000101",
+          "display": "Hypothyroidism (low thyroid function) high TSH, low T4 levels",
+          "target": [
+            {
+              "code": "0000821",
+              "display": "Hypothyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000102",
+          "display": "Subclinical or compensated hypothyroidism (hyperthyrotropinemia) high TSH, normal T4 levels",
+          "target": [
+            {
+              "code": "0008223",
+              "display": "Compensated hypothyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000104",
+          "display": "Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4)",
+          "target": [
+            {
+              "code": "0000872",
+              "display": "Hashimoto thyroiditis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000108",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0000820",
+              "display": "Abnormality of the thyroid gland",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-thyroid",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000101",
+          "display": "Hypothyroidism (low thyroid function) high TSH, low T4 levels",
+          "target": [
+            {
+              "code": "0005420",
+              "display": "hypothyroidism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000104",
+          "display": "Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4)",
+          "target": [
+            {
+              "code": "0007699",
+              "display": "Hashimoto thyroiditis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000108",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0003240",
+              "display": "thyroid gland disease",
+              "equivalence": "equivalent"
             }
           ]
         }
@@ -6888,6 +7676,11 @@
           "code": "v000111",
           "display": "Obesity",
           "target": [
+            {
+              "code": "v000111",
+              "display": "Obesity",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000111",
               "display": "Obesity",
@@ -6936,6 +7729,11 @@
               "code": "v000115",
               "display": "Hypoglycemia (low blood sugar)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000115",
+              "display": "Hypoglycemia (low blood sugar)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6980,6 +7778,11 @@
               "code": "v000119",
               "display": "Vitamin D deficiency",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000119",
+              "display": "Vitamin D deficiency",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6998,6 +7801,11 @@
           "code": "v000121",
           "display": "Systemic Lupus Erythematosus (SLE) or other autoimmune disease",
           "target": [
+            {
+              "code": "v000121",
+              "display": "Systemic Lupus Erythematosus (SLE) or other autoimmune disease",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000121",
               "display": "Systemic Lupus Erythematosus (SLE) or other autoimmune disease",
@@ -7023,6 +7831,208 @@
             {
               "code": "v000123",
               "display": "Other",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "v000123",
+              "display": "Other",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "v000123",
+              "display": "Other",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "v000123",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-metabolic",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000110",
+          "display": "Calcium deficiency",
+          "target": [
+            {
+              "code": "0002901",
+              "display": "Hypocalcemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000111",
+          "display": "Obesity",
+          "target": [
+            {
+              "code": "0001513",
+              "display": "Obesity",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000112",
+          "display": "Delayed/late puberty",
+          "target": [
+            {
+              "code": "0000823",
+              "display": "Delayed puberty",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000113",
+          "display": "Growth hormone deficiency",
+          "target": [
+            {
+              "code": "0000824",
+              "display": "Decreased response to growth hormone stimuation test",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000115",
+          "display": "Hypoglycemia (low blood sugar)",
+          "target": [
+            {
+              "code": "0001943",
+              "display": "Hypoglycemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000118",
+          "display": "Precocious/early puberty",
+          "target": [
+            {
+              "code": "0000826",
+              "display": "Precocious puberty",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000119",
+          "display": "Vitamin D deficiency",
+          "target": [
+            {
+              "code": "0100512",
+              "display": "Low levels of vitamin D",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000121",
+          "display": "Systemic Lupus Erythematosus (SLE) or other autoimmune disease",
+          "target": [
+            {
+              "code": "0002725",
+              "display": "Systemic lupus erythematosus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000123",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0000818",
+              "display": "Abnormality of the endocrine system",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "0002960",
+              "display": "Autoimmunity",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-metabolic",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000111",
+          "display": "Obesity",
+          "target": [
+            {
+              "code": "0011122",
+              "display": "obesity disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000115",
+          "display": "Hypoglycemia (low blood sugar)",
+          "target": [
+            {
+              "code": "0004946",
+              "display": "hypoglycemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000117",
+          "display": "Cushing's disease",
+          "target": [
+            {
+              "code": "0009050",
+              "display": "Cushing disease due to pituitary adenoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000119",
+          "display": "Vitamin D deficiency",
+          "target": [
+            {
+              "code": "0100471",
+              "display": "vitamin D deficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000121",
+          "display": "Systemic Lupus Erythematosus (SLE) or other autoimmune disease",
+          "target": [
+            {
+              "code": "0007915",
+              "display": "systemic lupus erythematosus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000123",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0005151",
+              "display": "endocrine system disease",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "0007179",
+              "display": "autoimmune disease",
               "equivalence": "equivalent"
             }
           ]
@@ -7444,6 +8454,11 @@
               "code": "v000159",
               "display": "Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000159",
+              "display": "Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -7451,6 +8466,11 @@
           "code": "v000160",
           "display": "Autism or Autism Spectrum Disorder (ASD)",
           "target": [
+            {
+              "code": "v000160",
+              "display": "Autism or Autism Spectrum Disorder (ASD)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000160",
               "display": "Autism or Autism Spectrum Disorder (ASD)",
@@ -7466,6 +8486,11 @@
               "code": "v000161",
               "display": "Anxiety disorder",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000161",
+              "display": "Anxiety disorder",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -7473,6 +8498,11 @@
           "code": "v000162",
           "display": "Depression",
           "target": [
+            {
+              "code": "v000162",
+              "display": "Depression",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000162",
               "display": "Depression",
@@ -7521,6 +8551,11 @@
               "code": "v000166",
               "display": "Obsessive-Compulsive Disorder (OCD)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000166",
+              "display": "Obsessive-Compulsive Disorder (OCD)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -7528,6 +8563,11 @@
           "code": "v000167",
           "display": "Oppositional defiant disorder",
           "target": [
+            {
+              "code": "v000167",
+              "display": "Oppositional defiant disorder",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000167",
               "display": "Oppositional defiant disorder",
@@ -7543,6 +8583,11 @@
               "code": "v000168",
               "display": "Bipolar/manic depression",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000168",
+              "display": "Bipolar/manic depression",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -7554,6 +8599,11 @@
               "code": "v000169",
               "display": "Panic attacks",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000169",
+              "display": "Panic attacks",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -7561,6 +8611,11 @@
           "code": "v000170",
           "display": "Schizophrenia",
           "target": [
+            {
+              "code": "v000170",
+              "display": "Schizophrenia",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000170",
               "display": "Schizophrenia",
@@ -7631,6 +8686,298 @@
               "code": "v000176",
               "display": "Other",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000176",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-behavioral",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000159",
+          "display": "Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD)",
+          "target": [
+            {
+              "code": "0007018",
+              "display": "Attention deficit hyperactivity disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000160",
+          "display": "Autism or Autism Spectrum Disorder (ASD)",
+          "target": [
+            {
+              "code": "0000717",
+              "display": "Autism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000161",
+          "display": "Anxiety disorder",
+          "target": [
+            {
+              "code": "0000739",
+              "display": "Anxiety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000162",
+          "display": "Depression",
+          "target": [
+            {
+              "code": "0000716",
+              "display": "Depression",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000166",
+          "display": "Obsessive-Compulsive Disorder (OCD)",
+          "target": [
+            {
+              "code": "0000722",
+              "display": "Obsessive-compulsive behavior",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000167",
+          "display": "Oppositional defiant disorder",
+          "target": [
+            {
+              "code": "0010865",
+              "display": "Oppositional defiant disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000168",
+          "display": "Bipolar/manic depression",
+          "target": [
+            {
+              "code": "0007302",
+              "display": "Bipolar affective disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000169",
+          "display": "Panic attacks",
+          "target": [
+            {
+              "code": "0025269",
+              "display": "Panic attack",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000170",
+          "display": "Schizophrenia",
+          "target": [
+            {
+              "code": "0100753",
+              "display": "Schizophrenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000174",
+          "display": "Suicidal thoughts or plans",
+          "target": [
+            {
+              "code": "0031589",
+              "display": "Suicidal ideation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000176",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0000708",
+              "display": "Behavioral abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-behavioral",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000159",
+          "display": "Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD)",
+          "target": [
+            {
+              "code": "0007743",
+              "display": "attention deficit-hyperactivity disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000160",
+          "display": "Autism or Autism Spectrum Disorder (ASD)",
+          "target": [
+            {
+              "code": "0005260",
+              "display": "autism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000161",
+          "display": "Anxiety disorder",
+          "target": [
+            {
+              "code": "0005618",
+              "display": "anxiety disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000162",
+          "display": "Depression",
+          "target": [
+            {
+              "code": "0002050",
+              "display": "depressive disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000163",
+          "display": "Conduct or disruptive behavior disorder",
+          "target": [
+            {
+              "code": "0005352",
+              "display": "conduct disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000165",
+          "display": "Adjustment disorder",
+          "target": [
+            {
+              "code": "0003265",
+              "display": "adjustment disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000166",
+          "display": "Obsessive-Compulsive Disorder (OCD)",
+          "target": [
+            {
+              "code": "0008114",
+              "display": "obsessive-compulsive disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000167",
+          "display": "Oppositional defiant disorder",
+          "target": [
+            {
+              "code": "0000495",
+              "display": "oppositional defiant disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000168",
+          "display": "Bipolar/manic depression",
+          "target": [
+            {
+              "code": "0004985",
+              "display": "bipolar disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000169",
+          "display": "Panic attacks",
+          "target": [
+            {
+              "code": "0005383",
+              "display": "panic disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000170",
+          "display": "Schizophrenia",
+          "target": [
+            {
+              "code": "0005090",
+              "display": "schizophrenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000172",
+          "display": "Eating disorder",
+          "target": [
+            {
+              "code": "0005451",
+              "display": "eating disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000173",
+          "display": "Intermittent explosive disorder",
+          "target": [
+            {
+              "code": "0001521",
+              "display": "intermittent explosive disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000176",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0002025",
+              "display": "psychiatric disorder",
+              "equivalence": "equivalent"
             }
           ]
         }
@@ -7666,6 +9013,11 @@
           "code": "v000179",
           "display": "Intellectual disability",
           "target": [
+            {
+              "code": "v000179",
+              "display": "Intellectual disability",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000179",
               "display": "Intellectual disability",
@@ -7779,6 +9131,117 @@
             {
               "code": "v000189",
               "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-learning",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000178",
+          "display": "Global developmental delay",
+          "target": [
+            {
+              "code": "0001263",
+              "display": "Global developmental delay",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000179",
+          "display": "Intellectual disability",
+          "target": [
+            {
+              "code": "0001249",
+              "display": "Intellectual disability",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000181",
+          "display": "Speech delay: difficulty speaking as clearly as those of the same age",
+          "target": [
+            {
+              "code": "0000750",
+              "display": "Delayed speech and language development",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000185",
+          "display": "Verbal apraxia/dyspraxia (difficulty saying what he/she intends correctly and consistently)",
+          "target": [
+            {
+              "code": "0011098",
+              "display": "Speech apraxia",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-learning",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000179",
+          "display": "Intellectual disability",
+          "target": [
+            {
+              "code": "0001071",
+              "display": "Intellectual disability",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000180",
+          "display": "Language delay: difficulty understanding what others are saying as well as those of the same age",
+          "target": [
+            {
+              "code": "0001276",
+              "display": "expressive language disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000182",
+          "display": "Mixed receptive and expressive language impairment",
+          "target": [
+            {
+              "code": "0001568",
+              "display": "mixed receptive-expressive language disorder",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000184",
+          "display": "Auditory processing disorder (difficulty recognizing and interpreting sounds)",
+          "target": [
+            {
+              "code": "0024422",
+              "display": "auditory perceptual disorders",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000189",
+          "display": "Other",
+          "target": [
+            {
+              "code": "0004681",
+              "display": "learning disability",
               "equivalence": "equivalent"
             }
           ]

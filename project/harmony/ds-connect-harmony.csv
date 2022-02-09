@@ -280,7 +280,6 @@ Not tested,Not tested,ConditionPresent,unconfirmed,Unconfirmed,http://terminolog
 Not tested,Not tested,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
 Other Relative,Other Relative,relationship_to_participant
 Other non-relative,Other non-relative,relationship_to_participant
-Other,Other,gender
 Other,Other,gender,other,Other,http://hl7.org/fhir/administrative-gender,
 Parental Lab Reports Received,Parental Lab Reports Received,genetic_status
 Parental Testing Needed,Parental Testing Needed,genetic_status
@@ -424,12 +423,6 @@ race_v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1
 race_v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 race_v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 race_v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000208,race_american_indian,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000209,race_asian,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 registration_year,registration_year,demo
 relationship_to_participant,relationship_to_participant,demo
 session_id,session_id,ihq
@@ -465,7 +458,7 @@ v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fis
 v000028,Hirschsprung disease (the gut doesn't move the stool and becomes enlarged inside),q-gastro
 v000029,Chronic constipation,q-gastro
 v000030,Dysphagia (difficulty swallowing),q-gastro
-v000031,"Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",q-gastro
+v000031,"Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",q-gastro,0002835,Aspiration,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000032,Celiac disease (gluten or wheat intolerance),q-gastro
 v000033,Other feeding problem,q-gastro
 v000034,Chronic diarrhea,q-gastro
@@ -488,74 +481,104 @@ v000050,Surgery for Hirschsprung disease,q-gastro-surgery
 v000051,Fundoplication (wrap top of stomach around esophagus to prevent acid reflux),q-gastro-surgery
 v000052,Unsure,q-gastro-surgery
 v000053,Other,q-gastro-surgery
-v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental
-v000056,Folliculitis (red rash where the hair comes out of the skin),q-dental
-v000057,Vitiligo (white patches of skin without any pigment),q-dental
+v000054,No,q-gastro-surgery
+v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental,0002232,Patchy alopecia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental,0005340,alopecia areata,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000056,Folliculitis (red rash where the hair comes out of the skin),q-dental,0006552,folliculitis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000056,Folliculitis (red rash where the hair comes out of the skin),q-dental,0025084,Folliculitis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000057,Vitiligo (white patches of skin without any pigment),q-dental,0001045,Vitiligo,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000057,Vitiligo (white patches of skin without any pigment),q-dental,0008661,vitiligo,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000058,Multiple dental caries (cavities),q-dental
 v000059,Wears dentures,q-dental
 v000060,Other dental problems,q-dental
-v000061,Other skin problems,q-dental
+v000061,Other skin problems,q-dental,0000951,Abnormality of the skin,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000061,Other skin problems,q-dental,0005093,skin disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000062,Unsure,q-dental
+v000063,No,q-neurologic
 v000064,"Regression or loss of previously attained skills (speech-language, social, self-help or motor skills)",q-neurologic
 v000065,Swallowing disorder (required a gastrostomy tube or nasogastric tube for more than 1 month),q-neurologic
-v000066,Cerebral palsy,q-neurologic
-v000067,Stroke,q-neurologic
-v000068,Brain malformation,q-neurologic
+v000066,Cerebral palsy,q-neurologic,0006497,cerebral palsy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000066,Cerebral palsy,q-neurologic,0100021,Cerebral palsy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000067,Stroke,q-neurologic,0001297,Stroke,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000067,Stroke,q-neurologic,0005098,stroke disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000068,Brain malformation,q-neurologic,0012443,Abnormality of brain morphology,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000069,Unsure,q-neurologic
-v000070,Other,q-neurologic
+v000070,Other,q-neurologic,0000707,Abnormality of the nervous system,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000070,Other,q-neurologic,0005071,nervous system disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000071,None,q-sleep
-v000072,Sleep apnea,q-sleep
-v000073,Sleep-disordered breathing,q-sleep
-v000074,Snoring,q-sleep
-v000075,Narcolepsy,q-sleep
-v000076,Restless legs syndrome,q-sleep
-v000077,Excessive daytime sleepiness,q-sleep
-v000078,Insomnia (difficulty falling asleep or staying asleep),q-sleep
+v000072,Sleep apnea,q-sleep,0005296,sleep apnea syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000072,Sleep apnea,q-sleep,0010535,Sleep apnea,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000073,Sleep-disordered breathing,q-sleep,0005296,sleep apnea syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000073,Sleep-disordered breathing,q-sleep,0010535,Sleep apnea,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000074,Snoring,q-sleep,0025267,Snoring,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000075,Narcolepsy,q-sleep,0021107,narcolepsy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000075,Narcolepsy,q-sleep,0030050,Narcolepsy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000076,Restless legs syndrome,q-sleep,0005391,restless legs syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000076,Restless legs syndrome,q-sleep,0012452,Restless legs,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000077,Excessive daytime sleepiness,q-sleep,0001262,Excessive daytime somnolence,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000078,Insomnia (difficulty falling asleep or staying asleep),q-sleep,0013600,Insomnia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000078,Insomnia (difficulty falling asleep or staying asleep),q-sleep,0100785,Insomnia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000079,Unsure,q-sleep
 v000080,Other,q-sleep
 v000081,No skeletal problems,q-skeletal
-v000082,Atlanto-axial instability or (neck spine is weak or unstable),q-skeletal
-v000083,Cervical spine degeneration (pain or numbness in the neck or extremities from weakness in the neck bones),q-skeletal
-v000084,Osteopenia (low bone mineral density),q-skeletal
-v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal
-v000086,Fractures (broken bones),q-skeletal
-v000087,Arthritis,q-skeletal
+v000082,Atlanto-axial instability or (neck spine is weak or unstable),q-skeletal,0003467,Atlantoaxial instability,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000083,Cervical spine degeneration (pain or numbness in the neck or extremities from weakness in the neck bones),q-skeletal,0008480,Cervical spondylosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000084,Osteopenia (low bone mineral density),q-skeletal,0000938,Osteopenia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal,0000939,Osteoporosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal,0005298,osteoporosis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000086,Fractures (broken bones),q-skeletal,0005315,bone fracture,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000086,Fractures (broken bones),q-skeletal,0020110,Bone fracture,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000087,Arthritis,q-skeletal,0001369,Arthritis; Arthropathy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000087,Arthritis,q-skeletal,0003040,Arthritis; Arthropathy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000087,Arthritis,q-skeletal,0006816,arthropathy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000088,Unsure,q-skeletal
-v000089,Other,q-skeletal
+v000089,Other,q-skeletal,0002081,musculoskeletal system disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000089,Other,q-skeletal,0033127,Abnormality of the musculoskeletal system,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000090,Not diagnosed with any of  these cancers,q-cancer
-v000091,Diagnosed with breast cancer,q-cancer
-v000092,Diagnosed with cervical cancer (for females),q-cancer
-v000093,Diagnosed with ovarian cancer (for females),q-cancer
-v000094,Diagnosed with testicular cancer (for males),q-cancer
-v000095,Diagnosed with prostate cancer (for males),q-cancer
-v000096,Diagnosed with cancer other than leukemia during childhood,q-cancer
+v000091,Diagnosed with breast cancer,q-cancer,0007254,breast cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000092,Diagnosed with cervical cancer (for females),q-cancer,0002974,cervical cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000093,Diagnosed with ovarian cancer (for females),q-cancer,0008170,ovarian cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000094,Diagnosed with testicular cancer (for males),q-cancer,0005447,testicular cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000095,Diagnosed with prostate cancer (for males),q-cancer,0008315,prostate cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000096,Diagnosed with cancer other than leukemia during childhood,q-cancer,0002664,Neoplasm,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000096,Diagnosed with cancer other than leukemia during childhood,q-cancer,0006517,childhood malignant neoplasm,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000097,Diagnosed with other adulthood cancer not named above,q-cancer
 v000098,Unsure,q-cancer
 v000099,Other,q-cancer
 v000100,None,q-thyroid
-v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",q-thyroid
-v000102,"Subclinical or compensated hypothyroidism (hyperthyrotropinemia) high TSH, normal T4 levels",q-thyroid
+v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",q-thyroid,0000821,Hypothyroidism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",q-thyroid,0005420,hypothyroidism,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000102,"Subclinical or compensated hypothyroidism (hyperthyrotropinemia) high TSH, normal T4 levels",q-thyroid,0008223,Compensated hypothyroidism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000103,"Hyperthyroidism (overactive thyroid) low TSH,  high T4 levels",q-thyroid
-v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),q-thyroid
+v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),q-thyroid,0000872,Hashimoto thyroiditis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),q-thyroid,0007699,Hashimoto thyroiditis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000105,Positive thyroglobulin  or thyroid peroxidase (TPO) antibodies,q-thyroid
 v000106,Positive antimicrosomal antibodies,q-thyroid
 v000107,Unsure,q-thyroid
-v000108,Other,q-thyroid
+v000108,Other,q-thyroid,0000820,Abnormality of the thyroid gland,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000108,Other,q-thyroid,0003240,thyroid gland disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000109,"No other metabolic, hormonal, or autoimmune conditions diagnosed",q-metabolic
-v000110,Calcium deficiency,q-metabolic
-v000111,Obesity,q-metabolic
-v000112,Delayed/late puberty,q-metabolic
-v000113,Growth hormone deficiency,q-metabolic
+v000110,Calcium deficiency,q-metabolic,0002901,Hypocalcemia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000111,Obesity,q-metabolic,0001513,Obesity,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000111,Obesity,q-metabolic,0011122,obesity disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000112,Delayed/late puberty,q-metabolic,0000823,Delayed puberty,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000113,Growth hormone deficiency,q-metabolic,0000824,Decreased response to growth hormone stimuation test,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000114,High cortisol,q-metabolic
-v000115,Hypoglycemia (low blood sugar),q-metabolic
+v000115,Hypoglycemia (low blood sugar),q-metabolic,0001943,Hypoglycemia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000115,Hypoglycemia (low blood sugar),q-metabolic,0004946,hypoglycemia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000116,Low testosterone,q-metabolic
-v000117,Cushing's disease,q-metabolic
-v000118,Precocious/early puberty,q-metabolic
-v000119,Vitamin D deficiency,q-metabolic
+v000117,Cushing's disease,q-metabolic,0009050,Cushing disease due to pituitary adenoma,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000118,Precocious/early puberty,q-metabolic,0000826,Precocious puberty,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000119,Vitamin D deficiency,q-metabolic,0100471,vitamin D deficiency,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000119,Vitamin D deficiency,q-metabolic,0100512,Low levels of vitamin D,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000120,"Metabolic syndrome (combination of at least 2-3 of the following:  high blood pressure, high blood sugar, unhealthy cholesterol levels, and increased abdominal fat)",q-metabolic
-v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,q-metabolic
+v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,q-metabolic,0002725,Systemic lupus erythematosus,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,q-metabolic,0007915,systemic lupus erythematosus,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000122,Unsure,q-metabolic
-v000123,Other,q-metabolic
+v000123,Other,q-metabolic,0000818,Abnormality of the endocrine system,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000123,Other,q-metabolic,0002960,Autoimmunity,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000123,Other,q-metabolic,0005151,endocrine system disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000123,Other,q-metabolic,0007179,autoimmune disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000124,No hearing loss,q-hearing-loss
 v000125,Transient hearing loss (hearing loss went away),q-hearing-loss
 v000126,Conductive hearing loss,q-hearing-loss
@@ -591,37 +614,48 @@ v000155,"Presbyopia (""old eyes"" requiring magnifying lenses or reading glasses
 v000156,Unsure,q-vision
 v000157,Other,q-vision
 v000158,None,q-behavioral
-v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral
-v000160,Autism or Autism Spectrum Disorder (ASD),q-behavioral
-v000161,Anxiety disorder,q-behavioral
-v000162,Depression,q-behavioral
-v000163,Conduct or disruptive behavior disorder,q-behavioral
+v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral,0007018,Attention deficit hyperactivity disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral,0007743,attention deficit-hyperactivity disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000160,Autism or Autism Spectrum Disorder (ASD),q-behavioral,0000717,Autism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000160,Autism or Autism Spectrum Disorder (ASD),q-behavioral,0005260,autism,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000161,Anxiety disorder,q-behavioral,0000739,Anxiety,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000161,Anxiety disorder,q-behavioral,0005618,anxiety disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000162,Depression,q-behavioral,0000716,Depression,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000162,Depression,q-behavioral,0002050,depressive disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000163,Conduct or disruptive behavior disorder,q-behavioral,0005352,conduct disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000164,Regression (loss of previously stable functional skills),q-behavioral
-v000165,Adjustment disorder,q-behavioral
-v000166,Obsessive-Compulsive Disorder (OCD),q-behavioral
-v000167,Oppositional defiant disorder,q-behavioral
-v000168,Bipolar/manic depression,q-behavioral
-v000169,Panic attacks,q-behavioral
-v000170,Schizophrenia,q-behavioral
+v000165,Adjustment disorder,q-behavioral,0003265,adjustment disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000166,Obsessive-Compulsive Disorder (OCD),q-behavioral,0000722,Obsessive-compulsive behavior,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000166,Obsessive-Compulsive Disorder (OCD),q-behavioral,0008114,obsessive-compulsive disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000167,Oppositional defiant disorder,q-behavioral,0000495,oppositional defiant disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000167,Oppositional defiant disorder,q-behavioral,0010865,Oppositional defiant disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000168,Bipolar/manic depression,q-behavioral,0004985,bipolar disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000168,Bipolar/manic depression,q-behavioral,0007302,Bipolar affective disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000169,Panic attacks,q-behavioral,0005383,panic disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000169,Panic attacks,q-behavioral,0025269,Panic attack,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000170,Schizophrenia,q-behavioral,0005090,schizophrenia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000170,Schizophrenia,q-behavioral,0100753,Schizophrenia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000171,Addiction,q-behavioral
-v000172,Eating disorder,q-behavioral
-v000173,Intermittent explosive disorder,q-behavioral
-v000174,Suicidal thoughts or plans,q-behavioral
+v000172,Eating disorder,q-behavioral,0005451,eating disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000173,Intermittent explosive disorder,q-behavioral,0001521,intermittent explosive disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000174,Suicidal thoughts or plans,q-behavioral,0031589,Suicidal ideation,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000175,Unsure,q-behavioral
-v000176,Other,q-behavioral
+v000176,Other,q-behavioral,0000708,Behavioral abnormality,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000176,Other,q-behavioral,0002025,psychiatric disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000177,None,q-learning
-v000178,Global developmental delay,q-learning
-v000179,Intellectual disability,q-learning
-v000180,Language delay: difficulty understanding what others are saying as well as those of the same age,q-learning
-v000181,Speech delay: difficulty speaking as clearly as those of the same age,q-learning
-v000182,Mixed receptive and expressive language impairment,q-learning
+v000178,Global developmental delay,q-learning,0001263,Global developmental delay,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000179,Intellectual disability,q-learning,0001071,Intellectual disability,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000179,Intellectual disability,q-learning,0001249,Intellectual disability,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000180,Language delay: difficulty understanding what others are saying as well as those of the same age,q-learning,0001276,expressive language disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000181,Speech delay: difficulty speaking as clearly as those of the same age,q-learning,0000750,Delayed speech and language development,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000182,Mixed receptive and expressive language impairment,q-learning,0001568,mixed receptive-expressive language disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000183,Minimal speech,q-learning
-v000184,Auditory processing disorder (difficulty recognizing and interpreting sounds),q-learning
-v000185,Verbal apraxia/dyspraxia (difficulty saying what he/she intends correctly and consistently),q-learning
+v000184,Auditory processing disorder (difficulty recognizing and interpreting sounds),q-learning,0024422,auditory perceptual disorders,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000185,Verbal apraxia/dyspraxia (difficulty saying what he/she intends correctly and consistently),q-learning,0011098,Speech apraxia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000186,"Visual processing deficits (difficulty seeing differences between colors, shapes, patterns)",q-learning
 v000187,Hearing loss,q-learning
 v000188,Unsure,q-learning
-v000189,Other,q-learning
+v000189,Other,q-learning,0004681,learning disability,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000190,Lives with parents (may include siblings),q-living-situation
 v000191,Lives with sibling,q-living-situation
 v000192,Lives with other family member,q-living-situation
@@ -633,5 +667,11 @@ v000197,Lives in a long-term care facility,q-living-situation
 v000198,Unsure,q-living-situation
 v000199,Other,q-living-situation
 v000200,language_preferred,language
+v000208,race_american_indian,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000209,race_asian,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000214,language_spoken_english,language
 v000215,language_spoken_spanish,language
