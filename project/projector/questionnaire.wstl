@@ -45,27 +45,32 @@ def Condition(study, questionnaire, qcode, qvalue, note) {
                 var verifcode: "1";
             }
         }
-        meta.tag[]: StudyMeta(study);   
 
-        identifier[]: Key_Identifier(study, "Condition", BuildObservationId(study, subject_id, questionnaire.survey_time, qcode, ""));
-        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+        var coding: HarmonizeMapped(qcode, "ihq");
 
-        verificationStatus: HarmonizeAsCoding(verifcode, "ConditionPresent");
-        verificationStatus.text: HarmonizedLocalDisplay(verifcode, "ConditionPresent");
+        if (coding?) {
+            meta.tag[]: StudyMeta(study);   
 
-        category[0].coding[0].system: "http://terminology.hl7.org/CodeSystem/condition-category";
-        category[0].coding[0].code: "encounter-diagnosis";
-        category[0].coding[0].display: "Encounter Diagnosis";
+            identifier[]: Key_Identifier(study, "Condition", BuildObservationId(study, subject_id, questionnaire.survey_time, qcode, ""));
+            subject: Reference_Key_Identifier(study, "Patient", subject_id);
 
-        code.text: HarmonizedLocalDisplay(qcode, "ihq");
-        code.coding[]: HarmonizeMapped(qcode, "ihq");
-        code.coding[]: LocalCodeSystemReference(study.id, "ihq", qcode);
-        note[].text: note;
+            verificationStatus: HarmonizeAsCoding(verifcode, "ConditionPresent");
+            verificationStatus.text: HarmonizedLocalDisplay(verifcode, "ConditionPresent");
 
-        onsetString (if qcode = "q000001"): questionnaire.q000002;
-        onsetString (if qcode = "q000017"): questionnaire.q000019;
-        onsetString (if qcode = "q000020"): questionnaire.q000021;
-        resourceType: "Condition";
+            category[0].coding[0].system: "http://terminology.hl7.org/CodeSystem/condition-category";
+            category[0].coding[0].code: "encounter-diagnosis";
+            category[0].coding[0].display: "Encounter Diagnosis";
+
+            code.text: HarmonizedLocalDisplay(qcode, "ihq");
+            code.coding[]: coding;
+            code.coding[]: LocalCodeSystemReference(study.id, "ihq", qcode);
+            note[].text: note;
+
+            onsetString (if qcode = "q000001"): questionnaire.q000002;
+            onsetString (if qcode = "q000017"): questionnaire.q000019;
+            onsetString (if qcode = "q000020"): questionnaire.q000021;
+            resourceType: "Condition";
+        }
     }
 }
 
@@ -186,21 +191,28 @@ def ComplexObservation(study, questionnaire, qcode, qvalue) {
 // will also result in becoming Conditions (which is not done here)
 //
 def ObservationCheckbox(study, questionnaire, table_name, qcode, answer) {
+    // Clean up the race_ prefix from the data so that it properly matches the data-dictionary
+    var qcoding: answer.code;
+    var codeparts: $StrSplit(answer.code, "_");
+    var qcoding (if $ListLen(codeparts) > 1): codeparts[1];
+
     if ($IsNotNil(answer.value)) {
         var subject_id: questionnaire.patient_id;
         var age_at: questionnaire.age_at_survey_time;
-        var localcs: LocalCodeSystemReference(study.id, qcode, answer.code);
+        var localcs: LocalCodeSystemReference(study.id, qcode, qcoding);
 
         meta.tag[]: StudyMeta(study);
         
         identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, questionnaire.survey_time, qcode, answer.code));
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
         focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, qcode));
-        code.text: HarmonizedLocalDisplay(answer.code, qcode);
-        code.coding[]: HarmonizeMapped(answer.code, qcode);
-        code.coding[]: localcs;
-        
-        valueString: answer.value;
+
+        code.text: HarmonizedLocalDisplay(qcode, table_name);
+        code.coding[]: HarmonizeMapped(qcode, table_name);
+        code.coding[]: LocalCodeSystemReference(study.id, table_name, qcode);
+        valueCodeableConcept.text: HarmonizedLocalDisplay(qcoding, qcode);
+        valueCodeableConcept.coding[]: localcs;
+
         status: "final";
         resourceType: "Observation";
 
@@ -221,7 +233,7 @@ def BasicObservation(study, questionnaire, qcode, qvalue) {
     var subject_id: questionnaire.patient_id;
     var age_at: questionnaire.age_at_survey_time;
     meta.tag[]: StudyMeta(study);
-    
+
     identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, questionnaire.survey_time, qcode, ""));
     subject: Reference_Key_Identifier(study, "Patient", subject_id);
     focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", qcode));
