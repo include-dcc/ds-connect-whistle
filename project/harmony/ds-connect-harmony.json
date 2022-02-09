@@ -5686,6 +5686,17 @@
       "target": "self",
       "element": [
         {
+          "code": "v000006",
+          "display": "No",
+          "target": [
+            {
+              "code": "v000006",
+              "display": "No",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "v000007",
           "display": "Yes, a sibling or twin has Down syndrome",
           "target": [

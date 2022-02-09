@@ -440,6 +440,7 @@ v000002,"Genetic testing in baby after birth (such as chromosome analysis, cytog
 v000003,Physical examination by a physician,q-diagnosis
 v000004,Unsure,q-diagnosis
 v000005,Other,q-diagnosis
+v000006,No,q-fam-mem
 v000007,"Yes, a sibling or twin has Down syndrome",q-fam-mem
 v000008,"Yes, a more distant relative has Down syndrome",q-fam-mem
 v000009,Unsure,q-fam-mem
