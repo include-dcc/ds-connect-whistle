@@ -102,7 +102,7 @@ def AtAtRegistrationObservation(study, subject) {
 
     if (age_at?) {
         meta.tag[]: StudyMeta(study);
-        
+
         identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, "age_at_registration"));
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
         focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "demo", "age_at_registration"));
@@ -117,6 +117,54 @@ def AtAtRegistrationObservation(study, subject) {
     }
 }
 
+def TraitObservation(study, subject, varname, value, tablename) {
+    var subject_id: subject.patient_id;
+
+    meta.tag[]: StudyMeta(study);
+
+    identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, ".", varname));
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, tablename, varname));
+    code.text: HarmonizedLocalDisplay(varname, tablename);
+    code.coding[]: HarmonizeMapped(varname, tablename);
+    code.coding[]: LocalCodeSystemReference(study.id, tablename, varname);
+
+    valueCodeableConcept.coding[]: HarmonizeMapped(value, varname);
+    valueCodeableConcept.text: value;
+    
+    status: "final";
+    resourceType: "Observation";
+
+}
+
+def RaceObservation(study, demo, race) {
+    if (race.value?) {
+        var subject_id: demo.patient_id;
+
+
+        // Clean up the race_ prefix from the data so that it properly matches the data-dictionary
+        var racecoding: race.code;
+        var codeparts: $StrSplit(race.code, "_");
+        var racecoding (if $ListLen(codeparts) > 1): codeparts[1];
+
+        var varname: HarmonizedLocalDisplay(race.code, "race");
+
+        meta.tag[]: StudyMeta(study);
+
+        identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, ".", varname));
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+        focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "demo", "race"));
+        code.text: HarmonizedLocalDisplay(racecoding, "race");
+        code.coding[]: HarmonizeMapped(racecoding, "demo");
+        code.coding[]: LocalCodeSystemReference(study.id, "demo", racecoding);
+
+        valueCodeableConcept.coding[]: HarmonizeMapped(racecoding, "race");
+        valueCodeableConcept.text: $StrCat(race.text);
+        
+        status: "final";
+        resourceType: "Observation";
+    }
+}
 
 // Description: Wrapper for generating Patient records
 //
@@ -127,6 +175,9 @@ def AtAtRegistrationObservation(study, subject) {
 def ProcessParticipant(study, demo) {
     out patient: Participant(study, demo);
     out observation: AtAtRegistrationObservation(study, demo);
+    out observation: TraitObservation(study, demo, "gender", demo.gender, "demo");
+    out observation: RaceObservation(study, demo, demo.race[]);
+    out observation: TraitObservation(study, demo, "ethnicity", demo.ethnicity, "demo");
 }
 
 // Description: Wrapper for generating ResearchSubject records
