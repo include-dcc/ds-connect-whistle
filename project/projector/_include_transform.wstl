@@ -145,6 +145,23 @@ def Transform_DSC_Dataset_Test_Subset(resource) {
     }
 }
 
+// Transform the ds-connect subset of data for test purposes
+def Transform_DSC_Dataset_min(resource) {
+    if resource.study? {
+        // $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
+        // $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
+        if resource.demo? {
+            $this: ProcessParticipant(resource.study, resource.demo[]);
+            // $this: ProcessGroup(resource.study, resource.demo[*]);
+            // $this: ProcessStudy(resource.study);
+            // $this: ProcessResearchSubject(resource.study, resource.demo[]);
+        }        
+        if resource.ihq? {
+            $this: ProcessQuestionnaire(resource.study, resource.ihq[]);
+        }
+    }
+}
+
 // Transform the ds-connect dataset 
 def Transform_DSC_Dataset(resource) {
     if resource.study? {
