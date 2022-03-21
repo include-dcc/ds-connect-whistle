@@ -52,6 +52,7 @@ def Condition(study, questionnaire, qcode, qvalue, note) {
             meta.tag[]: StudyMeta(study);   
 
             identifier[]: Key_Identifier(study, "Condition", BuildObservationId(study, subject_id, questionnaire.survey_time, qcode, ""));
+            identifier[0].use: "official";
             subject: Reference_Key_Identifier(study, "Patient", subject_id);
 
             verificationStatus: HarmonizeAsCoding(verifcode, "ConditionPresent");
@@ -61,7 +62,7 @@ def Condition(study, questionnaire, qcode, qvalue, note) {
             category[0].coding[0].code: "encounter-diagnosis";
             category[0].coding[0].display: "Encounter Diagnosis";
 
-            code.text: HarmonizedLocalDisplay(qcode, "ihq");
+            code.text: qvalue;
             code.coding[]: coding;
             code.coding[]: LocalCodeSystemReference(study.id, "ihq", qcode);
             note[].text: note;
@@ -111,6 +112,7 @@ def ValueBasedCondition(study, questionnaire, varcode, qv) {
         meta.tag[]: StudyMeta(study);
 
         identifier[]: Key_Identifier(study, "Condition", BuildObservationId(study, subject_id, questionnaire.survey_time, varcode, qcode));
+        identifier[0].use: "official";
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
 
         verificationStatus: HarmonizeAsCoding(verifcode, "ConditionPresent");
@@ -169,6 +171,8 @@ def ComplexObservation(study, questionnaire, qcode, qvalue) {
     var age_at: questionnaire.age_at_survey_time;
     meta.tag[]: StudyMeta(study);
     identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, questionnaire.survey_time, qcode, ""));
+    identifier[0].use: "official";
+
     subject: Reference_Key_Identifier(study, "Patient", subject_id);
     focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", qcode));
     code.text: HarmonizedLocalDisplay(qcode, "ihq");
@@ -208,6 +212,7 @@ def ObservationCheckbox(study, questionnaire, table_name, qcode, answer) {
         meta.tag[]: StudyMeta(study);
         
         identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, questionnaire.survey_time, qcode, answer.code));
+        identifier[0].use: "official";
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
         focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, table_name, qcode));
 
@@ -239,6 +244,7 @@ def BasicObservation(study, questionnaire, qcode, qvalue) {
     meta.tag[]: StudyMeta(study);
 
     identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, subject_id, questionnaire.survey_time, qcode, ""));
+    identifier[0].use: "official";
     subject: Reference_Key_Identifier(study, "Patient", subject_id);
     focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", qcode));
     code.text: HarmonizedLocalDisplay(qcode, "ihq");
@@ -248,6 +254,45 @@ def BasicObservation(study, questionnaire, qcode, qvalue) {
     valueCodeableConcept.coding[]: ValueCodeableConcept(study.id, "ihq", qcode, qvalue, qvalue);
     status: "final";
     resourceType: "Observation";
+}
+
+// Definition: Construct basic Observation whose response is a code from a local vocabulary (i.e. categorial value)
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  questionnaire - This is the entire JSON representation of the IHQ form
+//  qcode - The code/question id associated with the observation 
+//  qvalue - list of checkbox objects. Each should have the following fields
+//     - code Is the code associated with the checkbox's definition
+//     - value is the response provided. This is likely "1" or missing
+//  
+def AtAtSurveyObservation(study, questionnaire) {
+    var subject_id: questionnaire.patient_id;
+    var age_at: questionnaire.age_at_survey_time;
+
+    if (age_at?) {
+        meta.tag[]: StudyMeta(study);
+
+        identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, ".", "age_at_survey_time", ".", questionnaire.survey_time));
+        identifier[0].use: "official";
+
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+        focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", "age_at_survey_time"));
+        code.text: HarmonizedLocalDisplay("age_at_survey_time", "ihq");
+        code.coding[]: HarmonizeMapped("age_at_survey_time", "ihq");
+        code.coding[]: LocalCodeSystemReference(study.id, "ihq", "age_at_survey_time");
+        
+        var subref: Reference_Key_Identifier(study, "Patient", subject_id);
+        _valueDateTime.extension[0]: AgeAtExtension(study, subref, age_at, "years");
+        status: "final";
+        resourceType: "Observation";
+    }
+}
+
+def ProcessAgeAtSurveyOnly(study, qst) {
+    if (qst.survey_complete = "1") {
+        out observations: AtAtSurveyObservation(study, qst);
+    }
 }
 
 // Definition: Wrapper to build the IHQ data table as FHIR resources
