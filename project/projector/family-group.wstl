@@ -1,0 +1,94 @@
+// Group to represent a family
+
+// Description: Build the group entry
+// 
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  subjects - array of subjects, each of which should have a patient_id 
+//
+// We don't currently have access to consent details, so this just builds the 
+// entire enrollment for the study. 
+def FamilyGroup(study, subjects, famid) {
+    meta.tag[]: StudyMeta(study);
+
+    identifier[0]: Key_Identifier(study, "Group", $StrCat(study.id, ".", famid));
+    identifier[1]: Key_Identifier(study, "Group/id", famid);
+    identifier[1].use: "official";
+    type: "person";
+    actual: true;
+    var familymembers: subjects[where $.parent_id=famid];
+    member[].entity: Reference_Key_Identifier(study, "Patient", famid);
+    member[]: Reference_Enrollment(study, familymembers[]);
+    quantity: $ListLen(member);
+
+    code.coding[0].system: "http://terminology.hl7.org/CodeSystem/v3-RoleCode";
+    code.coding[0].code: "FAMMEMB";
+    code.coding[0].display: "family member";
+
+    resourceType: "Group";
+}
+
+// Subject is the individual we whose relationship with focus_id we are describing in code
+// so of code=mother, then subject_id is the "mother" of focus_id
+def FamilyRelationshipObservation(study, subject_id, focus_id, code) {
+    var varcode: HarmonizeMapped(code, "FamilyRelationship");
+
+    meta.tag[]: StudyMeta(study);
+    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+
+    identifier[]: Key_Identifier(study, "Observation",  $StrCat(study.id, ".", subject_id, ".", code, ".", focus_id));
+    identifier[0].use: "official";
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    focus[]: Reference_Key_Identifier(study, "Patient", focus_id);
+    code.text: "Family Relationship";
+    code.coding[]: HarmonizeMapped("FAMMEMB", "FamilyRelationship");
+    valueCodeableConcept.coding: varcode;
+    valueCodeableConcept.text: varcode[0].display;
+    
+    status: "final";
+    resourceType: "Observation";
+}
+
+// Definition: Construct basic Observation whose response is a code from a local vocabulary (i.e. categorial value)
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  questionnaire - This is the entire JSON representation of the IHQ form
+//  qcode - The code/question id associated with the observation 
+//  qvalue - list of checkbox objects. Each should have the following fields
+//     - code Is the code associated with the checkbox's definition
+//     - value is the response provided. This is likely "1" or missing
+//  
+def FamilyIdObservation(study, tablename, varname, value) {
+    var varcode: HarmonizeMapped(varname, tablename);
+
+    meta.tag[]: StudyMeta(study);
+    
+    identifier[]: Key_Identifier(study, "Observation",  $StrCat(study.id, ".", tablename, ".", varname, ".", value));
+    identifier[0].use: "official";
+    subject: Reference_Key_Identifier(study, "Group", $StrCat(study.id, ".", value));
+    focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, tablename, varname));
+    code.text: HarmonizedLocalDisplay(varname, tablename);
+    code.coding[]: varcode;
+    code.coding[]: LocalCodeSystemReference(study.id, tablename, varname);
+    valueString: value;
+    
+    status: "final";
+    resourceType: "Observation";
+}
+
+// Description: Wrapper to create the group(s)
+// 
+//  study - This is the full study object created by Whistler
+//  demo - Array of demo objects  
+def ProcessFamilyGroups(study, participants, familyid) {
+    var familymembers: participants[where $.parent_id=familyid];
+    var subjectids: $Unique(familymembers[*].patient_id);
+
+    out family_data: FamilyGroup(study, participants, familyid);
+
+    // For now, since we have no clue what we have, we'll just stick with FAMMEMB for everything
+    out family_data: FamilyRelationshipObservation(study, familyid, subjectids[], "FAMMEMB");
+    out family_data: FamilyRelationshipObservation(study, subjectids[], familyid, "FAMMEMB");
+    out family_data: FamilyIdObservation(study, "ihq", "parent_id", familyid);
+}
