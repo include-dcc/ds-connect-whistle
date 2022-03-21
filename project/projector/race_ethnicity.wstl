@@ -20,12 +20,19 @@
 //   value is the checkbox value itself ("1" or "")
 //
 // We will ignore any race details that are not checked 
-def RaceExtension(race) {
+def RaceOmbs(race) {
     if (race.value = "1") {
         var RaceValueCoding: HarmonizeMappedFirst(race.code, "race");
+        valueCoding : RaceValueCoding;
+        url : "ombCategory";
+    }
+}
+
+def RaceExtension(subject) {
+    var races: RaceOmbs(subject.race[]);
+    if ($ListLen(races) > 0) {
         url: "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race";
-        extension[0].valueCoding : RaceValueCoding;
-        extension[0].url : "ombCategory";
+        extension[]: races;
     }
 }
 // Definition: Add the Race extension if the data is present 
