@@ -1,13 +1,17 @@
-study_id: ds-connect
+study_id: DSC
 study_accession: TBD
-study_title: TBD
+study_title: DS-Connect
 study_desc: TBD
 identifier_prefix: https://include.org/ds-connect/fhir
+url: https://includedcc.org/studies/ds-connect
 output_filename: ds-connect-subset
 id_colname: patient_id
 whistle_src: project/ds-connect-subset.wstl
 code_harmonization_dir: project/harmony
 projector_lib: project/projector
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
 dataset:
   demo: 
     filename: data/ds-connect/updated/dsconnect_demo.csv

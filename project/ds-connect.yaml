@@ -1,13 +1,18 @@
-study_id: ds-connect
+study_id: DSC
 study_accession: 
-study_title: TBD
+study_title: DS-Connect
 study_desc: TBD
 identifier_prefix: https://include.org/ds-connect/fhir
+url: https://includedcc.org/studies/ds-connect
 output_filename: ds-connect
 id_colname: patient_id
 whistle_src: project/ds-connect.wstl
 code_harmonization_dir: project/harmony
 projector_lib: project/projector
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
 dataset:
   demo: 
     filename: data/ds-connect/updated/dsconnect_demo.csv
@@ -25,7 +30,7 @@ dataset:
       consents: ^consent
       language: ^language
   ihq: 
-    filename: data/ds-connect/updated/dsconnect_ihq.csv
+    filename: data/ds-connect/updated/dsconnect_ihq-single-dates.csv
     data_dictionary: 
       filename: data/ds-connect/updated/dd/ds-connect-ihq.csv
       colnames:

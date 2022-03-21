@@ -153,11 +153,16 @@ def Transform_DSC_Dataset_min(resource) {
         if resource.demo? {
             $this: ProcessParticipant(resource.study, resource.demo[]);
             // $this: ProcessGroup(resource.study, resource.demo[*]);
-            // $this: ProcessStudy(resource.study);
+            //$this: ProcessStudy(resource.study);
             // $this: ProcessResearchSubject(resource.study, resource.demo[]);
+
+
         }        
         if resource.ihq? {
-            $this: ProcessQuestionnaire(resource.study, resource.ihq[]);
+            var familyids: $Unique(resource.ihq[*].parent_id);
+            //$this: ProcessFamilyGroups(resource.study, resource.ihq[*], familyids[]);
+            //$this: ProcessAgeAtSurveyOnly(resource.study, resource.ihq[]);
+            //$this: ProcessQuestionnaire(resource.study, resource.ihq[]);
         }
     }
 }
@@ -172,6 +177,9 @@ def Transform_DSC_Dataset(resource) {
             $this: ProcessGroup(resource.study, resource.demo[*]);
             $this: ProcessStudy(resource.study);
             $this: ProcessResearchSubject(resource.study, resource.demo[]);
+
+            var familyids: $Unique(resource.demo[*].parent_id);
+            $this: ProcessFamilyGroups(resource.study, resource.demo[*], familyids[]);
         }        
         if resource.ihq? {
             $this: ProcessQuestionnaire(resource.study, resource.ihq[]);
