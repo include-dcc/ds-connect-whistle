@@ -12,11 +12,22 @@ def Study(study) {
     title: study.title;
     description: study.desc;
     status: "completed"
+    meta.tag[]: StudyMeta(study);
     
     enrollment[0]: Reference_Key_Identifier(study, "Group", study.id);
+    identifier[0].use (if ~study.accession?): "official";
     identifier[0]: Key_Identifier(study, "ResearchStudy", study.id);
     identifier[1].value(if study.accession?): study.id;
     identifier[1].system(if study.accession?): "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=";
+    identifier[1].use (if study.accession?): "official";
+
+    // As per request 2022-03-15, we'll add a couple keywords 
+    keyword[].coding: HarmonizeMapped(study.id, "IncludeProgram");
+    keyword[].coding[].code: study.id;
+    
+    // As per request 2022-03-26, we'll stash the URL for the project's website in relatedArtifact
+    relatedArtifact[0].type: "documentation";
+    relatedArtifact[0].url: study.url;
     resourceType: "ResearchStudy";
 }
 
