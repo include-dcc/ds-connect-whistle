@@ -42,3 +42,5 @@ Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,ConditionP
 Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
 Not tested,Not tested,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
 Unsure,Unsure,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+DSC,DS-Connect,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,https://docs.google.com/spreadsheets/d/1_qbnn1VVlQS0tGprkiJbOhHZFixvs2qAVj5Rrdi2EaU/edit#gid=857513026
+FAMMEMB,Family Member,FamilyRelationship,FAMMEMB,family member,http://terminology.hl7.org/CodeSystem/v3-RoleCode

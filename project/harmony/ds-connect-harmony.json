@@ -3441,71 +3441,16 @@
       ]
     },
     {
-      "source": "q000001",
-      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "source": "https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807",
+      "target": "self",
       "element": [
         {
-          "code": "Complete trisomy 21",
-          "display": "Complete trisomy 21",
+          "code": "Anal stenosis\"",
+          "display": "http://purl.obolibrary.org/obo/hp.owl",
           "target": [
             {
-              "code": "0008608",
-              "display": "Down Syndrome",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Mosaic Translocation Down syndrome",
-          "display": "Mosaic Translocation Down syndrome",
-          "target": [
-            {
-              "code": "0008608",
-              "display": "Down Syndrome",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Mosaic trisomy 21",
-          "display": "Mosaic trisomy 21",
-          "target": [
-            {
-              "code": "0008608",
-              "display": "Down Syndrome",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Not tested",
-          "display": "Not tested",
-          "target": [
-            {
-              "code": "0008608",
-              "display": "Down Syndrome",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Translocation Down syndrome",
-          "display": "Translocation Down syndrome",
-          "target": [
-            {
-              "code": "0008608",
-              "display": "Down Syndrome",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Unsure",
-          "display": "Unsure",
-          "target": [
-            {
-              "code": "0008608",
-              "display": "Down Syndrome",
+              "code": "Anal stenosis\"",
+              "display": "http://purl.obolibrary.org/obo/hp.owl",
               "equivalence": "equivalent"
             }
           ]
@@ -3524,6 +3469,11 @@
               "code": "Complete trisomy 21",
               "display": "Complete trisomy 21",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "Complete trisomy 21",
+              "display": "Complete trisomy 21",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -3535,6 +3485,11 @@
               "code": "Mosaic Translocation Down syndrome",
               "display": "Mosaic Translocation Down syndrome",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "Mosaic Translocation Down syndrome",
+              "display": "Mosaic Translocation Down syndrome",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -3542,6 +3497,11 @@
           "code": "Mosaic trisomy 21",
           "display": "Mosaic trisomy 21",
           "target": [
+            {
+              "code": "Mosaic trisomy 21",
+              "display": "Mosaic trisomy 21",
+              "equivalence": "equivalent"
+            },
             {
               "code": "Mosaic trisomy 21",
               "display": "Mosaic trisomy 21",
@@ -3561,9 +3521,25 @@
           ]
         },
         {
+          "code": "Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies)",
+          "display": "Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies)",
+          "target": [
+            {
+              "code": "Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies)",
+              "display": "Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Translocation Down syndrome",
           "display": "Translocation Down syndrome",
           "target": [
+            {
+              "code": "Translocation Down syndrome",
+              "display": "Translocation Down syndrome",
+              "equivalence": "equivalent"
+            },
             {
               "code": "Translocation Down syndrome",
               "display": "Translocation Down syndrome",
@@ -3578,6 +3554,83 @@
             {
               "code": "Unsure",
               "display": "Unsure",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Unsure",
+              "display": "Unsure",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q000001",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "Complete trisomy 21",
+          "display": "Complete trisomy 21",
+          "target": [
+            {
+              "code": "MONDO:0008608",
+              "display": "Down Syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mosaic Translocation Down syndrome",
+          "display": "Mosaic Translocation Down syndrome",
+          "target": [
+            {
+              "code": "MONDO:0008608",
+              "display": "Down Syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mosaic trisomy 21",
+          "display": "Mosaic trisomy 21",
+          "target": [
+            {
+              "code": "MONDO:0008608",
+              "display": "Down Syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not tested",
+          "display": "Not tested",
+          "target": [
+            {
+              "code": "MONDO:0008608",
+              "display": "Down Syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Translocation Down syndrome",
+          "display": "Translocation Down syndrome",
+          "target": [
+            {
+              "code": "MONDO:0008608",
+              "display": "Down Syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unsure",
+          "display": "Unsure",
+          "target": [
+            {
+              "code": "MONDO:0008608",
+              "display": "Down Syndrome",
               "equivalence": "equivalent"
             }
           ]
@@ -3636,6 +3689,61 @@
     },
     {
       "source": "gender",
+      "target": "self",
+      "element": [
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "gender",
       "target": "http://hl7.org/fhir/administrative-gender",
       "element": [
         {
@@ -3677,56 +3785,6 @@
           "target": [
             {
               "code": "unknown",
-              "display": "Unknown",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "gender",
-      "target": "self",
-      "element": [
-        {
-          "code": "Female",
-          "display": "Female",
-          "target": [
-            {
-              "code": "Female",
-              "display": "Female",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Male",
-          "display": "Male",
-          "target": [
-            {
-              "code": "Male",
-              "display": "Male",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Other",
-          "display": "Other",
-          "target": [
-            {
-              "code": "Other",
-              "display": "Other",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Unknown",
-          "display": "Unknown",
-          "target": [
-            {
-              "code": "Unknown",
               "display": "Unknown",
               "equivalence": "equivalent"
             }
@@ -4116,7 +4174,7 @@
           "display": "Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies)",
           "target": [
             {
-              "code": "0008608",
+              "code": "MONDO:0008608",
               "display": "Down Syndrome",
               "equivalence": "equivalent"
             }
@@ -4722,11 +4780,11 @@
         },
         {
           "code": "q-congen-heart",
-          "display": "Which of the following congenital heart defects have been diagnosed? (Select all that apply.) ",
+          "display": "Which of the following congenital heart defects have been diagnosed? (Select all that apply.)",
           "target": [
             {
               "code": "q-congen-heart",
-              "display": "Which of the following congenital heart defects have been diagnosed? (Select all that apply.) ",
+              "display": "Which of the following congenital heart defects have been diagnosed? (Select all that apply.)",
               "equivalence": "equivalent"
             }
           ]
@@ -4766,11 +4824,11 @@
         },
         {
           "code": "q-gastro",
-          "display": "Which of the following gastrointestinal conditions have been diagnosed? (Select all that apply.) ",
+          "display": "Which of the following gastrointestinal conditions have been diagnosed? (Select all that apply.)",
           "target": [
             {
               "code": "q-gastro",
-              "display": "Which of the following gastrointestinal conditions have been diagnosed? (Select all that apply.) ",
+              "display": "Which of the following gastrointestinal conditions have been diagnosed? (Select all that apply.)",
               "equivalence": "equivalent"
             }
           ]
@@ -4898,11 +4956,11 @@
         },
         {
           "code": "q-vision",
-          "display": "Has the participant ever been diagnosed with any of the following eye or vision conditions? (Select all that apply.) ",
+          "display": "Has the participant ever been diagnosed with any of the following eye or vision conditions? (Select all that apply.)",
           "target": [
             {
               "code": "q-vision",
-              "display": "Has the participant ever been diagnosed with any of the following eye or vision conditions? (Select all that apply.) ",
+              "display": "Has the participant ever been diagnosed with any of the following eye or vision conditions? (Select all that apply.)",
               "equivalence": "equivalent"
             }
           ]
@@ -4911,6 +4969,11 @@
           "code": "q000001",
           "display": "What is the participant's Down syndrome diagnosis?",
           "target": [
+            {
+              "code": "q000001",
+              "display": "What is the participant's Down syndrome diagnosis?",
+              "equivalence": "equivalent"
+            },
             {
               "code": "q000001",
               "display": "What is the participant's Down syndrome diagnosis?",
@@ -4931,22 +4994,22 @@
         },
         {
           "code": "q000003",
-          "display": "Is the participant with Down syndrome still living? ",
+          "display": "Is the participant with Down syndrome still living?",
           "target": [
             {
               "code": "q000003",
-              "display": "Is the participant with Down syndrome still living? ",
+              "display": "Is the participant with Down syndrome still living?",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "q000004",
-          "display": "What was the mother's age in years at the time of the participant's birth? ",
+          "display": "What was the mother's age in years at the time of the participant's birth?",
           "target": [
             {
               "code": "q000004",
-              "display": "What was the mother's age in years at the time of the participant's birth? ",
+              "display": "What was the mother's age in years at the time of the participant's birth?",
               "equivalence": "equivalent"
             }
           ]
@@ -5019,11 +5082,11 @@
         },
         {
           "code": "q000011",
-          "display": "Has the participant ever been diagnosed with a skeletal problem (problems with the bones or joints)? ",
+          "display": "Has the participant ever been diagnosed with a skeletal problem (problems with the bones or joints)?",
           "target": [
             {
               "code": "q000011",
-              "display": "Has the participant ever been diagnosed with a skeletal problem (problems with the bones or joints)? ",
+              "display": "Has the participant ever been diagnosed with a skeletal problem (problems with the bones or joints)?",
               "equivalence": "equivalent"
             }
           ]
@@ -5085,22 +5148,22 @@
         },
         {
           "code": "q000017",
-          "display": "Has the participant ever seen an audiologist for hearing testing? ",
+          "display": "Has the participant ever seen an audiologist for hearing testing?",
           "target": [
             {
               "code": "q000017",
-              "display": "Has the participant ever seen an audiologist for hearing testing? ",
+              "display": "Has the participant ever seen an audiologist for hearing testing?",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "q000018",
-          "display": "How often does the participant have his or her hearing tested?  ",
+          "display": "How often does the participant have his or her hearing tested?",
           "target": [
             {
               "code": "q000018",
-              "display": "How often does the participant have his or her hearing tested?  ",
+              "display": "How often does the participant have his or her hearing tested?",
               "equivalence": "equivalent"
             }
           ]
@@ -5118,11 +5181,11 @@
         },
         {
           "code": "q000020",
-          "display": "Has the participant ever had an eye exam performed by an eye doctor or an ophthalmologist?  ",
+          "display": "Has the participant ever had an eye exam performed by an eye doctor or an ophthalmologist?",
           "target": [
             {
               "code": "q000020",
-              "display": "Has the participant ever had an eye exam performed by an eye doctor or an ophthalmologist?  ",
+              "display": "Has the participant ever had an eye exam performed by an eye doctor or an ophthalmologist?",
               "equivalence": "equivalent"
             }
           ]
@@ -5173,11 +5236,11 @@
         },
         {
           "code": "q000025",
-          "display": "If the participant is 18 years or older, what is the highest grade or level of school the participant has completed or the highest degree the participant has received? ",
+          "display": "If the participant is 18 years or older, what is the highest grade or level of school the participant has completed or the highest degree the participant has received?",
           "target": [
             {
               "code": "q000025",
-              "display": "If the participant is 18 years or older, what is the highest grade or level of school the participant has completed or the highest degree the participant has received? ",
+              "display": "If the participant is 18 years or older, what is the highest grade or level of school the participant has completed or the highest degree the participant has received?",
               "equivalence": "equivalent"
             }
           ]
@@ -5325,7 +5388,7 @@
           "display": "What is the participant's Down syndrome diagnosis?",
           "target": [
             {
-              "code": "0008608",
+              "code": "MONDO:0008608",
               "display": "Down Syndrome",
               "equivalence": "equivalent"
             }
@@ -5560,6 +5623,11 @@
               "code": "v000211",
               "display": "race_pacific_islander",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000211",
+              "display": "race_pacific_islander",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -5681,17 +5749,6 @@
       "target": "self",
       "element": [
         {
-          "code": "v000006",
-          "display": "No",
-          "target": [
-            {
-              "code": "v000006",
-              "display": "No",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
           "code": "v000007",
           "display": "Yes, a sibling or twin has Down syndrome",
           "target": [
@@ -5749,6 +5806,11 @@
               "code": "v000011",
               "display": "Atrial septal defect (ASD)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000011",
+              "display": "Atrial septal defect (ASD)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -5756,6 +5818,11 @@
           "code": "v000012",
           "display": "Ventricular septal defect (VSD)",
           "target": [
+            {
+              "code": "v000012",
+              "display": "Ventricular septal defect (VSD)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000012",
               "display": "Ventricular septal defect (VSD)",
@@ -5771,6 +5838,11 @@
               "code": "v000013",
               "display": "Atrioventricular septal defect (or AV Canal Defect)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000013",
+              "display": "Atrioventricular septal defect (or AV Canal Defect)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -5778,6 +5850,11 @@
           "code": "v000014",
           "display": "Tetralogy of Fallot",
           "target": [
+            {
+              "code": "v000014",
+              "display": "Tetralogy of Fallot",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000014",
               "display": "Tetralogy of Fallot",
@@ -5793,6 +5870,11 @@
               "code": "v000015",
               "display": "Patent Ductus Arteriosus (PDA)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000015",
+              "display": "Patent Ductus Arteriosus (PDA)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -5800,6 +5882,11 @@
           "code": "v000016",
           "display": "Patent Foramen Ovale (PFO)",
           "target": [
+            {
+              "code": "v000016",
+              "display": "Patent Foramen Ovale (PFO)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000016",
               "display": "Patent Foramen Ovale (PFO)",
@@ -5825,6 +5912,177 @@
             {
               "code": "v000018",
               "display": "Other",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "v000018",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-congen-heart",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000011",
+          "display": "Atrial septal defect (ASD)",
+          "target": [
+            {
+              "code": "HP:0001631",
+              "display": "Atrial septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000012",
+          "display": "Ventricular septal defect (VSD)",
+          "target": [
+            {
+              "code": "HP:0001629",
+              "display": "Ventricular septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000013",
+          "display": "Atrioventricular septal defect (or AV Canal Defect)",
+          "target": [
+            {
+              "code": "HP:0006695",
+              "display": "Atrioventricular canal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000014",
+          "display": "Tetralogy of Fallot",
+          "target": [
+            {
+              "code": "HP:0001636",
+              "display": "Tetralogy of Fallot",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000015",
+          "display": "Patent Ductus Arteriosus (PDA)",
+          "target": [
+            {
+              "code": "HP:0001643",
+              "display": "Patent ductus arteriosus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000016",
+          "display": "Patent Foramen Ovale (PFO)",
+          "target": [
+            {
+              "code": "HP:0001655",
+              "display": "Patent foramen ovale",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000018",
+          "display": "Other",
+          "target": [
+            {
+              "code": "HP:0001627",
+              "display": "Abnormal heart morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-congen-heart",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000011",
+          "display": "Atrial septal defect (ASD)",
+          "target": [
+            {
+              "code": "MONDO:0006664",
+              "display": "atrial septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000012",
+          "display": "Ventricular septal defect (VSD)",
+          "target": [
+            {
+              "code": "MONDO:0002070",
+              "display": "ventricular septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000013",
+          "display": "Atrioventricular septal defect (or AV Canal Defect)",
+          "target": [
+            {
+              "code": "MONDO:0020290",
+              "display": "atrioventricular septal defect",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000014",
+          "display": "Tetralogy of Fallot",
+          "target": [
+            {
+              "code": "MONDO:0008542",
+              "display": "tetralogy of fallot",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000015",
+          "display": "Patent Ductus Arteriosus (PDA)",
+          "target": [
+            {
+              "code": "MONDO:0011827",
+              "display": "patent ductus arteriosus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000016",
+          "display": "Patent Foramen Ovale (PFO)",
+          "target": [
+            {
+              "code": "MONDO:0020439",
+              "display": "patent foramen ovale",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000018",
+          "display": "Other",
+          "target": [
+            {
+              "code": "MONDO:0005453",
+              "display": "congenital heart disease",
               "equivalence": "equivalent"
             }
           ]
@@ -5926,6 +6184,11 @@
               "code": "v000026",
               "display": "Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000026",
+              "display": "Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -5933,6 +6196,16 @@
           "code": "v000027",
           "display": "Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe)",
           "target": [
+            {
+              "code": "v000027",
+              "display": "Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe)",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "v000027",
+              "display": "Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000027",
               "display": "Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe)",
@@ -5992,6 +6265,11 @@
               "code": "v000032",
               "display": "Celiac disease (gluten or wheat intolerance)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000032",
+              "display": "Celiac disease (gluten or wheat intolerance)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6014,6 +6292,11 @@
               "code": "v000034",
               "display": "Chronic diarrhea",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000034",
+              "display": "Chronic diarrhea",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6025,6 +6308,11 @@
               "code": "v000035",
               "display": "Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000035",
+              "display": "Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6032,6 +6320,11 @@
           "code": "v000036",
           "display": "Gastroesophageal reflux (GERD acid reflux)",
           "target": [
+            {
+              "code": "v000036",
+              "display": "Gastroesophageal reflux (GERD acid reflux)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000036",
               "display": "Gastroesophageal reflux (GERD acid reflux)",
@@ -6058,6 +6351,11 @@
               "code": "v000038",
               "display": "Peptic ulcers",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000038",
+              "display": "Peptic ulcers",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -6065,6 +6363,11 @@
           "code": "v000039",
           "display": "Gallstones",
           "target": [
+            {
+              "code": "v000039",
+              "display": "Gallstones",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000039",
               "display": "Gallstones",
@@ -6145,12 +6448,270 @@
       "target": "http://purl.obolibrary.org/obo/hp.owl",
       "element": [
         {
-          "code": "v000031",
-          "display": "Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",
+          "code": "v000025",
+          "display": "Duodenal atresia, stenosis or web (blockage or narrowing of intestines beyond the stomach)",
           "target": [
             {
-              "code": "0002835",
-              "display": "Aspiration",
+              "code": "HP:0002246",
+              "display": "Abnormal duodenum morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000026",
+          "display": "Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out)",
+          "target": [
+            {
+              "code": "HP:0002023",
+              "display": "Anal stenosis",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "HP:0002025",
+              "display": "Anal atresia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000027",
+          "display": "Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe)",
+          "target": [
+            {
+              "code": "HP:0002032",
+              "display": "Esophageal atresia",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "HP:0002575",
+              "display": "Tracheoesophageal fistula",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000029",
+          "display": "Chronic constipation",
+          "target": [
+            {
+              "code": "HP:0012450",
+              "display": "Chronic constipation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000032",
+          "display": "Celiac disease (gluten or wheat intolerance)",
+          "target": [
+            {
+              "code": "HP:0002608",
+              "display": "Celiac disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000034",
+          "display": "Chronic diarrhea",
+          "target": [
+            {
+              "code": "HP:0002028",
+              "display": "Chronic diarrhea",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000035",
+          "display": "Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns)",
+          "target": [
+            {
+              "code": "HP:0002021",
+              "display": "Pyloric stenosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000036",
+          "display": "Gastroesophageal reflux (GERD acid reflux)",
+          "target": [
+            {
+              "code": "HP:0002020",
+              "display": "Gastroesophageal reflux",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000038",
+          "display": "Peptic ulcers",
+          "target": [
+            {
+              "code": "HP:0004398",
+              "display": "Peptic ulcer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000039",
+          "display": "Gallstones",
+          "target": [
+            {
+              "code": "HP:0001081",
+              "display": "Cholelithiasis",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-gastro",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000027",
+          "display": "Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe)",
+          "target": [
+            {
+              "code": "MONDO:0001044",
+              "display": "esophageal atresia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000028",
+          "display": "Hirschsprung disease (the gut doesn't move the stool and becomes enlarged inside)",
+          "target": [
+            {
+              "code": "MONDO:0018309",
+              "display": "Hirschsprung disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000032",
+          "display": "Celiac disease (gluten or wheat intolerance)",
+          "target": [
+            {
+              "code": "MONDO:0005130",
+              "display": "celiac disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000034",
+          "display": "Chronic diarrhea",
+          "target": [
+            {
+              "code": "MONDO:0044751",
+              "display": "chronic diarrheal disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000035",
+          "display": "Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns)",
+          "target": [
+            {
+              "code": "MONDO:0001561",
+              "display": "pyloric stenosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000036",
+          "display": "Gastroesophageal reflux (GERD acid reflux)",
+          "target": [
+            {
+              "code": "MONDO:0007186",
+              "display": "gastroesophageal reflux disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000037",
+          "display": "Irritable bowel syndrome (IBS)",
+          "target": [
+            {
+              "code": "MONDO:0005052",
+              "display": "irritable bowel syndrome",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000038",
+          "display": "Peptic ulcers",
+          "target": [
+            {
+              "code": "MONDO:0004247",
+              "display": "peptic ulcer disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000039",
+          "display": "Gallstones",
+          "target": [
+            {
+              "code": "MONDO:0005346",
+              "display": "gallstones",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000040",
+          "display": "Hemorrhoids",
+          "target": [
+            {
+              "code": "MONDO:0004872",
+              "display": "hemorrhoid",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000041",
+          "display": "Diverticulitis or diverticulosis",
+          "target": [
+            {
+              "code": "MONDO:0004235",
+              "display": "diverticulitis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000042",
+          "display": "Colorectal carcinoma (cancer of the bowel)",
+          "target": [
+            {
+              "code": "MONDO:0024331",
+              "display": "colorectal carcinoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000043",
+          "display": "Inflammatory bowel disease (Crohn's disease or ulcerative colitis)",
+          "target": [
+            {
+              "code": "MONDO:0005265",
+              "display": "inflammatory bowel disease",
               "equivalence": "equivalent"
             }
           ]
@@ -6248,17 +6809,6 @@
               "equivalence": "equivalent"
             }
           ]
-        },
-        {
-          "code": "v000054",
-          "display": "No",
-          "target": [
-            {
-              "code": "v000054",
-              "display": "No",
-              "equivalence": "equivalent"
-            }
-          ]
         }
       ]
     },
@@ -6271,7 +6821,7 @@
           "display": "Alopecia areata (loss of hair on scalp at a young age)",
           "target": [
             {
-              "code": "0002232",
+              "code": "HP:0002232",
               "display": "Patchy alopecia",
               "equivalence": "equivalent"
             }
@@ -6282,7 +6832,7 @@
           "display": "Folliculitis (red rash where the hair comes out of the skin)",
           "target": [
             {
-              "code": "0025084",
+              "code": "HP:0025084",
               "display": "Folliculitis",
               "equivalence": "equivalent"
             }
@@ -6293,7 +6843,7 @@
           "display": "Vitiligo (white patches of skin without any pigment)",
           "target": [
             {
-              "code": "0001045",
+              "code": "HP:0001045",
               "display": "Vitiligo",
               "equivalence": "equivalent"
             }
@@ -6304,7 +6854,7 @@
           "display": "Other skin problems",
           "target": [
             {
-              "code": "0000951",
+              "code": "HP:0000951",
               "display": "Abnormality of the skin",
               "equivalence": "equivalent"
             }
@@ -6435,7 +6985,7 @@
           "display": "Alopecia areata (loss of hair on scalp at a young age)",
           "target": [
             {
-              "code": "0005340",
+              "code": "MONDO:0005340",
               "display": "alopecia areata",
               "equivalence": "equivalent"
             }
@@ -6446,7 +6996,7 @@
           "display": "Folliculitis (red rash where the hair comes out of the skin)",
           "target": [
             {
-              "code": "0006552",
+              "code": "MONDO:0006552",
               "display": "folliculitis",
               "equivalence": "equivalent"
             }
@@ -6457,7 +7007,7 @@
           "display": "Vitiligo (white patches of skin without any pigment)",
           "target": [
             {
-              "code": "0008661",
+              "code": "MONDO:0008661",
               "display": "vitiligo",
               "equivalence": "equivalent"
             }
@@ -6468,7 +7018,7 @@
           "display": "Other skin problems",
           "target": [
             {
-              "code": "0005093",
+              "code": "MONDO:0005093",
               "display": "skin disease",
               "equivalence": "equivalent"
             }
@@ -6480,17 +7030,6 @@
       "source": "q-neurologic",
       "target": "self",
       "element": [
-        {
-          "code": "v000063",
-          "display": "No",
-          "target": [
-            {
-              "code": "v000063",
-              "display": "No",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
         {
           "code": "v000064",
           "display": "Regression or loss of previously attained skills (speech-language, social, self-help or motor skills)",
@@ -6594,7 +7133,7 @@
           "display": "Cerebral palsy",
           "target": [
             {
-              "code": "0006497",
+              "code": "MONDO:0006497",
               "display": "cerebral palsy",
               "equivalence": "equivalent"
             }
@@ -6605,7 +7144,7 @@
           "display": "Stroke",
           "target": [
             {
-              "code": "0005098",
+              "code": "MONDO:0005098",
               "display": "stroke disorder",
               "equivalence": "equivalent"
             }
@@ -6616,7 +7155,7 @@
           "display": "Other",
           "target": [
             {
-              "code": "0005071",
+              "code": "MONDO:0005071",
               "display": "nervous system disorder",
               "equivalence": "equivalent"
             }
@@ -6633,7 +7172,7 @@
           "display": "Cerebral palsy",
           "target": [
             {
-              "code": "0100021",
+              "code": "HP:0100021",
               "display": "Cerebral palsy",
               "equivalence": "equivalent"
             }
@@ -6644,7 +7183,7 @@
           "display": "Stroke",
           "target": [
             {
-              "code": "0001297",
+              "code": "HP:0001297",
               "display": "Stroke",
               "equivalence": "equivalent"
             }
@@ -6655,7 +7194,7 @@
           "display": "Brain malformation",
           "target": [
             {
-              "code": "0012443",
+              "code": "HP:0012443",
               "display": "Abnormality of brain morphology",
               "equivalence": "equivalent"
             }
@@ -6666,7 +7205,7 @@
           "display": "Other",
           "target": [
             {
-              "code": "0000707",
+              "code": "HP:0000707",
               "display": "Abnormality of the nervous system",
               "equivalence": "equivalent"
             }
@@ -6824,7 +7363,7 @@
           "display": "Sleep apnea",
           "target": [
             {
-              "code": "0005296",
+              "code": "MONDO:0005296",
               "display": "sleep apnea syndrome",
               "equivalence": "equivalent"
             }
@@ -6835,7 +7374,7 @@
           "display": "Sleep-disordered breathing",
           "target": [
             {
-              "code": "0005296",
+              "code": "MONDO:0005296",
               "display": "sleep apnea syndrome",
               "equivalence": "equivalent"
             }
@@ -6846,7 +7385,7 @@
           "display": "Narcolepsy",
           "target": [
             {
-              "code": "0021107",
+              "code": "MONDO:0021107",
               "display": "narcolepsy",
               "equivalence": "equivalent"
             }
@@ -6857,7 +7396,7 @@
           "display": "Restless legs syndrome",
           "target": [
             {
-              "code": "0005391",
+              "code": "MONDO:0005391",
               "display": "restless legs syndrome",
               "equivalence": "equivalent"
             }
@@ -6868,7 +7407,7 @@
           "display": "Insomnia (difficulty falling asleep or staying asleep)",
           "target": [
             {
-              "code": "0013600",
+              "code": "MONDO:0013600",
               "display": "Insomnia",
               "equivalence": "equivalent"
             }
@@ -6885,7 +7424,7 @@
           "display": "Sleep apnea",
           "target": [
             {
-              "code": "0010535",
+              "code": "HP:0010535",
               "display": "Sleep apnea",
               "equivalence": "equivalent"
             }
@@ -6896,7 +7435,7 @@
           "display": "Sleep-disordered breathing",
           "target": [
             {
-              "code": "0010535",
+              "code": "HP:0010535",
               "display": "Sleep apnea",
               "equivalence": "equivalent"
             }
@@ -6907,7 +7446,7 @@
           "display": "Snoring",
           "target": [
             {
-              "code": "0025267",
+              "code": "HP:0025267",
               "display": "Snoring",
               "equivalence": "equivalent"
             }
@@ -6918,7 +7457,7 @@
           "display": "Narcolepsy",
           "target": [
             {
-              "code": "0030050",
+              "code": "HP:0030050",
               "display": "Narcolepsy",
               "equivalence": "equivalent"
             }
@@ -6929,7 +7468,7 @@
           "display": "Restless legs syndrome",
           "target": [
             {
-              "code": "0012452",
+              "code": "HP:0012452",
               "display": "Restless legs",
               "equivalence": "equivalent"
             }
@@ -6940,7 +7479,7 @@
           "display": "Excessive daytime sleepiness",
           "target": [
             {
-              "code": "0001262",
+              "code": "HP:0001262",
               "display": "Excessive daytime somnolence",
               "equivalence": "equivalent"
             }
@@ -6951,7 +7490,7 @@
           "display": "Insomnia (difficulty falling asleep or staying asleep)",
           "target": [
             {
-              "code": "0100785",
+              "code": "HP:0100785",
               "display": "Insomnia",
               "equivalence": "equivalent"
             }
@@ -7098,7 +7637,7 @@
           "display": "Atlanto-axial instability or (neck spine is weak or unstable)",
           "target": [
             {
-              "code": "0003467",
+              "code": "HP:0003467",
               "display": "Atlantoaxial instability",
               "equivalence": "equivalent"
             }
@@ -7109,7 +7648,7 @@
           "display": "Cervical spine degeneration (pain or numbness in the neck or extremities from weakness in the neck bones)",
           "target": [
             {
-              "code": "0008480",
+              "code": "HP:0008480",
               "display": "Cervical spondylosis",
               "equivalence": "equivalent"
             }
@@ -7120,7 +7659,7 @@
           "display": "Osteopenia (low bone mineral density)",
           "target": [
             {
-              "code": "0000938",
+              "code": "HP:0000938",
               "display": "Osteopenia",
               "equivalence": "equivalent"
             }
@@ -7131,7 +7670,7 @@
           "display": "Osteoporosis (weak, brittle bones that are easy to break)",
           "target": [
             {
-              "code": "0000939",
+              "code": "HP:0000939",
               "display": "Osteoporosis",
               "equivalence": "equivalent"
             }
@@ -7142,7 +7681,7 @@
           "display": "Fractures (broken bones)",
           "target": [
             {
-              "code": "0020110",
+              "code": "HP:0020110",
               "display": "Bone fracture",
               "equivalence": "equivalent"
             }
@@ -7153,13 +7692,13 @@
           "display": "Arthritis",
           "target": [
             {
-              "code": "0001369",
-              "display": "Arthritis; Arthropathy",
+              "code": "HP:0001369",
+              "display": "Arthritis",
               "equivalence": "equivalent"
             },
             {
-              "code": "0003040",
-              "display": "Arthritis; Arthropathy",
+              "code": "HP:0003040",
+              "display": "Arthropathy",
               "equivalence": "equivalent"
             }
           ]
@@ -7169,7 +7708,7 @@
           "display": "Other",
           "target": [
             {
-              "code": "0033127",
+              "code": "HP:0033127",
               "display": "Abnormality of the musculoskeletal system",
               "equivalence": "equivalent"
             }
@@ -7186,7 +7725,7 @@
           "display": "Osteoporosis (weak, brittle bones that are easy to break)",
           "target": [
             {
-              "code": "0005298",
+              "code": "MONDO:0005298",
               "display": "osteoporosis",
               "equivalence": "equivalent"
             }
@@ -7197,7 +7736,7 @@
           "display": "Fractures (broken bones)",
           "target": [
             {
-              "code": "0005315",
+              "code": "MONDO:0005315",
               "display": "bone fracture",
               "equivalence": "equivalent"
             }
@@ -7208,7 +7747,7 @@
           "display": "Arthritis",
           "target": [
             {
-              "code": "0006816",
+              "code": "MONDO:0006816",
               "display": "arthropathy",
               "equivalence": "equivalent"
             }
@@ -7219,7 +7758,7 @@
           "display": "Other",
           "target": [
             {
-              "code": "0002081",
+              "code": "MONDO:0002081",
               "display": "musculoskeletal system disease",
               "equivalence": "equivalent"
             }
@@ -7357,7 +7896,7 @@
           "display": "Diagnosed with breast cancer",
           "target": [
             {
-              "code": "0007254",
+              "code": "MONDO:0007254",
               "display": "breast cancer",
               "equivalence": "equivalent"
             }
@@ -7368,7 +7907,7 @@
           "display": "Diagnosed with cervical cancer (for females)",
           "target": [
             {
-              "code": "0002974",
+              "code": "MONDO:0002974",
               "display": "cervical cancer",
               "equivalence": "equivalent"
             }
@@ -7379,7 +7918,7 @@
           "display": "Diagnosed with ovarian cancer (for females)",
           "target": [
             {
-              "code": "0008170",
+              "code": "MONDO:0008170",
               "display": "ovarian cancer",
               "equivalence": "equivalent"
             }
@@ -7390,7 +7929,7 @@
           "display": "Diagnosed with testicular cancer (for males)",
           "target": [
             {
-              "code": "0005447",
+              "code": "MONDO:0005447",
               "display": "testicular cancer",
               "equivalence": "equivalent"
             }
@@ -7401,7 +7940,7 @@
           "display": "Diagnosed with prostate cancer (for males)",
           "target": [
             {
-              "code": "0008315",
+              "code": "MONDO:0008315",
               "display": "prostate cancer",
               "equivalence": "equivalent"
             }
@@ -7412,7 +7951,7 @@
           "display": "Diagnosed with cancer other than leukemia during childhood",
           "target": [
             {
-              "code": "0006517",
+              "code": "MONDO:0006517",
               "display": "childhood malignant neoplasm",
               "equivalence": "equivalent"
             }
@@ -7429,7 +7968,7 @@
           "display": "Diagnosed with cancer other than leukemia during childhood",
           "target": [
             {
-              "code": "0002664",
+              "code": "HP:0002664",
               "display": "Neoplasm",
               "equivalence": "equivalent"
             }
@@ -7566,7 +8105,7 @@
           "display": "Hypothyroidism (low thyroid function) high TSH, low T4 levels",
           "target": [
             {
-              "code": "0000821",
+              "code": "HP:0000821",
               "display": "Hypothyroidism",
               "equivalence": "equivalent"
             }
@@ -7577,7 +8116,7 @@
           "display": "Subclinical or compensated hypothyroidism (hyperthyrotropinemia) high TSH, normal T4 levels",
           "target": [
             {
-              "code": "0008223",
+              "code": "HP:0008223",
               "display": "Compensated hypothyroidism",
               "equivalence": "equivalent"
             }
@@ -7588,7 +8127,7 @@
           "display": "Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4)",
           "target": [
             {
-              "code": "0000872",
+              "code": "HP:0000872",
               "display": "Hashimoto thyroiditis",
               "equivalence": "equivalent"
             }
@@ -7599,7 +8138,7 @@
           "display": "Other",
           "target": [
             {
-              "code": "0000820",
+              "code": "HP:0000820",
               "display": "Abnormality of the thyroid gland",
               "equivalence": "equivalent"
             }
@@ -7616,7 +8155,7 @@
           "display": "Hypothyroidism (low thyroid function) high TSH, low T4 levels",
           "target": [
             {
-              "code": "0005420",
+              "code": "MONDO:0005420",
               "display": "hypothyroidism",
               "equivalence": "equivalent"
             }
@@ -7627,7 +8166,7 @@
           "display": "Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4)",
           "target": [
             {
-              "code": "0007699",
+              "code": "MONDO:0007699",
               "display": "Hashimoto thyroiditis",
               "equivalence": "equivalent"
             }
@@ -7638,7 +8177,7 @@
           "display": "Other",
           "target": [
             {
-              "code": "0003240",
+              "code": "MONDO:0003240",
               "display": "thyroid gland disease",
               "equivalence": "equivalent"
             }
@@ -7861,7 +8400,7 @@
           "display": "Calcium deficiency",
           "target": [
             {
-              "code": "0002901",
+              "code": "HP:0002901",
               "display": "Hypocalcemia",
               "equivalence": "equivalent"
             }
@@ -7872,7 +8411,7 @@
           "display": "Obesity",
           "target": [
             {
-              "code": "0001513",
+              "code": "HP:0001513",
               "display": "Obesity",
               "equivalence": "equivalent"
             }
@@ -7883,7 +8422,7 @@
           "display": "Delayed/late puberty",
           "target": [
             {
-              "code": "0000823",
+              "code": "HP:0000823",
               "display": "Delayed puberty",
               "equivalence": "equivalent"
             }
@@ -7894,7 +8433,7 @@
           "display": "Growth hormone deficiency",
           "target": [
             {
-              "code": "0000824",
+              "code": "HP:0000824",
               "display": "Decreased response to growth hormone stimuation test",
               "equivalence": "equivalent"
             }
@@ -7905,7 +8444,7 @@
           "display": "Hypoglycemia (low blood sugar)",
           "target": [
             {
-              "code": "0001943",
+              "code": "HP:0001943",
               "display": "Hypoglycemia",
               "equivalence": "equivalent"
             }
@@ -7916,7 +8455,7 @@
           "display": "Precocious/early puberty",
           "target": [
             {
-              "code": "0000826",
+              "code": "HP:0000826",
               "display": "Precocious puberty",
               "equivalence": "equivalent"
             }
@@ -7927,7 +8466,7 @@
           "display": "Vitamin D deficiency",
           "target": [
             {
-              "code": "0100512",
+              "code": "HP:0100512",
               "display": "Low levels of vitamin D",
               "equivalence": "equivalent"
             }
@@ -7938,7 +8477,7 @@
           "display": "Systemic Lupus Erythematosus (SLE) or other autoimmune disease",
           "target": [
             {
-              "code": "0002725",
+              "code": "HP:0002725",
               "display": "Systemic lupus erythematosus",
               "equivalence": "equivalent"
             }
@@ -7949,12 +8488,12 @@
           "display": "Other",
           "target": [
             {
-              "code": "0000818",
+              "code": "HP:0000818",
               "display": "Abnormality of the endocrine system",
               "equivalence": "equivalent"
             },
             {
-              "code": "0002960",
+              "code": "HP:0002960",
               "display": "Autoimmunity",
               "equivalence": "equivalent"
             }
@@ -7971,7 +8510,7 @@
           "display": "Obesity",
           "target": [
             {
-              "code": "0011122",
+              "code": "MONDO:0011122",
               "display": "obesity disorder",
               "equivalence": "equivalent"
             }
@@ -7982,7 +8521,7 @@
           "display": "Hypoglycemia (low blood sugar)",
           "target": [
             {
-              "code": "0004946",
+              "code": "MONDO:0004946",
               "display": "hypoglycemia",
               "equivalence": "equivalent"
             }
@@ -7993,7 +8532,7 @@
           "display": "Cushing's disease",
           "target": [
             {
-              "code": "0009050",
+              "code": "MONDO:0009050",
               "display": "Cushing disease due to pituitary adenoma",
               "equivalence": "equivalent"
             }
@@ -8004,7 +8543,7 @@
           "display": "Vitamin D deficiency",
           "target": [
             {
-              "code": "0100471",
+              "code": "MONDO:0100471",
               "display": "vitamin D deficiency",
               "equivalence": "equivalent"
             }
@@ -8015,7 +8554,7 @@
           "display": "Systemic Lupus Erythematosus (SLE) or other autoimmune disease",
           "target": [
             {
-              "code": "0007915",
+              "code": "MONDO:0007915",
               "display": "systemic lupus erythematosus",
               "equivalence": "equivalent"
             }
@@ -8026,12 +8565,12 @@
           "display": "Other",
           "target": [
             {
-              "code": "0005151",
+              "code": "MONDO:0005151",
               "display": "endocrine system disease",
               "equivalence": "equivalent"
             },
             {
-              "code": "0007179",
+              "code": "MONDO:0007179",
               "display": "autoimmune disease",
               "equivalence": "equivalent"
             }
@@ -8261,6 +8800,11 @@
               "code": "v000142",
               "display": "Cataract",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000142",
+              "display": "Cataract",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -8268,6 +8812,11 @@
           "code": "v000143",
           "display": "Strabismus (eye turns in or out)",
           "target": [
+            {
+              "code": "v000143",
+              "display": "Strabismus (eye turns in or out)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000143",
               "display": "Strabismus (eye turns in or out)",
@@ -8283,6 +8832,11 @@
               "code": "v000144",
               "display": "Amblyopia (lazy eye)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000144",
+              "display": "Amblyopia (lazy eye)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -8290,6 +8844,11 @@
           "code": "v000145",
           "display": "Nearsighted (myopia)",
           "target": [
+            {
+              "code": "v000145",
+              "display": "Nearsighted (myopia)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000145",
               "display": "Nearsighted (myopia)",
@@ -8305,6 +8864,11 @@
               "code": "v000146",
               "display": "Farsighted (hyperopia)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000146",
+              "display": "Farsighted (hyperopia)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -8316,6 +8880,11 @@
               "code": "v000147",
               "display": "Astigmatism (blurry vision)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000147",
+              "display": "Astigmatism (blurry vision)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -8323,6 +8892,11 @@
           "code": "v000148",
           "display": "Ptosis (droopy eyelid)",
           "target": [
+            {
+              "code": "v000148",
+              "display": "Ptosis (droopy eyelid)",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000148",
               "display": "Ptosis (droopy eyelid)",
@@ -8349,6 +8923,11 @@
               "code": "v000150",
               "display": "Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision)",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000150",
+              "display": "Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision)",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -8371,6 +8950,11 @@
               "code": "v000152",
               "display": "Blindness",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000152",
+              "display": "Blindness",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -8382,6 +8966,11 @@
               "code": "v000153",
               "display": "Glaucoma",
               "equivalence": "equivalent"
+            },
+            {
+              "code": "v000153",
+              "display": "Glaucoma",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -8389,6 +8978,11 @@
           "code": "v000154",
           "display": "Retinal detachment",
           "target": [
+            {
+              "code": "v000154",
+              "display": "Retinal detachment",
+              "equivalence": "equivalent"
+            },
             {
               "code": "v000154",
               "display": "Retinal detachment",
@@ -8425,6 +9019,309 @@
             {
               "code": "v000157",
               "display": "Other",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "v000157",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-vision",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
+      "element": [
+        {
+          "code": "v000142",
+          "display": "Cataract",
+          "target": [
+            {
+              "code": "HP:0000518",
+              "display": "Cataract",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000143",
+          "display": "Strabismus (eye turns in or out)",
+          "target": [
+            {
+              "code": "HP:0000486",
+              "display": "Strabismus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000144",
+          "display": "Amblyopia (lazy eye)",
+          "target": [
+            {
+              "code": "HP:0000646",
+              "display": "Amblyopia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000145",
+          "display": "Nearsighted (myopia)",
+          "target": [
+            {
+              "code": "HP:0000545",
+              "display": "Myopia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000146",
+          "display": "Farsighted (hyperopia)",
+          "target": [
+            {
+              "code": "HP:0000540",
+              "display": "Hypermetropia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000147",
+          "display": "Astigmatism (blurry vision)",
+          "target": [
+            {
+              "code": "HP:0000483",
+              "display": "Astigmatism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000148",
+          "display": "Ptosis (droopy eyelid)",
+          "target": [
+            {
+              "code": "HP:0000508",
+              "display": "Ptosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000149",
+          "display": "Lacrimal duct stenosis (blockage of tear duct)",
+          "target": [
+            {
+              "code": "HP:0000579",
+              "display": "Nasolacrimal duct obstruction",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000150",
+          "display": "Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision)",
+          "target": [
+            {
+              "code": "HP:0000563",
+              "display": "Keratoconus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000152",
+          "display": "Blindness",
+          "target": [
+            {
+              "code": "HP:0000618",
+              "display": "Blindness",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000153",
+          "display": "Glaucoma",
+          "target": [
+            {
+              "code": "HP:0000501",
+              "display": "Glaucoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000154",
+          "display": "Retinal detachment",
+          "target": [
+            {
+              "code": "HP:0000541",
+              "display": "Retinal detachment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000157",
+          "display": "Other",
+          "target": [
+            {
+              "code": "HP:0000478",
+              "display": "Abnormality of the eye",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "q-vision",
+      "target": "http://purl.obolibrary.org/obo/mondo.owl",
+      "element": [
+        {
+          "code": "v000142",
+          "display": "Cataract",
+          "target": [
+            {
+              "code": "MONDO:0005129",
+              "display": "cataract (disease)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000143",
+          "display": "Strabismus (eye turns in or out)",
+          "target": [
+            {
+              "code": "MONDO:0003432",
+              "display": "strabismus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000144",
+          "display": "Amblyopia (lazy eye)",
+          "target": [
+            {
+              "code": "MONDO:0001020",
+              "display": "amblyopia (disease)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000145",
+          "display": "Nearsighted (myopia)",
+          "target": [
+            {
+              "code": "MONDO:0001384",
+              "display": "myopia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000146",
+          "display": "Farsighted (hyperopia)",
+          "target": [
+            {
+              "code": "MONDO:0004891",
+              "display": "hyperopia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000147",
+          "display": "Astigmatism (blurry vision)",
+          "target": [
+            {
+              "code": "MONDO:0011284",
+              "display": "astigmatism (disease)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000148",
+          "display": "Ptosis (droopy eyelid)",
+          "target": [
+            {
+              "code": "MONDO:0000728",
+              "display": "ptosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000150",
+          "display": "Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision)",
+          "target": [
+            {
+              "code": "MONDO:0015486",
+              "display": "keratoconus (disease)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000152",
+          "display": "Blindness",
+          "target": [
+            {
+              "code": "MONDO:0001941",
+              "display": "blindness (disorder)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000153",
+          "display": "Glaucoma",
+          "target": [
+            {
+              "code": "MONDO:0005041",
+              "display": "glaucoma (disease)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000154",
+          "display": "Retinal detachment",
+          "target": [
+            {
+              "code": "MONDO:0008375",
+              "display": "retinal detachment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000155",
+          "display": "Presbyopia (\"old eyes\" requiring magnifying lenses or reading glasses)",
+          "target": [
+            {
+              "code": "MONDO:0001330",
+              "display": "presbyopia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "v000157",
+          "display": "Other",
+          "target": [
+            {
+              "code": "MONDO:0024458",
+              "display": "disease of visual system",
               "equivalence": "equivalent"
             }
           ]
@@ -8705,7 +9602,7 @@
           "display": "Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD)",
           "target": [
             {
-              "code": "0007018",
+              "code": "HP:0007018",
               "display": "Attention deficit hyperactivity disorder",
               "equivalence": "equivalent"
             }
@@ -8716,7 +9613,7 @@
           "display": "Autism or Autism Spectrum Disorder (ASD)",
           "target": [
             {
-              "code": "0000717",
+              "code": "HP:0000717",
               "display": "Autism",
               "equivalence": "equivalent"
             }
@@ -8727,7 +9624,7 @@
           "display": "Anxiety disorder",
           "target": [
             {
-              "code": "0000739",
+              "code": "HP:0000739",
               "display": "Anxiety",
               "equivalence": "equivalent"
             }
@@ -8738,7 +9635,7 @@
           "display": "Depression",
           "target": [
             {
-              "code": "0000716",
+              "code": "HP:0000716",
               "display": "Depression",
               "equivalence": "equivalent"
             }
@@ -8749,7 +9646,7 @@
           "display": "Obsessive-Compulsive Disorder (OCD)",
           "target": [
             {
-              "code": "0000722",
+              "code": "HP:0000722",
               "display": "Obsessive-compulsive behavior",
               "equivalence": "equivalent"
             }
@@ -8760,7 +9657,7 @@
           "display": "Oppositional defiant disorder",
           "target": [
             {
-              "code": "0010865",
+              "code": "HP:0010865",
               "display": "Oppositional defiant disorder",
               "equivalence": "equivalent"
             }
@@ -8771,7 +9668,7 @@
           "display": "Bipolar/manic depression",
           "target": [
             {
-              "code": "0007302",
+              "code": "HP:0007302",
               "display": "Bipolar affective disorder",
               "equivalence": "equivalent"
             }
@@ -8782,7 +9679,7 @@
           "display": "Panic attacks",
           "target": [
             {
-              "code": "0025269",
+              "code": "HP:0025269",
               "display": "Panic attack",
               "equivalence": "equivalent"
             }
@@ -8793,7 +9690,7 @@
           "display": "Schizophrenia",
           "target": [
             {
-              "code": "0100753",
+              "code": "HP:0100753",
               "display": "Schizophrenia",
               "equivalence": "equivalent"
             }
@@ -8804,7 +9701,7 @@
           "display": "Suicidal thoughts or plans",
           "target": [
             {
-              "code": "0031589",
+              "code": "HP:0031589",
               "display": "Suicidal ideation",
               "equivalence": "equivalent"
             }
@@ -8815,7 +9712,7 @@
           "display": "Other",
           "target": [
             {
-              "code": "0000708",
+              "code": "HP:0000708",
               "display": "Behavioral abnormality",
               "equivalence": "equivalent"
             }
@@ -8832,7 +9729,7 @@
           "display": "Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD)",
           "target": [
             {
-              "code": "0007743",
+              "code": "MONDO:0007743",
               "display": "attention deficit-hyperactivity disorder",
               "equivalence": "equivalent"
             }
@@ -8843,7 +9740,7 @@
           "display": "Autism or Autism Spectrum Disorder (ASD)",
           "target": [
             {
-              "code": "0005260",
+              "code": "MONDO:0005260",
               "display": "autism",
               "equivalence": "equivalent"
             }
@@ -8854,7 +9751,7 @@
           "display": "Anxiety disorder",
           "target": [
             {
-              "code": "0005618",
+              "code": "MONDO:0005618",
               "display": "anxiety disorder",
               "equivalence": "equivalent"
             }
@@ -8865,7 +9762,7 @@
           "display": "Depression",
           "target": [
             {
-              "code": "0002050",
+              "code": "MONDO:0002050",
               "display": "depressive disorder",
               "equivalence": "equivalent"
             }
@@ -8876,7 +9773,7 @@
           "display": "Conduct or disruptive behavior disorder",
           "target": [
             {
-              "code": "0005352",
+              "code": "MONDO:0005352",
               "display": "conduct disorder",
               "equivalence": "equivalent"
             }
@@ -8887,7 +9784,7 @@
           "display": "Adjustment disorder",
           "target": [
             {
-              "code": "0003265",
+              "code": "MONDO:0003265",
               "display": "adjustment disorder",
               "equivalence": "equivalent"
             }
@@ -8898,7 +9795,7 @@
           "display": "Obsessive-Compulsive Disorder (OCD)",
           "target": [
             {
-              "code": "0008114",
+              "code": "MONDO:0008114",
               "display": "obsessive-compulsive disorder",
               "equivalence": "equivalent"
             }
@@ -8909,7 +9806,7 @@
           "display": "Oppositional defiant disorder",
           "target": [
             {
-              "code": "0000495",
+              "code": "MONDO:0000495",
               "display": "oppositional defiant disorder",
               "equivalence": "equivalent"
             }
@@ -8920,7 +9817,7 @@
           "display": "Bipolar/manic depression",
           "target": [
             {
-              "code": "0004985",
+              "code": "MONDO:0004985",
               "display": "bipolar disorder",
               "equivalence": "equivalent"
             }
@@ -8931,7 +9828,7 @@
           "display": "Panic attacks",
           "target": [
             {
-              "code": "0005383",
+              "code": "MONDO:0005383",
               "display": "panic disorder",
               "equivalence": "equivalent"
             }
@@ -8942,7 +9839,7 @@
           "display": "Schizophrenia",
           "target": [
             {
-              "code": "0005090",
+              "code": "MONDO:0005090",
               "display": "schizophrenia",
               "equivalence": "equivalent"
             }
@@ -8953,7 +9850,7 @@
           "display": "Eating disorder",
           "target": [
             {
-              "code": "0005451",
+              "code": "MONDO:0005451",
               "display": "eating disorder",
               "equivalence": "equivalent"
             }
@@ -8964,7 +9861,7 @@
           "display": "Intermittent explosive disorder",
           "target": [
             {
-              "code": "0001521",
+              "code": "MONDO:0001521",
               "display": "intermittent explosive disorder",
               "equivalence": "equivalent"
             }
@@ -8975,7 +9872,7 @@
           "display": "Other",
           "target": [
             {
-              "code": "0002025",
+              "code": "MONDO:0002025",
               "display": "psychiatric disorder",
               "equivalence": "equivalent"
             }
@@ -9146,7 +10043,7 @@
           "display": "Global developmental delay",
           "target": [
             {
-              "code": "0001263",
+              "code": "HP:0001263",
               "display": "Global developmental delay",
               "equivalence": "equivalent"
             }
@@ -9157,7 +10054,7 @@
           "display": "Intellectual disability",
           "target": [
             {
-              "code": "0001249",
+              "code": "HP:0001249",
               "display": "Intellectual disability",
               "equivalence": "equivalent"
             }
@@ -9168,7 +10065,7 @@
           "display": "Speech delay: difficulty speaking as clearly as those of the same age",
           "target": [
             {
-              "code": "0000750",
+              "code": "HP:0000750",
               "display": "Delayed speech and language development",
               "equivalence": "equivalent"
             }
@@ -9179,7 +10076,7 @@
           "display": "Verbal apraxia/dyspraxia (difficulty saying what he/she intends correctly and consistently)",
           "target": [
             {
-              "code": "0011098",
+              "code": "HP:0011098",
               "display": "Speech apraxia",
               "equivalence": "equivalent"
             }
@@ -9196,7 +10093,7 @@
           "display": "Intellectual disability",
           "target": [
             {
-              "code": "0001071",
+              "code": "MONDO:0001071",
               "display": "Intellectual disability",
               "equivalence": "equivalent"
             }
@@ -9207,7 +10104,7 @@
           "display": "Language delay: difficulty understanding what others are saying as well as those of the same age",
           "target": [
             {
-              "code": "0001276",
+              "code": "MONDO:0001276",
               "display": "expressive language disorder",
               "equivalence": "equivalent"
             }
@@ -9218,7 +10115,7 @@
           "display": "Mixed receptive and expressive language impairment",
           "target": [
             {
-              "code": "0001568",
+              "code": "MONDO:0001568",
               "display": "mixed receptive-expressive language disorder",
               "equivalence": "equivalent"
             }
@@ -9229,7 +10126,7 @@
           "display": "Auditory processing disorder (difficulty recognizing and interpreting sounds)",
           "target": [
             {
-              "code": "0024422",
+              "code": "MONDO:0024422",
               "display": "auditory perceptual disorders",
               "equivalence": "equivalent"
             }
@@ -9240,7 +10137,7 @@
           "display": "Other",
           "target": [
             {
-              "code": "0004681",
+              "code": "MONDO:0004681",
               "display": "learning disability",
               "equivalence": "equivalent"
             }
@@ -9397,6 +10294,74 @@
             {
               "code": "v000215",
               "display": "language_spoken_spanish",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "IncludeProgram",
+      "target": "https://includedcc.org/fhir/code-systems/programs",
+      "element": [
+        {
+          "code": "DSC",
+          "display": "DS-Connect",
+          "target": [
+            {
+              "code": "INCLUDE",
+              "display": "INCLUDE",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "IncludeProgram",
+      "target": "self",
+      "element": [
+        {
+          "code": "DSC",
+          "display": "DS-Connect",
+          "target": [
+            {
+              "code": "DSC",
+              "display": "DS-Connect",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "FamilyRelationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "element": [
+        {
+          "code": "FAMMEMB",
+          "display": "Family Member",
+          "target": [
+            {
+              "code": "FAMMEMB",
+              "display": "family member",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "FamilyRelationship",
+      "target": "self",
+      "element": [
+        {
+          "code": "FAMMEMB",
+          "display": "Family Member",
+          "target": [
+            {
+              "code": "FAMMEMB",
+              "display": "Family Member",
               "equivalence": "equivalent"
             }
           ]

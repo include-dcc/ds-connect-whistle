@@ -204,6 +204,7 @@ local code,text,local code system,code,display,code system,comment
 9th Grade,9th Grade,q000023
 9th Grade,9th Grade,q000024
 Adoptive Parent,Adoptive Parent,relationship_to_participant
+Anal stenosis",http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 Associate degree - academic program,Associate degree - academic program,q000032
 Associate degree - academic program,Associate degree - academic program,q000033
 Associate degree - occupational/technical/vocational program,Associate degree - occupational/technical/vocational program,q000032
@@ -220,6 +221,7 @@ College,College,q000022
 College,College,q000023
 College,College,q000024
 Complete trisomy 21,Complete trisomy 21,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Complete trisomy 21,Complete trisomy 21,q000001
 Complete trisomy 21,Complete trisomy 21,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl
 Completed a GED (General Education Development Test for high school equivalent),Completed a GED (General Education Development Test for high school equivalent),q000025
 Diagnosed with dementia or Alzheimer's disease,Diagnosed with dementia or Alzheimer's disease,q000026
@@ -227,6 +229,7 @@ Diagnosed with mild cognitive decline or mild cognitive impairment,Diagnosed wit
 Don't know,Don't know,relationship_to_participant
 Eighth grade or less,Eighth grade or less,q000025
 Exhibiting early signs of dementia or loss of skills that are being monitored,Exhibiting early signs of dementia or loss of skills that are being monitored,q000026
+Female,Female,gender
 Female,Female,gender,female,Female,http://hl7.org/fhir/administrative-gender,
 Foster Parent,Foster Parent,relationship_to_participant
 GED (General Education Development test for high school equivalent),GED (General Education Development test for high school equivalent),q000022
@@ -254,8 +257,10 @@ Less than high school,Less than high school,q000033
 Male,Male,gender,male,Male,http://hl7.org/fhir/administrative-gender,
 Medical Caregiver,Medical Caregiver,relationship_to_participant
 Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,q000001
 Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
 Mosaic trisomy 21,Mosaic trisomy 21,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic trisomy 21,Mosaic trisomy 21,q000001
 Mosaic trisomy 21,Mosaic trisomy 21,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
 Multiple ages for different eye conditions,Multiple ages for different eye conditions,q000021
 N/A,N/A,family_group_code
@@ -285,6 +290,7 @@ Parental Lab Reports Received,Parental Lab Reports Received,genetic_status
 Parental Testing Needed,Parental Testing Needed,genetic_status
 Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
 Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),DS_diagnosis,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),q000001
 Pending Clarification - First Attempt,Pending Clarification - First Attempt,clinical_status
 Pending Clarification - Second Attempt,Pending Clarification - Second Attempt,clinical_status
 Prefer not to answer,Prefer not to answer,q000034
@@ -298,11 +304,13 @@ Proband Lab Report Review Pending,Proband Lab Report Review Pending,genetic_stat
 Professional training beyond a four-year college or university,Professional training beyond a four-year college or university,q000025
 Self,Self,relationship_to_participant
 Translocation Down syndrome,Translocation Down syndrome,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Translocation Down syndrome,Translocation Down syndrome,q000001
 Translocation Down syndrome,Translocation Down syndrome,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
 Unknown,Unknown,ethnicity,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
 Unknown,Unknown,gender,unknown,Unknown,http://hl7.org/fhir/administrative-gender,
 Unsure,Condition Unconfirmed,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
 Unsure,Unsure,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,q000001
 Unsure,Unsure,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,,
 Unsure,Unsure,q000002
 Unsure,Unsure,q000003
@@ -365,11 +373,11 @@ patient_id,patient_id,demo
 patient_id,patient_id,ihq
 q-behavioral,Has the participant ever been diagnosed with any of the following behavioral or mental health conditions? (Select all that apply.),ihq
 q-cancer,Has the participant ever been diagnosed with any of the following forms of cancer? (Select all that apply.),ihq
-q-congen-heart,Which of the following congenital heart defects have been diagnosed? (Select all that apply.) ,ihq
+q-congen-heart,Which of the following congenital heart defects have been diagnosed? (Select all that apply.),ihq
 q-dental,Has the participant ever been diagnosed with any of the following skin or dental problems? (Select all that apply.),ihq
 q-diagnosis,How was the diagnosis of Down syndrome made? (Select all that apply.),ihq
 q-fam-mem,Does the participant have a family member with Down syndrome? (Select all that apply.),ihq
-q-gastro,Which of the following gastrointestinal conditions have been diagnosed? (Select all that apply.) ,ihq
+q-gastro,Which of the following gastrointestinal conditions have been diagnosed? (Select all that apply.),ihq
 q-gastro-surgery,Has the participant ever had any surgery for the gastrointestinal tract? (Select all that apply.),ihq
 q-hearing-loss,Has the participant ever been diagnosed with any of the following types of hearing loss? (Select all that apply.),ihq
 q-hearing-treatment,What treatment(s) has the participant had for hearing loss? (Select all that apply.),ihq
@@ -381,32 +389,33 @@ q-neurologic,Has the participant ever had any of the following neurologic condit
 q-skeletal,Which of the following skeletal problems have been diagnosed? (Select all that apply.),ihq
 q-sleep,Which of the following sleep problems have been diagnosed? (Select all that apply.),ihq
 q-thyroid,What types of thyroid condition(s) have been diagnosed? (Select all that apply.),ihq
-q-vision,Has the participant ever been diagnosed with any of the following eye or vision conditions? (Select all that apply.) ,ihq
+q-vision,Has the participant ever been diagnosed with any of the following eye or vision conditions? (Select all that apply.),ihq
+q000001,What is the participant's Down syndrome diagnosis?,ihq
 q000001,What is the participant's Down syndrome diagnosis?,ihq,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,I just found this code for Down Syndrome using Mondo's website search
 q000002,What was the participant's age in years when the diagnosis of Down syndrome was made?,ihq
-q000003,Is the participant with Down syndrome still living? ,ihq
-q000004,What was the mother's age in years at the time of the participant's birth? ,ihq
+q000003,Is the participant with Down syndrome still living?,ihq
+q000004,What was the mother's age in years at the time of the participant's birth?,ihq
 q000005,What was the father's age in years at the time of the participant's birth?,ihq
 q000006,Has the participant been diagnosed with a congenital heart defect (a birth defect of the heart)?,ihq
 q000007,Has the participant ever been diagnosed with any gastrointestinal (gut or intestinal) conditions?,ihq
 q000008,"In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",ihq
 q000009,Has the participant ever been diagnosed with any form of seizures or epilepsy?,ihq
 q000010,Has the participant ever been diagnosed with any sleep problems?,ihq
-q000011,Has the participant ever been diagnosed with a skeletal problem (problems with the bones or joints)? ,ihq
+q000011,Has the participant ever been diagnosed with a skeletal problem (problems with the bones or joints)?,ihq
 q000012,"Has the participant been diagnosed with any form of leukemia, or transient myeloproliferative disorder (TMD, also known as transient abnormal myelopoiesis or transient leukemia), or a leukemoid reaction?",ihq
 q000013,Has the participant ever been diagnosed with COVID-19 (novel coronavirus disease)?,ihq
 q000014,Has the participant ever been diagnosed with a thyroid condition?,ihq
 q000015,Has the participant ever been diagnosed with diabetes?,ihq
 q000016,Has participant ever been diagnosed with celiac disease (gluten or wheat intolerance)?,ihq
-q000017,Has the participant ever seen an audiologist for hearing testing? ,ihq
-q000018,How often does the participant have his or her hearing tested?  ,ihq
+q000017,Has the participant ever seen an audiologist for hearing testing?,ihq
+q000018,How often does the participant have his or her hearing tested?,ihq
 q000019,"If the participant has hearing loss, what was the age in years when the diagnosis was made?",ihq
-q000020,Has the participant ever had an eye exam performed by an eye doctor or an ophthalmologist?  ,ihq
+q000020,Has the participant ever had an eye exam performed by an eye doctor or an ophthalmologist?,ihq
 q000021,"If the participant has an eye condition, what was the age in years when the diagnosis was made?",ihq
 q000022,"If the participant is less than 18 years old, what is the highest grade in school that the participant has started?",ihq
 q000023,"If the participant is less than 18 years old, what is the grade at which the participant is academically functioning for reading skills?",ihq
 q000024,"If the participant is less than 18 years old, what is the grade at which the participant is academically functioning for math skills?",ihq
-q000025,"If the participant is 18 years or older, what is the highest grade or level of school the participant has completed or the highest degree the participant has received? ",ihq
+q000025,"If the participant is 18 years or older, what is the highest grade or level of school the participant has completed or the highest degree the participant has received?",ihq
 q000026,"Has the participant ever been diagnosed with Dementia, Alzheimer's disease, or cognitive decline?",ihq
 q000027,Has the participant ever had a formal IQ (intelligence) test?,ihq
 q000028,Is the participant currently participating in any clinical trial or research study related to Down syndrome?,ihq
@@ -433,44 +442,59 @@ v000002,"Genetic testing in baby after birth (such as chromosome analysis, cytog
 v000003,Physical examination by a physician,q-diagnosis
 v000004,Unsure,q-diagnosis
 v000005,Other,q-diagnosis
-v000006,No,q-fam-mem
 v000007,"Yes, a sibling or twin has Down syndrome",q-fam-mem
 v000008,"Yes, a more distant relative has Down syndrome",q-fam-mem
 v000009,Unsure,q-fam-mem
 v000010,No congenital heart defect,q-congen-heart
-v000011,Atrial septal defect (ASD),q-congen-heart
-v000012,Ventricular septal defect (VSD),q-congen-heart
-v000013,Atrioventricular septal defect (or AV Canal Defect),q-congen-heart
-v000014,Tetralogy of Fallot,q-congen-heart
-v000015,Patent Ductus Arteriosus (PDA),q-congen-heart
-v000016,Patent Foramen Ovale (PFO),q-congen-heart
+v000011,Atrial septal defect (ASD),q-congen-heart,0001631,Atrial septal defect,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000011,Atrial septal defect (ASD),q-congen-heart,0006664,atrial septal defect,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000012,Ventricular septal defect (VSD),q-congen-heart,0001629,Ventricular septal defect,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000012,Ventricular septal defect (VSD),q-congen-heart,0002070,ventricular septal defect,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000013,Atrioventricular septal defect (or AV Canal Defect),q-congen-heart,0006695,Atrioventricular canal defect,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000013,Atrioventricular septal defect (or AV Canal Defect),q-congen-heart,0020290,atrioventricular septal defect,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000014,Tetralogy of Fallot,q-congen-heart,0001636,Tetralogy of Fallot,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000014,Tetralogy of Fallot,q-congen-heart,0008542,tetralogy of fallot,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000015,Patent Ductus Arteriosus (PDA),q-congen-heart,0001643,Patent ductus arteriosus,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000015,Patent Ductus Arteriosus (PDA),q-congen-heart,0011827,patent ductus arteriosus,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000016,Patent Foramen Ovale (PFO),q-congen-heart,0001655,Patent foramen ovale,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000016,Patent Foramen Ovale (PFO),q-congen-heart,0020439,patent foramen ovale,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000017,Unsure,q-congen-heart
-v000018,Other,q-congen-heart
+v000018,Other,q-congen-heart,0001627,Abnormal heart morphology,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000018,Other,q-congen-heart,0005453,congenital heart disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000019,None,q-heart-surgery
 v000020,"Yes, surgery for a congenital heart defect in the first year of life",q-heart-surgery
 v000021,"Yes, surgery for a congenital heart defect after the first year of life",q-heart-surgery
 v000022,Cardiac surgery for other reason later in life,q-heart-surgery
 v000023,Unsure,q-heart-surgery
 v000024,None,q-gastro
-v000025,"Duodenal atresia, stenosis or web (blockage or narrowing of intestines beyond the stomach)",q-gastro
-v000026,Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out),q-gastro
-v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),q-gastro
-v000028,Hirschsprung disease (the gut doesn't move the stool and becomes enlarged inside),q-gastro
-v000029,Chronic constipation,q-gastro
+v000025,"Duodenal atresia, stenosis or web (blockage or narrowing of intestines beyond the stomach)",q-gastro,0002246,Abnormal duodenum morphology,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000026,Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out),q-gastro,0002023,Anal stenosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000026,Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out),q-gastro,0002025,Anal atresia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),q-gastro,0001044,esophageal atresia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),q-gastro,0002032,Esophageal atresia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),q-gastro,0002575,Tracheoesophageal fistula,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000028,Hirschsprung disease (the gut doesn't move the stool and becomes enlarged inside),q-gastro,0018309,Hirschsprung disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000029,Chronic constipation,q-gastro,0012450,Chronic constipation,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000030,Dysphagia (difficulty swallowing),q-gastro
-v000031,"Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",q-gastro,0002835,Aspiration,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000032,Celiac disease (gluten or wheat intolerance),q-gastro
+v000031,"Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",q-gastro
+v000032,Celiac disease (gluten or wheat intolerance),q-gastro,0002608,Celiac disease,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000032,Celiac disease (gluten or wheat intolerance),q-gastro,0005130,celiac disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000033,Other feeding problem,q-gastro
-v000034,Chronic diarrhea,q-gastro
-v000035,Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns),q-gastro
-v000036,Gastroesophageal reflux (GERD acid reflux),q-gastro
-v000037,Irritable bowel syndrome (IBS),q-gastro
-v000038,Peptic ulcers,q-gastro
-v000039,Gallstones,q-gastro
-v000040,Hemorrhoids,q-gastro
-v000041,Diverticulitis or diverticulosis,q-gastro
-v000042,Colorectal carcinoma (cancer of the bowel),q-gastro
-v000043,Inflammatory bowel disease (Crohn's disease or ulcerative colitis),q-gastro
+v000034,Chronic diarrhea,q-gastro,0002028,Chronic diarrhea,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000034,Chronic diarrhea,q-gastro,0044751,chronic diarrheal disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000035,Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns),q-gastro,0001561,pyloric stenosis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000035,Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns),q-gastro,0002021,Pyloric stenosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000036,Gastroesophageal reflux (GERD acid reflux),q-gastro,0002020,Gastroesophageal reflux,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000036,Gastroesophageal reflux (GERD acid reflux),q-gastro,0007186,gastroesophageal reflux disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000037,Irritable bowel syndrome (IBS),q-gastro,0005052,irritable bowel syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000038,Peptic ulcers,q-gastro,0004247,peptic ulcer disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000038,Peptic ulcers,q-gastro,0004398,Peptic ulcer,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000039,Gallstones,q-gastro,0001081,Cholelithiasis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000039,Gallstones,q-gastro,0005346,gallstones,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000040,Hemorrhoids,q-gastro,0004872,hemorrhoid,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000041,Diverticulitis or diverticulosis,q-gastro,0004235,diverticulitis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000042,Colorectal carcinoma (cancer of the bowel),q-gastro,0024331,colorectal carcinoma,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000043,Inflammatory bowel disease (Crohn's disease or ulcerative colitis),q-gastro,0005265,inflammatory bowel disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000044,Unsure,q-gastro
 v000045,Other,q-gastro
 v000046,None,q-gastro-surgery
@@ -481,7 +505,6 @@ v000050,Surgery for Hirschsprung disease,q-gastro-surgery
 v000051,Fundoplication (wrap top of stomach around esophagus to prevent acid reflux),q-gastro-surgery
 v000052,Unsure,q-gastro-surgery
 v000053,Other,q-gastro-surgery
-v000054,No,q-gastro-surgery
 v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental,0002232,Patchy alopecia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental,0005340,alopecia areata,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000056,Folliculitis (red rash where the hair comes out of the skin),q-dental,0006552,folliculitis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
@@ -494,7 +517,6 @@ v000060,Other dental problems,q-dental
 v000061,Other skin problems,q-dental,0000951,Abnormality of the skin,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000061,Other skin problems,q-dental,0005093,skin disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000062,Unsure,q-dental
-v000063,No,q-neurologic
 v000064,"Regression or loss of previously attained skills (speech-language, social, self-help or motor skills)",q-neurologic
 v000065,Swallowing disorder (required a gastrostomy tube or nasogastric tube for more than 1 month),q-neurologic
 v000066,Cerebral palsy,q-neurologic,0006497,cerebral palsy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
@@ -528,8 +550,8 @@ v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal,0
 v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal,0005298,osteoporosis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000086,Fractures (broken bones),q-skeletal,0005315,bone fracture,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000086,Fractures (broken bones),q-skeletal,0020110,Bone fracture,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000087,Arthritis,q-skeletal,0001369,Arthritis; Arthropathy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000087,Arthritis,q-skeletal,0003040,Arthritis; Arthropathy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000087,Arthritis,q-skeletal,0001369,Arthritis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000087,Arthritis,q-skeletal,0003040,Arthropathy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000087,Arthritis,q-skeletal,0006816,arthropathy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000088,Unsure,q-skeletal
 v000089,Other,q-skeletal,0002081,musculoskeletal system disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
@@ -597,22 +619,34 @@ v000138,Uses lip reading,q-hearing-treatment
 v000139,Unsure,q-hearing-treatment
 v000140,Other,q-hearing-treatment
 v000141,None,q-vision
-v000142,Cataract,q-vision
-v000143,Strabismus (eye turns in or out),q-vision
-v000144,Amblyopia (lazy eye),q-vision
-v000145,Nearsighted (myopia),q-vision
-v000146,Farsighted (hyperopia),q-vision
-v000147,Astigmatism (blurry vision),q-vision
-v000148,Ptosis (droopy eyelid),q-vision
-v000149,Lacrimal duct stenosis (blockage of tear duct),q-vision
-v000150,Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision),q-vision
+v000142,Cataract,q-vision,0000518,Cataract,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000142,Cataract,q-vision,0005129,cataract (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000143,Strabismus (eye turns in or out),q-vision,0000486,Strabismus,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000143,Strabismus (eye turns in or out),q-vision,0003432,strabismus,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000144,Amblyopia (lazy eye),q-vision,0000646,Amblyopia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000144,Amblyopia (lazy eye),q-vision,0001020,amblyopia (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000145,Nearsighted (myopia),q-vision,0000545,Myopia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000145,Nearsighted (myopia),q-vision,0001384,myopia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000146,Farsighted (hyperopia),q-vision,0000540,Hypermetropia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000146,Farsighted (hyperopia),q-vision,0004891,hyperopia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000147,Astigmatism (blurry vision),q-vision,0000483,Astigmatism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000147,Astigmatism (blurry vision),q-vision,0011284,astigmatism (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000148,Ptosis (droopy eyelid),q-vision,0000508,Ptosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000148,Ptosis (droopy eyelid),q-vision,0000728,ptosis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000149,Lacrimal duct stenosis (blockage of tear duct),q-vision,0000579,Nasolacrimal duct obstruction,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000150,Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision),q-vision,0000563,Keratoconus,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000150,Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision),q-vision,0015486,keratoconus (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000151,Depth perception problems,q-vision
-v000152,Blindness,q-vision
-v000153,Glaucoma,q-vision
-v000154,Retinal detachment,q-vision
-v000155,"Presbyopia (""old eyes"" requiring magnifying lenses or reading glasses)",q-vision
+v000152,Blindness,q-vision,0000618,Blindness,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000152,Blindness,q-vision,0001941,blindness (disorder),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000153,Glaucoma,q-vision,0000501,Glaucoma,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000153,Glaucoma,q-vision,0005041,glaucoma (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000154,Retinal detachment,q-vision,0000541,Retinal detachment,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000154,Retinal detachment,q-vision,0008375,retinal detachment,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000155,"Presbyopia (""old eyes"" requiring magnifying lenses or reading glasses)",q-vision,0001330,presbyopia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000156,Unsure,q-vision
-v000157,Other,q-vision
+v000157,Other,q-vision,0000478,Abnormality of the eye,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000157,Other,q-vision,0024458,disease of visual system,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000158,None,q-behavioral
 v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral,0007018,Attention deficit hyperactivity disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral,0007743,attention deficit-hyperactivity disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
@@ -670,8 +704,11 @@ v000200,language_preferred,language
 v000208,race_american_indian,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000209,race_asian,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000211,race_pacific_islander,race
 v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
 v000214,language_spoken_english,language
 v000215,language_spoken_spanish,language
+DSC,DS-Connect,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,https://docs.google.com/spreadsheets/d/1_qbnn1VVlQS0tGprkiJbOhHZFixvs2qAVj5Rrdi2EaU/edit#gid=857513026
+FAMMEMB,Family Member,FamilyRelationship,FAMMEMB,family member,http://terminology.hl7.org/CodeSystem/v3-RoleCode
