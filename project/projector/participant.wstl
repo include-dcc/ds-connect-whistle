@@ -14,6 +14,7 @@ def ResearchSubject(study, subject) {
     meta.tag[]: StudyMeta(study);
 
     identifier[]: Key_Identifier(study, "ResearchSubject", subject.patient_id);
+    identifier[0].use: "official";
     status: "on-study";
     study: Reference_Key_Identifier(study, "ResearchStudy", study.id);
     individual: Reference_Key_Identifier(study, "Patient", subject.patient_id);
@@ -30,8 +31,9 @@ def Participant(study, subject) {
     meta.tag[]: StudyMeta(study);
 
     identifier[]: Key_Identifier(study, "Patient", subject.patient_id);
+    identifier[0].use: "official";
     gender (if subject.gender ~= "."): HarmonizeAsCode(subject.gender, "gender");
-    extension[]: RaceExtension(subject.race[]);
+    extension[]: RaceExtension(subject);
     extension[]: EthnicityExtension(subject);
     resourceType : "Patient"
 }
@@ -104,6 +106,7 @@ def AtAtRegistrationObservation(study, subject) {
         meta.tag[]: StudyMeta(study);
 
         identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, "age_at_registration"));
+        identifier[0].use: "official";
 
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
         focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "demo", "age_at_registration"));
@@ -124,6 +127,7 @@ def TraitObservation(study, subject, varname, value, tablename) {
     meta.tag[]: StudyMeta(study);
 
     identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, ".", varname));
+    identifier[0].use: "official";
     subject: Reference_Key_Identifier(study, "Patient", subject_id);
     focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, tablename, varname));
     code.text: HarmonizedLocalDisplay(varname, tablename);
@@ -138,10 +142,16 @@ def TraitObservation(study, subject, varname, value, tablename) {
 
 }
 
+def LocalCodeSystemReferenceSpecial(study, table_name, varname, code) {
+    code: code;
+    system: VocabularyURL(study, $StrCat(table_name, varname), "");
+    display: HarmonizedLocalDisplay(code, table_name);
+}
+
+
 def RaceObservation(study, demo, race) {
     if (race.value?) {
         var subject_id: demo.patient_id;
-
 
         // Clean up the race_ prefix from the data so that it properly matches the data-dictionary
         var racecoding: race.code;
@@ -153,11 +163,12 @@ def RaceObservation(study, demo, race) {
         meta.tag[]: StudyMeta(study);
 
         identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, ".", varname));
+        identifier[0].use: "official";
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
         focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "demo", "race"));
         code.text: HarmonizedLocalDisplay(racecoding, "race");
         code.coding[]: HarmonizeMapped(racecoding, "demo");
-        code.coding[]: LocalCodeSystemReference(study.id, "demo", racecoding);
+        code.coding[]: LocalCodeSystemReferenceSpecial(study.id, "demo", "race", racecoding);
 
         valueCodeableConcept.coding[]: HarmonizeMapped(racecoding, "race");
         valueCodeableConcept.text: $StrCat(race.text);
