@@ -1,714 +1,626 @@
-local code,text,local code system,code,display,code system,comment
-"$100,000 - $149,999","$100,000 - $149,999",q000034
-"$25,000 - $49,999","$25,000 - $49,999",q000034
-"$50,000 - $74,999","$50,000 - $74,999",q000034
-"$75,000 - $99,999","$75,000 - $99,999",q000034
-"(Any combination of letters and numbers starting with ""NDAR"")","(Any combination of letters and numbers starting with ""NDAR"")",guid
-"Above $150,000","Above $150,000",q000034
-"Bachelor's degree (e.g., BA, AB, BS, BBA)","Bachelor's degree (e.g., BA, AB, BS, BBA)",q000032
-"Bachelor's degree (e.g., BA, AB, BS, BBA)","Bachelor's degree (e.g., BA, AB, BS, BBA)",q000033
-"Diagnosed with any of the following: leukemia, TMD, or leukemoid reaction","Diagnosed with any of the following: leukemia, TMD, or leukemoid reaction",q000012
-"Doctoral degree (e.g., PhD, EdD)","Doctoral degree (e.g., PhD, EdD)",q000032
-"Doctoral degree (e.g., PhD, EdD)","Doctoral degree (e.g., PhD, EdD)",q000033
-"Less than $25,000 (USD)","Less than $25,000 (USD)",q000034
-"Master's degree (e.g., MA, MS, MEng, Med, MBA)","Master's degree (e.g., MA, MS, MEng, Med, MBA)",q000032
-"Master's degree (e.g., MA, MS, MEng, Med, MBA)","Master's degree (e.g., MA, MS, MEng, Med, MBA)",q000033
-"More than eighth grade, but did not graduate from high school","More than eighth grade, but did not graduate from high school",q000025
-"Not diagnosed with leukemia, TMD or leukemoid reaction","Not diagnosed with leukemia, TMD or leukemoid reaction",q000012
-"Participant went to school, but unsure what level","Participant went to school, but unsure what level",q000025
-"Preschool, nursery school or kindergarten","Preschool, nursery school or kindergarten",q000032
-"Preschool, nursery school or kindergarten","Preschool, nursery school or kindergarten",q000033
-"Professional school degree (e.g., MD, DDS, DVM, JD)","Professional school degree (e.g., MD, DDS, DVM, JD)",q000032
-"Professional school degree (e.g., MD, DDS, DVM, JD)","Professional school degree (e.g., MD, DDS, DVM, JD)",q000033
-"Some college, no degree","Some college, no degree",q000032
-"Some college, no degree","Some college, no degree",q000033
-"Went to a business, trade, or vocational school after high school","Went to a business, trade, or vocational school after high school",q000025
-"Went to a business, trade, or vocational school instead of high school","Went to a business, trade, or vocational school instead of high school",q000025
-"Went to college, but did not graduate","Went to college, but did not graduate",q000025
-###,###,address_postal_code
-(All US State abbreviations),(All US State abbreviations),address_state
-(Any country),(Any country),address_country
-(Any country),(Any country),birth_country
-0,Condition Absent,ConditionPresent,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-1 year,1 year,q000002
-1 year,1 year,q000019
-1 year,1 year,q000021
-1,Condition Present,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-10 - 20 years,10 - 20 years,q000019
-10 - 20 years,10 - 20 years,q000021
-10 or more,10 or more,q000031
-10 years or older,10 years or older,q000002
-10th Grade,10th Grade,q000022
-10th Grade,10th Grade,q000023
-10th Grade,10th Grade,q000024
-11th Grade,11th Grade,q000022
-11th Grade,11th Grade,q000023
-11th Grade,11th Grade,q000024
-12th Grade,12th Grade,q000022
-12th Grade,12th Grade,q000023
-12th Grade,12th Grade,q000024
-15 years,15 years,q000004
-15 years,15 years,q000005
-16 years,16 years,q000004
-16 years,16 years,q000005
-17 years,17 years,q000004
-17 years,17 years,q000005
-18 years,18 years,q000004
-18 years,18 years,q000005
-19 years,19 years,q000004
-19 years,19 years,q000005
-1st Grade,1st Grade,q000022
-1st Grade,1st Grade,q000023
-1st Grade,1st Grade,q000024
-2 years,2 years,q000002
-2 years,2 years,q000019
-2 years,2 years,q000021
-2,Condition Unconfirmed,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-20 years,20 years,q000004
-20 years,20 years,q000005
-21 - 30 years,21 - 30 years,q000019
-21 - 30 years,21 - 30 years,q000021
-21 years,21 years,q000004
-21 years,21 years,q000005
-22 years,22 years,q000004
-22 years,22 years,q000005
-23 years,23 years,q000004
-23 years,23 years,q000005
-24 years,24 years,q000004
-24 years,24 years,q000005
-25 years,25 years,q000004
-25 years,25 years,q000005
-26 years,26 years,q000004
-26 years,26 years,q000005
-27 years,27 years,q000004
-27 years,27 years,q000005
-28 years,28 years,q000004
-28 years,28 years,q000005
-29 years,29 years,q000004
-29 years,29 years,q000005
-2nd Grade,2nd Grade,q000022
-2nd Grade,2nd Grade,q000023
-2nd Grade,2nd Grade,q000024
-3 years,3 years,q000002
-3 years,3 years,q000019
-3 years,3 years,q000021
-30 years,30 years,q000004
-30 years,30 years,q000005
-31 - 40 years,31 - 40 years,q000019
-31 - 40 years,31 - 40 years,q000021
-31 years,31 years,q000004
-31 years,31 years,q000005
-32 years,32 years,q000004
-32 years,32 years,q000005
-33 years,33 years,q000004
-33 years,33 years,q000005
-34 years,34 years,q000004
-34 years,34 years,q000005
-35 years,35 years,q000004
-35 years,35 years,q000005
-36 years,36 years,q000004
-36 years,36 years,q000005
-37 years,37 years,q000004
-37 years,37 years,q000005
-38 years,38 years,q000004
-38 years,38 years,q000005
-39 years,39 years,q000004
-39 years,39 years,q000005
-3rd Grade,3rd Grade,q000022
-3rd Grade,3rd Grade,q000023
-3rd Grade,3rd Grade,q000024
-4 years,4 years,q000002
-4 years,4 years,q000019
-4 years,4 years,q000021
-40 years,40 years,q000004
-40 years,40 years,q000005
-41 - 50 years,41 - 50 years,q000019
-41 - 50 years,41 - 50 years,q000021
-41 years,41 years,q000004
-41 years,41 years,q000005
-42 years,42 years,q000004
-42 years,42 years,q000005
-43 years,43 years,q000004
-43 years,43 years,q000005
-44 years,44 years,q000004
-44 years,44 years,q000005
-45 years,45 years,q000004
-45 years,45 years,q000005
-46 years,46 years,q000004
-46 years,46 years,q000005
-47 years,47 years,q000004
-47 years,47 years,q000005
-48 years,48 years,q000004
-48 years,48 years,q000005
-49 years,49 years,q000004
-49 years,49 years,q000005
-4th Grade,4th Grade,q000022
-4th Grade,4th Grade,q000023
-4th Grade,4th Grade,q000024
-5 or more,5 or more,q000008
-5 years,5 years,q000002
-5 years,5 years,q000019
-5 years,5 years,q000021
-50 years,50 years,q000004
-50 years,50 years,q000005
-51 - 60 years,51 - 60 years,q000019
-51 - 60 years,51 - 60 years,q000021
-51 years,51 years,q000004
-51 years,51 years,q000005
-52 years,52 years,q000004
-52 years,52 years,q000005
-53 years,53 years,q000004
-53 years,53 years,q000005
-54 years,54 years,q000004
-54 years,54 years,q000005
-55 years,55 years,q000004
-55 years,55 years,q000005
-56 years,56 years,q000004
-56 years,56 years,q000005
-57 years,57 years,q000004
-57 years,57 years,q000005
-58 years,58 years,q000004
-58 years,58 years,q000005
-59 years,59 years,q000004
-59 years,59 years,q000005
-5th Grade,5th Grade,q000022
-5th Grade,5th Grade,q000023
-5th Grade,5th Grade,q000024
-6 years,6 years,q000019
-6 years,6 years,q000021
-60 years,60 years,q000004
-60 years,60 years,q000005
-61 years or older,61 years or older,q000004
-61 years or older,61 years or older,q000005
-61 years or older,61 years or older,q000019
-61 years or older,61 years or older,q000021
-6th Grade,6th Grade,q000022
-6th Grade,6th Grade,q000023
-6th Grade,6th Grade,q000024
-7 years,7 years,q000002
-7 years,7 years,q000019
-7 years,7 years,q000021
-7th Grade,7th Grade,q000022
-7th Grade,7th Grade,q000023
-7th Grade,7th Grade,q000024
-8 years,8 years,q000002
-8 years,8 years,q000019
-8 years,8 years,q000021
-8th Grade,8th Grade,q000022
-8th Grade,8th Grade,q000023
-8th Grade,8th Grade,q000024
-9 years,9 years,q000002
-9 years,9 years,q000019
-9 years,9 years,q000021
-9th Grade,9th Grade,q000022
-9th Grade,9th Grade,q000023
-9th Grade,9th Grade,q000024
-Adoptive Parent,Adoptive Parent,relationship_to_participant
-Anal stenosis",http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-Associate degree - academic program,Associate degree - academic program,q000032
-Associate degree - academic program,Associate degree - academic program,q000033
-Associate degree - occupational/technical/vocational program,Associate degree - occupational/technical/vocational program,q000032
-Associate degree - occupational/technical/vocational program,Associate degree - occupational/technical/vocational program,q000033
-At birth,At birth,q000002
-At birth,At birth,q000019
-At birth,At birth,q000021
-Aunt/Uncle,Aunt/Uncle,relationship_to_participant
-Biological Parent,Biological Parent,relationship_to_participant
-Brother/Sister,Brother/Sister,relationship_to_participant
-Certificate of attendance from high school,Certificate of attendance from high school,q000022
-Certificate of attendance from high school,Certificate of attendance from high school,q000025
-College,College,q000022
-College,College,q000023
-College,College,q000024
-Complete trisomy 21,Complete trisomy 21,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Complete trisomy 21,Complete trisomy 21,q000001
-Complete trisomy 21,Complete trisomy 21,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl
-Completed a GED (General Education Development Test for high school equivalent),Completed a GED (General Education Development Test for high school equivalent),q000025
-Diagnosed with dementia or Alzheimer's disease,Diagnosed with dementia or Alzheimer's disease,q000026
-Diagnosed with mild cognitive decline or mild cognitive impairment,Diagnosed with mild cognitive decline or mild cognitive impairment,q000026
-Don't know,Don't know,relationship_to_participant
-Eighth grade or less,Eighth grade or less,q000025
-Exhibiting early signs of dementia or loss of skills that are being monitored,Exhibiting early signs of dementia or loss of skills that are being monitored,q000026
-Female,Female,gender
-Female,Female,gender,female,Female,http://hl7.org/fhir/administrative-gender,
-Foster Parent,Foster Parent,relationship_to_participant
-GED (General Education Development test for high school equivalent),GED (General Education Development test for high school equivalent),q000022
-Graduated from a college or university,Graduated from a college or university,q000025
-Grandparent,Grandparent,relationship_to_participant
-Had hearing tests in childhood but not in the past several years,Had hearing tests in childhood but not in the past several years,q000018
-Has hearing tests at least once a year,Has hearing tests at least once a year,q000018
-Has hearing tests less often than once a year,Has hearing tests less often than once a year,q000018
-High school graduate,High school graduate,q000025
-High school or GED (General Education Development Test for high school equivalent),High school or GED (General Education Development Test for high school equivalent),q000032
-High school or GED (General Education Development Test for high school equivalent),High school or GED (General Education Development Test for high school equivalent),q000033
-Hispanic or Latino,Hispanic or Latino,ethnicity,2135-2,Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
-Kilograms,Kilograms,units,kg,Kilograms,http://ucum.org,
-Kindergarten,Kindergarten,q000022
-Kindergarten,Kindergarten,q000023
-Kindergarten,Kindergarten,q000024
-Legal Guardian,Legal Guardian,relationship_to_participant
-Less than 1 year,Less than 1 year,q000002
-Less than 1 year,Less than 1 year,q000019
-Less than 1 year,Less than 1 year,q000021
-Less than 15 years,Less than 15 years,q000004
-Less than 15 years,Less than 15 years,q000005
-Less than high school,Less than high school,q000032
-Less than high school,Less than high school,q000033
-Male,Male,gender,male,Male,http://hl7.org/fhir/administrative-gender,
-Medical Caregiver,Medical Caregiver,relationship_to_participant
-Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,q000001
-Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
-Mosaic trisomy 21,Mosaic trisomy 21,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Mosaic trisomy 21,Mosaic trisomy 21,q000001
-Mosaic trisomy 21,Mosaic trisomy 21,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
-Multiple ages for different eye conditions,Multiple ages for different eye conditions,q000021
-N/A,N/A,family_group_code
-Never attended,Never attended,q000032
-Never attended,Never attended,q000033
-Never had a hearing test,Never had a hearing test,q000018
-No Surveys Completed - Contacted,No Surveys Completed - Contacted,clinical_status
-No eye condition,No eye condition,q000021
-No hearing loss,No hearing loss,q000019
-No schooling,No schooling,q000022
-No schooling,No schooling,q000023
-No schooling,No schooling,q000024
-No,Condition Absent,ConditionPresent,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Not Accepted,Not Accepted,clinical_status
-Not Applicable - Participant is 18 years or older,Not Applicable - Participant is 18 years or older,q000022
-Not Applicable - Participant is 18 years or older,Not Applicable - Participant is 18 years or older,q000023
-Not Applicable - Participant is 18 years or older,Not Applicable - Participant is 18 years or older,q000024
-Not Applicable - Participant is younger than 18 years,Not Applicable - Participant is younger than 18 years,q000025
-Not Hispanic or Latino,Not Hispanic or Latino,ethnicity,2186-5,Not Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
-Not Reviewed,Not Reviewed,clinical_status
-Not tested,Not tested,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Not tested,Not tested,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
-Other Relative,Other Relative,relationship_to_participant
-Other non-relative,Other non-relative,relationship_to_participant
-Other,Other,gender,other,Other,http://hl7.org/fhir/administrative-gender,
-Parental Lab Reports Received,Parental Lab Reports Received,genetic_status
-Parental Testing Needed,Parental Testing Needed,genetic_status
-Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),DS_diagnosis,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
-Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),q000001
-Pending Clarification - First Attempt,Pending Clarification - First Attempt,clinical_status
-Pending Clarification - Second Attempt,Pending Clarification - Second Attempt,clinical_status
-Prefer not to answer,Prefer not to answer,q000034
-Prenatal,Prenatal,q000002
-Preschool or nursery school,Preschool or nursery school,q000022
-Preschool or nursery school,Preschool or nursery school,q000023
-Preschool or nursery school,Preschool or nursery school,q000024
-Proband Lab Report Approved,Proband Lab Report Approved,genetic_status
-Proband Lab Report Received,Proband Lab Report Received,genetic_status
-Proband Lab Report Review Pending,Proband Lab Report Review Pending,genetic_status
-Professional training beyond a four-year college or university,Professional training beyond a four-year college or university,q000025
-Self,Self,relationship_to_participant
-Translocation Down syndrome,Translocation Down syndrome,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Translocation Down syndrome,Translocation Down syndrome,q000001
-Translocation Down syndrome,Translocation Down syndrome,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
-Unknown,Unknown,ethnicity,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
-Unknown,Unknown,gender,unknown,Unknown,http://hl7.org/fhir/administrative-gender,
-Unsure,Condition Unconfirmed,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Unsure,Unsure,ConditionPresent,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-Unsure,Unsure,q000001
-Unsure,Unsure,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,,
-Unsure,Unsure,q000002
-Unsure,Unsure,q000003
-Unsure,Unsure,q000004
-Unsure,Unsure,q000005
-Unsure,Unsure,q000006
-Unsure,Unsure,q000007
-Unsure,Unsure,q000008
-Unsure,Unsure,q000009
-Unsure,Unsure,q000010
-Unsure,Unsure,q000011
-Unsure,Unsure,q000012
-Unsure,Unsure,q000013
-Unsure,Unsure,q000014
-Unsure,Unsure,q000015
-Unsure,Unsure,q000016
-Unsure,Unsure,q000017
-Unsure,Unsure,q000018
-Unsure,Unsure,q000019
-Unsure,Unsure,q000020
-Unsure,Unsure,q000021
-Unsure,Unsure,q000022
-Unsure,Unsure,q000023
-Unsure,Unsure,q000024
-Unsure,Unsure,q000025
-Unsure,Unsure,q000026
-Unsure,Unsure,q000027
-Unsure,Unsure,q000028
-Unsure,Unsure,q000029
-Unsure,Unsure,q000030
-Unsure,Unsure,q000031
-Unsure,Unsure,q000032
-Unsure,Unsure,q000033
-Unsure,Unsure,q000034
-Verified,Verified,clinical_status
-Yes,Condition Present,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
-address_country,address_country,demo
-address_postal_code,address_postal_code,demo
-address_state,address_state,demo
-age_at_registration,age_at_registration,demo
-age_at_survey_time,age_at_survey_time,ihq
-birth_country,birth_country,demo
-birth_year,birth_year,demo
-birth_year,birth_year,ihq
-clinical_status,clinical_status,demo
-cm,cm,units,cm,cm,http://ucum.org,
-consents,consents,demo
-deceased_year,deceased_year,demo
-ethnicity,ethnicity,demo
-family_group_code,family_group_code,demo
-gender,gender,demo
-genetic_status,genetic_status,demo
-guid,guid,demo
-jconnect_code,jconnect_code,demo
-kg/m2,kg/m2,units,kg/m2,kg/m2,http://ucum.org,
-language,language,demo
-nih_consent_group,nih_consent_group,ihq
-parent_id,parent_id,ihq
-patient_id,patient_id,demo
-patient_id,patient_id,ihq
-q-behavioral,Has the participant ever been diagnosed with any of the following behavioral or mental health conditions? (Select all that apply.),ihq
-q-cancer,Has the participant ever been diagnosed with any of the following forms of cancer? (Select all that apply.),ihq
-q-congen-heart,Which of the following congenital heart defects have been diagnosed? (Select all that apply.),ihq
-q-dental,Has the participant ever been diagnosed with any of the following skin or dental problems? (Select all that apply.),ihq
-q-diagnosis,How was the diagnosis of Down syndrome made? (Select all that apply.),ihq
-q-fam-mem,Does the participant have a family member with Down syndrome? (Select all that apply.),ihq
-q-gastro,Which of the following gastrointestinal conditions have been diagnosed? (Select all that apply.),ihq
-q-gastro-surgery,Has the participant ever had any surgery for the gastrointestinal tract? (Select all that apply.),ihq
-q-hearing-loss,Has the participant ever been diagnosed with any of the following types of hearing loss? (Select all that apply.),ihq
-q-hearing-treatment,What treatment(s) has the participant had for hearing loss? (Select all that apply.),ihq
-q-heart-surgery,Has the participant ever had any cardiac or heart surgery? (Select all that apply.),ihq
-q-learning,Has the participant ever been diagnosed with any of the following learning problems? (Select all that apply.),ihq
-q-living-situation,Select the current living situation for the participant. (Select all that apply.),ihq
-q-metabolic,"Has the participant ever been diagnosed with any of the following metabolic, hormonal, or autoimmune conditions? (Select all that apply.)",ihq
-q-neurologic,Has the participant ever had any of the following neurologic conditions? (Select all that apply.),ihq
-q-skeletal,Which of the following skeletal problems have been diagnosed? (Select all that apply.),ihq
-q-sleep,Which of the following sleep problems have been diagnosed? (Select all that apply.),ihq
-q-thyroid,What types of thyroid condition(s) have been diagnosed? (Select all that apply.),ihq
-q-vision,Has the participant ever been diagnosed with any of the following eye or vision conditions? (Select all that apply.),ihq
-q000001,What is the participant's Down syndrome diagnosis?,ihq
-q000001,What is the participant's Down syndrome diagnosis?,ihq,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,I just found this code for Down Syndrome using Mondo's website search
-q000002,What was the participant's age in years when the diagnosis of Down syndrome was made?,ihq
-q000003,Is the participant with Down syndrome still living?,ihq
-q000004,What was the mother's age in years at the time of the participant's birth?,ihq
-q000005,What was the father's age in years at the time of the participant's birth?,ihq
-q000006,Has the participant been diagnosed with a congenital heart defect (a birth defect of the heart)?,ihq
-q000007,Has the participant ever been diagnosed with any gastrointestinal (gut or intestinal) conditions?,ihq
-q000008,"In the past 12 months, how many times has the participant been admitted to a hospital overnight or longer?",ihq
-q000009,Has the participant ever been diagnosed with any form of seizures or epilepsy?,ihq
-q000010,Has the participant ever been diagnosed with any sleep problems?,ihq
-q000011,Has the participant ever been diagnosed with a skeletal problem (problems with the bones or joints)?,ihq
-q000012,"Has the participant been diagnosed with any form of leukemia, or transient myeloproliferative disorder (TMD, also known as transient abnormal myelopoiesis or transient leukemia), or a leukemoid reaction?",ihq
-q000013,Has the participant ever been diagnosed with COVID-19 (novel coronavirus disease)?,ihq
-q000014,Has the participant ever been diagnosed with a thyroid condition?,ihq
-q000015,Has the participant ever been diagnosed with diabetes?,ihq
-q000016,Has participant ever been diagnosed with celiac disease (gluten or wheat intolerance)?,ihq
-q000017,Has the participant ever seen an audiologist for hearing testing?,ihq
-q000018,How often does the participant have his or her hearing tested?,ihq
-q000019,"If the participant has hearing loss, what was the age in years when the diagnosis was made?",ihq
-q000020,Has the participant ever had an eye exam performed by an eye doctor or an ophthalmologist?,ihq
-q000021,"If the participant has an eye condition, what was the age in years when the diagnosis was made?",ihq
-q000022,"If the participant is less than 18 years old, what is the highest grade in school that the participant has started?",ihq
-q000023,"If the participant is less than 18 years old, what is the grade at which the participant is academically functioning for reading skills?",ihq
-q000024,"If the participant is less than 18 years old, what is the grade at which the participant is academically functioning for math skills?",ihq
-q000025,"If the participant is 18 years or older, what is the highest grade or level of school the participant has completed or the highest degree the participant has received?",ihq
-q000026,"Has the participant ever been diagnosed with Dementia, Alzheimer's disease, or cognitive decline?",ihq
-q000027,Has the participant ever had a formal IQ (intelligence) test?,ihq
-q000028,Is the participant currently participating in any clinical trial or research study related to Down syndrome?,ihq
-q000029,Has the participant ever participated in any clinical trial or research study related to Down syndrome (and is not currently participating in a clinical trial)?,ihq
-q000030,Has the participant ever participated in any clinical trial or research study related to any other condition (aside from Down syndrome)?,ihq
-q000031,How many people (including the participant) currently live in the participant's household?,ihq
-q000032,What is the education level of the mother of the participant?,ihq
-q000033,What is the education level of the father of the participant?,ihq
-q000034,What is the annual gross income for the household in which the participant lives (in U.S. dollars)?,ihq
-race,race,demo
-race_v000208,race_american_indian,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-race_v000209,race_asian,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-race_v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-race_v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-race_v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-race_v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-registration_year,registration_year,demo
-relationship_to_participant,relationship_to_participant,demo
-session_id,session_id,ihq
-survey_complete,survey_complete,ihq
-survey_time,survey_time,ihq
-v000001,"Prenatal genetic testing (such as triple screen, quad screen, integrated screen, amniocentesis, chorionic villus sampling (CVS), or test of mother's blood for baby's DNA)",q-diagnosis
-v000002,"Genetic testing in baby after birth (such as chromosome analysis, cytogenomic array, or fluorescence in situ hybridization (FISH)",q-diagnosis
-v000003,Physical examination by a physician,q-diagnosis
-v000004,Unsure,q-diagnosis
-v000005,Other,q-diagnosis
-v000007,"Yes, a sibling or twin has Down syndrome",q-fam-mem
-v000008,"Yes, a more distant relative has Down syndrome",q-fam-mem
-v000009,Unsure,q-fam-mem
-v000010,No congenital heart defect,q-congen-heart
-v000011,Atrial septal defect (ASD),q-congen-heart,0001631,Atrial septal defect,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000011,Atrial septal defect (ASD),q-congen-heart,0006664,atrial septal defect,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000012,Ventricular septal defect (VSD),q-congen-heart,0001629,Ventricular septal defect,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000012,Ventricular septal defect (VSD),q-congen-heart,0002070,ventricular septal defect,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000013,Atrioventricular septal defect (or AV Canal Defect),q-congen-heart,0006695,Atrioventricular canal defect,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000013,Atrioventricular septal defect (or AV Canal Defect),q-congen-heart,0020290,atrioventricular septal defect,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000014,Tetralogy of Fallot,q-congen-heart,0001636,Tetralogy of Fallot,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000014,Tetralogy of Fallot,q-congen-heart,0008542,tetralogy of fallot,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000015,Patent Ductus Arteriosus (PDA),q-congen-heart,0001643,Patent ductus arteriosus,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000015,Patent Ductus Arteriosus (PDA),q-congen-heart,0011827,patent ductus arteriosus,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000016,Patent Foramen Ovale (PFO),q-congen-heart,0001655,Patent foramen ovale,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000016,Patent Foramen Ovale (PFO),q-congen-heart,0020439,patent foramen ovale,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000017,Unsure,q-congen-heart
-v000018,Other,q-congen-heart,0001627,Abnormal heart morphology,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000018,Other,q-congen-heart,0005453,congenital heart disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000019,None,q-heart-surgery
-v000020,"Yes, surgery for a congenital heart defect in the first year of life",q-heart-surgery
-v000021,"Yes, surgery for a congenital heart defect after the first year of life",q-heart-surgery
-v000022,Cardiac surgery for other reason later in life,q-heart-surgery
-v000023,Unsure,q-heart-surgery
-v000024,None,q-gastro
-v000025,"Duodenal atresia, stenosis or web (blockage or narrowing of intestines beyond the stomach)",q-gastro,0002246,Abnormal duodenum morphology,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000026,Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out),q-gastro,0002023,Anal stenosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000026,Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out),q-gastro,0002025,Anal atresia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),q-gastro,0001044,esophageal atresia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),q-gastro,0002032,Esophageal atresia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),q-gastro,0002575,Tracheoesophageal fistula,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000028,Hirschsprung disease (the gut doesn't move the stool and becomes enlarged inside),q-gastro,0018309,Hirschsprung disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000029,Chronic constipation,q-gastro,0012450,Chronic constipation,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000030,Dysphagia (difficulty swallowing),q-gastro
-v000031,"Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",q-gastro
-v000032,Celiac disease (gluten or wheat intolerance),q-gastro,0002608,Celiac disease,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000032,Celiac disease (gluten or wheat intolerance),q-gastro,0005130,celiac disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000033,Other feeding problem,q-gastro
-v000034,Chronic diarrhea,q-gastro,0002028,Chronic diarrhea,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000034,Chronic diarrhea,q-gastro,0044751,chronic diarrheal disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000035,Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns),q-gastro,0001561,pyloric stenosis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000035,Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns),q-gastro,0002021,Pyloric stenosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000036,Gastroesophageal reflux (GERD acid reflux),q-gastro,0002020,Gastroesophageal reflux,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000036,Gastroesophageal reflux (GERD acid reflux),q-gastro,0007186,gastroesophageal reflux disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000037,Irritable bowel syndrome (IBS),q-gastro,0005052,irritable bowel syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000038,Peptic ulcers,q-gastro,0004247,peptic ulcer disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000038,Peptic ulcers,q-gastro,0004398,Peptic ulcer,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000039,Gallstones,q-gastro,0001081,Cholelithiasis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000039,Gallstones,q-gastro,0005346,gallstones,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000040,Hemorrhoids,q-gastro,0004872,hemorrhoid,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000041,Diverticulitis or diverticulosis,q-gastro,0004235,diverticulitis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000042,Colorectal carcinoma (cancer of the bowel),q-gastro,0024331,colorectal carcinoma,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000043,Inflammatory bowel disease (Crohn's disease or ulcerative colitis),q-gastro,0005265,inflammatory bowel disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000044,Unsure,q-gastro
-v000045,Other,q-gastro
-v000046,None,q-gastro-surgery
-v000047,"Repair of duodenal atresia, stenosis, or web",q-gastro-surgery
-v000048,Repair of anal stenosis/atresia,q-gastro-surgery
-v000049,Gastrostomy tube placement (feeding tube),q-gastro-surgery
-v000050,Surgery for Hirschsprung disease,q-gastro-surgery
-v000051,Fundoplication (wrap top of stomach around esophagus to prevent acid reflux),q-gastro-surgery
-v000052,Unsure,q-gastro-surgery
-v000053,Other,q-gastro-surgery
-v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental,0002232,Patchy alopecia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000055,Alopecia areata (loss of hair on scalp at a young age),q-dental,0005340,alopecia areata,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000056,Folliculitis (red rash where the hair comes out of the skin),q-dental,0006552,folliculitis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000056,Folliculitis (red rash where the hair comes out of the skin),q-dental,0025084,Folliculitis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000057,Vitiligo (white patches of skin without any pigment),q-dental,0001045,Vitiligo,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000057,Vitiligo (white patches of skin without any pigment),q-dental,0008661,vitiligo,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000058,Multiple dental caries (cavities),q-dental
-v000059,Wears dentures,q-dental
-v000060,Other dental problems,q-dental
-v000061,Other skin problems,q-dental,0000951,Abnormality of the skin,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000061,Other skin problems,q-dental,0005093,skin disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000062,Unsure,q-dental
-v000064,"Regression or loss of previously attained skills (speech-language, social, self-help or motor skills)",q-neurologic
-v000065,Swallowing disorder (required a gastrostomy tube or nasogastric tube for more than 1 month),q-neurologic
-v000066,Cerebral palsy,q-neurologic,0006497,cerebral palsy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000066,Cerebral palsy,q-neurologic,0100021,Cerebral palsy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000067,Stroke,q-neurologic,0001297,Stroke,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000067,Stroke,q-neurologic,0005098,stroke disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000068,Brain malformation,q-neurologic,0012443,Abnormality of brain morphology,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000069,Unsure,q-neurologic
-v000070,Other,q-neurologic,0000707,Abnormality of the nervous system,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000070,Other,q-neurologic,0005071,nervous system disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000071,None,q-sleep
-v000072,Sleep apnea,q-sleep,0005296,sleep apnea syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000072,Sleep apnea,q-sleep,0010535,Sleep apnea,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000073,Sleep-disordered breathing,q-sleep,0005296,sleep apnea syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000073,Sleep-disordered breathing,q-sleep,0010535,Sleep apnea,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000074,Snoring,q-sleep,0025267,Snoring,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000075,Narcolepsy,q-sleep,0021107,narcolepsy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000075,Narcolepsy,q-sleep,0030050,Narcolepsy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000076,Restless legs syndrome,q-sleep,0005391,restless legs syndrome,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000076,Restless legs syndrome,q-sleep,0012452,Restless legs,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000077,Excessive daytime sleepiness,q-sleep,0001262,Excessive daytime somnolence,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000078,Insomnia (difficulty falling asleep or staying asleep),q-sleep,0013600,Insomnia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000078,Insomnia (difficulty falling asleep or staying asleep),q-sleep,0100785,Insomnia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000079,Unsure,q-sleep
-v000080,Other,q-sleep
-v000081,No skeletal problems,q-skeletal
-v000082,Atlanto-axial instability or (neck spine is weak or unstable),q-skeletal,0003467,Atlantoaxial instability,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000083,Cervical spine degeneration (pain or numbness in the neck or extremities from weakness in the neck bones),q-skeletal,0008480,Cervical spondylosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000084,Osteopenia (low bone mineral density),q-skeletal,0000938,Osteopenia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal,0000939,Osteoporosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000085,"Osteoporosis (weak, brittle bones that are easy to break)",q-skeletal,0005298,osteoporosis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000086,Fractures (broken bones),q-skeletal,0005315,bone fracture,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000086,Fractures (broken bones),q-skeletal,0020110,Bone fracture,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000087,Arthritis,q-skeletal,0001369,Arthritis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000087,Arthritis,q-skeletal,0003040,Arthropathy,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000087,Arthritis,q-skeletal,0006816,arthropathy,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000088,Unsure,q-skeletal
-v000089,Other,q-skeletal,0002081,musculoskeletal system disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000089,Other,q-skeletal,0033127,Abnormality of the musculoskeletal system,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000090,Not diagnosed with any of  these cancers,q-cancer
-v000091,Diagnosed with breast cancer,q-cancer,0007254,breast cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000092,Diagnosed with cervical cancer (for females),q-cancer,0002974,cervical cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000093,Diagnosed with ovarian cancer (for females),q-cancer,0008170,ovarian cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000094,Diagnosed with testicular cancer (for males),q-cancer,0005447,testicular cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000095,Diagnosed with prostate cancer (for males),q-cancer,0008315,prostate cancer,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000096,Diagnosed with cancer other than leukemia during childhood,q-cancer,0002664,Neoplasm,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000096,Diagnosed with cancer other than leukemia during childhood,q-cancer,0006517,childhood malignant neoplasm,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000097,Diagnosed with other adulthood cancer not named above,q-cancer
-v000098,Unsure,q-cancer
-v000099,Other,q-cancer
-v000100,None,q-thyroid
-v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",q-thyroid,0000821,Hypothyroidism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",q-thyroid,0005420,hypothyroidism,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000102,"Subclinical or compensated hypothyroidism (hyperthyrotropinemia) high TSH, normal T4 levels",q-thyroid,0008223,Compensated hypothyroidism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000103,"Hyperthyroidism (overactive thyroid) low TSH,  high T4 levels",q-thyroid
-v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),q-thyroid,0000872,Hashimoto thyroiditis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),q-thyroid,0007699,Hashimoto thyroiditis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000105,Positive thyroglobulin  or thyroid peroxidase (TPO) antibodies,q-thyroid
-v000106,Positive antimicrosomal antibodies,q-thyroid
-v000107,Unsure,q-thyroid
-v000108,Other,q-thyroid,0000820,Abnormality of the thyroid gland,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000108,Other,q-thyroid,0003240,thyroid gland disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000109,"No other metabolic, hormonal, or autoimmune conditions diagnosed",q-metabolic
-v000110,Calcium deficiency,q-metabolic,0002901,Hypocalcemia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000111,Obesity,q-metabolic,0001513,Obesity,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000111,Obesity,q-metabolic,0011122,obesity disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000112,Delayed/late puberty,q-metabolic,0000823,Delayed puberty,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000113,Growth hormone deficiency,q-metabolic,0000824,Decreased response to growth hormone stimuation test,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000114,High cortisol,q-metabolic
-v000115,Hypoglycemia (low blood sugar),q-metabolic,0001943,Hypoglycemia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000115,Hypoglycemia (low blood sugar),q-metabolic,0004946,hypoglycemia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000116,Low testosterone,q-metabolic
-v000117,Cushing's disease,q-metabolic,0009050,Cushing disease due to pituitary adenoma,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000118,Precocious/early puberty,q-metabolic,0000826,Precocious puberty,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000119,Vitamin D deficiency,q-metabolic,0100471,vitamin D deficiency,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000119,Vitamin D deficiency,q-metabolic,0100512,Low levels of vitamin D,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000120,"Metabolic syndrome (combination of at least 2-3 of the following:  high blood pressure, high blood sugar, unhealthy cholesterol levels, and increased abdominal fat)",q-metabolic
-v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,q-metabolic,0002725,Systemic lupus erythematosus,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,q-metabolic,0007915,systemic lupus erythematosus,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000122,Unsure,q-metabolic
-v000123,Other,q-metabolic,0000818,Abnormality of the endocrine system,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000123,Other,q-metabolic,0002960,Autoimmunity,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000123,Other,q-metabolic,0005151,endocrine system disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000123,Other,q-metabolic,0007179,autoimmune disease,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000124,No hearing loss,q-hearing-loss
-v000125,Transient hearing loss (hearing loss went away),q-hearing-loss
-v000126,Conductive hearing loss,q-hearing-loss
-v000127,Mixed hearing loss,q-hearing-loss
-v000128,Sensorineural hearing loss (permanent nerve hearing loss),q-hearing-loss
-v000129,Hearing loss - unknown type,q-hearing-loss
-v000130,Unsure,q-hearing-loss
-v000131,Other,q-hearing-loss
-v000132,No treatment needed (or no hearing loss),q-hearing-treatment
-v000133,Tympanostomy tubes (myringotomy tubes PE or pressure equalization tubes) in eardrum to allow fluid to drain from middle ear,q-hearing-treatment
-v000134,Hearing aid,q-hearing-treatment
-v000135,FM amplification system,q-hearing-treatment
-v000136,Cochlear implant,q-hearing-treatment
-v000137,Uses sign language,q-hearing-treatment
-v000138,Uses lip reading,q-hearing-treatment
-v000139,Unsure,q-hearing-treatment
-v000140,Other,q-hearing-treatment
-v000141,None,q-vision
-v000142,Cataract,q-vision,0000518,Cataract,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000142,Cataract,q-vision,0005129,cataract (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000143,Strabismus (eye turns in or out),q-vision,0000486,Strabismus,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000143,Strabismus (eye turns in or out),q-vision,0003432,strabismus,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000144,Amblyopia (lazy eye),q-vision,0000646,Amblyopia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000144,Amblyopia (lazy eye),q-vision,0001020,amblyopia (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000145,Nearsighted (myopia),q-vision,0000545,Myopia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000145,Nearsighted (myopia),q-vision,0001384,myopia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000146,Farsighted (hyperopia),q-vision,0000540,Hypermetropia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000146,Farsighted (hyperopia),q-vision,0004891,hyperopia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000147,Astigmatism (blurry vision),q-vision,0000483,Astigmatism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000147,Astigmatism (blurry vision),q-vision,0011284,astigmatism (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000148,Ptosis (droopy eyelid),q-vision,0000508,Ptosis,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000148,Ptosis (droopy eyelid),q-vision,0000728,ptosis,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000149,Lacrimal duct stenosis (blockage of tear duct),q-vision,0000579,Nasolacrimal duct obstruction,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000150,Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision),q-vision,0000563,Keratoconus,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000150,Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision),q-vision,0015486,keratoconus (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000151,Depth perception problems,q-vision
-v000152,Blindness,q-vision,0000618,Blindness,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000152,Blindness,q-vision,0001941,blindness (disorder),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000153,Glaucoma,q-vision,0000501,Glaucoma,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000153,Glaucoma,q-vision,0005041,glaucoma (disease),http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000154,Retinal detachment,q-vision,0000541,Retinal detachment,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000154,Retinal detachment,q-vision,0008375,retinal detachment,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000155,"Presbyopia (""old eyes"" requiring magnifying lenses or reading glasses)",q-vision,0001330,presbyopia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000156,Unsure,q-vision
-v000157,Other,q-vision,0000478,Abnormality of the eye,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000157,Other,q-vision,0024458,disease of visual system,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000158,None,q-behavioral
-v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral,0007018,Attention deficit hyperactivity disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),q-behavioral,0007743,attention deficit-hyperactivity disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000160,Autism or Autism Spectrum Disorder (ASD),q-behavioral,0000717,Autism,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000160,Autism or Autism Spectrum Disorder (ASD),q-behavioral,0005260,autism,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000161,Anxiety disorder,q-behavioral,0000739,Anxiety,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000161,Anxiety disorder,q-behavioral,0005618,anxiety disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000162,Depression,q-behavioral,0000716,Depression,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000162,Depression,q-behavioral,0002050,depressive disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000163,Conduct or disruptive behavior disorder,q-behavioral,0005352,conduct disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000164,Regression (loss of previously stable functional skills),q-behavioral
-v000165,Adjustment disorder,q-behavioral,0003265,adjustment disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000166,Obsessive-Compulsive Disorder (OCD),q-behavioral,0000722,Obsessive-compulsive behavior,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000166,Obsessive-Compulsive Disorder (OCD),q-behavioral,0008114,obsessive-compulsive disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000167,Oppositional defiant disorder,q-behavioral,0000495,oppositional defiant disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000167,Oppositional defiant disorder,q-behavioral,0010865,Oppositional defiant disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000168,Bipolar/manic depression,q-behavioral,0004985,bipolar disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000168,Bipolar/manic depression,q-behavioral,0007302,Bipolar affective disorder,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000169,Panic attacks,q-behavioral,0005383,panic disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000169,Panic attacks,q-behavioral,0025269,Panic attack,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000170,Schizophrenia,q-behavioral,0005090,schizophrenia,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000170,Schizophrenia,q-behavioral,0100753,Schizophrenia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000171,Addiction,q-behavioral
-v000172,Eating disorder,q-behavioral,0005451,eating disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000173,Intermittent explosive disorder,q-behavioral,0001521,intermittent explosive disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000174,Suicidal thoughts or plans,q-behavioral,0031589,Suicidal ideation,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000175,Unsure,q-behavioral
-v000176,Other,q-behavioral,0000708,Behavioral abnormality,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000176,Other,q-behavioral,0002025,psychiatric disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000177,None,q-learning
-v000178,Global developmental delay,q-learning,0001263,Global developmental delay,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000179,Intellectual disability,q-learning,0001071,Intellectual disability,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000179,Intellectual disability,q-learning,0001249,Intellectual disability,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000180,Language delay: difficulty understanding what others are saying as well as those of the same age,q-learning,0001276,expressive language disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000181,Speech delay: difficulty speaking as clearly as those of the same age,q-learning,0000750,Delayed speech and language development,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000182,Mixed receptive and expressive language impairment,q-learning,0001568,mixed receptive-expressive language disorder,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000183,Minimal speech,q-learning
-v000184,Auditory processing disorder (difficulty recognizing and interpreting sounds),q-learning,0024422,auditory perceptual disorders,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000185,Verbal apraxia/dyspraxia (difficulty saying what he/she intends correctly and consistently),q-learning,0011098,Speech apraxia,http://purl.obolibrary.org/obo/hp.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000186,"Visual processing deficits (difficulty seeing differences between colors, shapes, patterns)",q-learning
-v000187,Hearing loss,q-learning
-v000188,Unsure,q-learning
-v000189,Other,q-learning,0004681,learning disability,http://purl.obolibrary.org/obo/mondo.owl,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000190,Lives with parents (may include siblings),q-living-situation
-v000191,Lives with sibling,q-living-situation
-v000192,Lives with other family member,q-living-situation
-v000193,Lives in a group home,q-living-situation
-v000194,Lives in a supported apartment,q-living-situation
-v000195,Lives with spouse or with partner,q-living-situation
-v000196,Lives independently,q-living-situation
-v000197,Lives in a long-term care facility,q-living-situation
-v000198,Unsure,q-living-situation
-v000199,Other,q-living-situation
-v000200,language_preferred,language
-v000208,race_american_indian,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000209,race_asian,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000210,race_black,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000211,race_pacific_islander,race
-v000211,race_pacific_islander,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000212,race_white,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000213,race_unknown,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
-v000214,language_spoken_english,language
-v000215,language_spoken_spanish,language
-DSC,DS-Connect,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,https://docs.google.com/spreadsheets/d/1_qbnn1VVlQS0tGprkiJbOhHZFixvs2qAVj5Rrdi2EaU/edit#gid=857513026
-FAMMEMB,Family Member,FamilyRelationship,FAMMEMB,family member,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+local code,text,table_name,parent_varname,local code system,code,display,code system,comment
+race_v000208,race_american_indian,,,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,
+race_v000209,race_asian,,,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,
+race_v000210,race_black,,,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,
+race_v000211,race_pacific_islander,,,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,
+race_v000212,race_white,,,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,
+race_v000213,race_unknown,,,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
+Kilograms,Kilograms,,,units,kg,Kilograms,http://ucum.org,
+cm,cm,,,units,cm,cm,http://ucum.org,
+kg/m2,kg/m2,,,units,kg/m2,kg/m2,http://ucum.org,
+DSC,DS-Connect,,,IncludeProgram,INCLUDE,INCLUDE,https://includedcc.org/fhir/code-systems/programs,
+FAMMEMB,Family Member,,,FamilyRelationship,FAMMEMB,family member,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
+Female,Female,demo,gender,gender,female,Female,http://hl7.org/fhir/administrative-gender,
+Female,Female,demo,gender,gender,female,Female,http://hl7.org/fhir/administrative-gender,
+Male,Male,demo,gender,gender,male,Male,http://hl7.org/fhir/administrative-gender,
+Male,Male,demo,gender,gender,male,Male,http://hl7.org/fhir/administrative-gender,
+Other,Other,demo,gender,gender,other,Other,http://hl7.org/fhir/administrative-gender,
+Other,Other,demo,gender,gender,other,Other,http://hl7.org/fhir/administrative-gender,
+Hispanic or Latino,Hispanic or Latino,demo,ethnicity,ethnicity,2135-2,Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+Hispanic or Latino,Hispanic or Latino,demo,ethnicity,ethnicity,2135-2,Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+Not Hispanic or Latino,Not Hispanic or Latino,demo,ethnicity,ethnicity,2186-5,Not Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+Not Hispanic or Latino,Not Hispanic or Latino,demo,ethnicity,ethnicity,2186-5,Not Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+Unknown,Unknown,demo,ethnicity,ethnicity,unknown,Unknown,http://hl7.org/fhir/administrative-gender,
+Unknown,Unknown,demo,ethnicity,ethnicity,unknown,Unknown,http://hl7.org/fhir/administrative-gender,
+Unknown,Unknown,demo,ethnicity,ethnicity,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
+Unknown,Unknown,demo,ethnicity,ethnicity,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
+v000208,race_american_indian,demo,race,race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000209,race_asian,demo,race,race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000210,race_black,demo,race,race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000211,race_pacific_islander,demo,race,race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000212,race_white,demo,race,race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+v000213,race_unknown,demo,race,race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+q000001,What is the participant's Down syndrome diagnosis?,ihq,,ihq,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,I just found this code for Down Syndrome using Mondo's website search
+Complete trisomy 21,Complete trisomy 21,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Complete trisomy 21,Complete trisomy 21,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Complete trisomy 21,Complete trisomy 21,ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Complete trisomy 21,Complete trisomy 21,ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic trisomy 21,Mosaic trisomy 21,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Mosaic trisomy 21,Mosaic trisomy 21,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Mosaic trisomy 21,Mosaic trisomy 21,ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic trisomy 21,Mosaic trisomy 21,ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Translocation Down syndrome,Translocation Down syndrome,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Translocation Down syndrome,Translocation Down syndrome,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Translocation Down syndrome,Translocation Down syndrome,ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Translocation Down syndrome,Translocation Down syndrome,ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Mosaic Translocation Down syndrome,Mosaic Translocation Down syndrome,ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),Partial Trisomy 21 (only a part of chromosome 21 is present in 3 copies),ihq,q000001,q000001,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Not tested,Not tested,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Not tested,Not tested,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Not tested,Not tested,ihq,q000001,q000001,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Not tested,Not tested,ihq,q000001,q000001,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000001,q000001,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000001,q000001,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000001,q000001,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000001,q000001,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000001,q000001,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000004,Unsure,ihq,q-diagnosis,q-diagnosis,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000004,Unsure,ihq,q-diagnosis,q-diagnosis,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000004,Unsure,ihq,q-diagnosis,q-diagnosis,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000005,Other,ihq,q-diagnosis,q-diagnosis,other,Other,http://hl7.org/fhir/administrative-gender,
+Unsure,Unsure,ihq,q000002,q000002,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000002,q000002,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000002,q000002,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000002,q000002,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000002,q000002,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000002,q000002,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000003,q000003,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000003,q000003,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000003,q000003,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000003,q000003,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000003,q000003,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000003,q000003,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000003,q000003,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000003,q000003,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000003,q000003,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000003,q000003,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000004,q000004,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000004,q000004,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000004,q000004,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000004,q000004,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000004,q000004,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000004,q000004,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000005,q000005,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000005,q000005,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000005,q000005,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000005,q000005,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000005,q000005,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000005,q000005,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000006,No,ihq,q-fam-mem,q-fam-mem,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000009,Unsure,ihq,q-fam-mem,q-fam-mem,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000009,Unsure,ihq,q-fam-mem,q-fam-mem,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000009,Unsure,ihq,q-fam-mem,q-fam-mem,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000006,q000006,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000006,q000006,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000006,q000006,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000006,q000006,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000006,q000006,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000006,q000006,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000006,q000006,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000006,q000006,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000006,q000006,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000006,q000006,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000011,Atrial septal defect (ASD),ihq,q-congen-heart,q-congen-heart,0001631,Atrial septal defect,http://purl.obolibrary.org/obo/hp.owl,
+v000011,Atrial septal defect (ASD),ihq,q-congen-heart,q-congen-heart,0006664,atrial septal defect,http://purl.obolibrary.org/obo/mondo.owl,
+v000012,Ventricular septal defect (VSD),ihq,q-congen-heart,q-congen-heart,0001629,Ventricular septal defect,http://purl.obolibrary.org/obo/hp.owl,
+v000012,Ventricular septal defect (VSD),ihq,q-congen-heart,q-congen-heart,0002070,ventricular septal defect,http://purl.obolibrary.org/obo/mondo.owl,
+v000013,Atrioventricular septal defect (or AV Canal Defect),ihq,q-congen-heart,q-congen-heart,0006695,Atrioventricular canal defect,http://purl.obolibrary.org/obo/hp.owl,
+v000013,Atrioventricular septal defect (or AV Canal Defect),ihq,q-congen-heart,q-congen-heart,0020290,atrioventricular septal defect,http://purl.obolibrary.org/obo/mondo.owl,
+v000014,Tetralogy of Fallot,ihq,q-congen-heart,q-congen-heart,0001636,Tetralogy of Fallot,http://purl.obolibrary.org/obo/hp.owl,
+v000014,Tetralogy of Fallot,ihq,q-congen-heart,q-congen-heart,0008542,tetralogy of fallot,http://purl.obolibrary.org/obo/mondo.owl,
+v000015,Patent Ductus Arteriosus (PDA),ihq,q-congen-heart,q-congen-heart,0001643,Patent ductus arteriosus,http://purl.obolibrary.org/obo/hp.owl,
+v000015,Patent Ductus Arteriosus (PDA),ihq,q-congen-heart,q-congen-heart,0011827,patent ductus arteriosus,http://purl.obolibrary.org/obo/mondo.owl,
+v000016,Patent Foramen Ovale (PFO),ihq,q-congen-heart,q-congen-heart,0001655,Patent foramen ovale,http://purl.obolibrary.org/obo/hp.owl,
+v000016,Patent Foramen Ovale (PFO),ihq,q-congen-heart,q-congen-heart,0020439,patent foramen ovale,http://purl.obolibrary.org/obo/mondo.owl,
+v000017,Unsure,ihq,q-congen-heart,q-congen-heart,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000017,Unsure,ihq,q-congen-heart,q-congen-heart,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000017,Unsure,ihq,q-congen-heart,q-congen-heart,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000018,Other,ihq,q-congen-heart,q-congen-heart,other,Other,http://hl7.org/fhir/administrative-gender,
+v000018,Other,ihq,q-congen-heart,q-congen-heart,0001627,Abnormal heart morphology,http://purl.obolibrary.org/obo/hp.owl,
+v000018,Other,ihq,q-congen-heart,q-congen-heart,0005453,congenital heart disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000023,Unsure,ihq,q-heart-surgery,q-heart-surgery,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000023,Unsure,ihq,q-heart-surgery,q-heart-surgery,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000023,Unsure,ihq,q-heart-surgery,q-heart-surgery,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000007,q000007,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000007,q000007,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000007,q000007,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000007,q000007,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000007,q000007,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000007,q000007,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000007,q000007,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000007,q000007,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000007,q000007,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000007,q000007,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000025,"Duodenal atresia, stenosis or web (blockage or narrowing of intestines beyond the stomach)",ihq,q-gastro,q-gastro,0002246,Abnormal duodenum morphology,http://purl.obolibrary.org/obo/hp.owl,
+v000026,Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out),ihq,q-gastro,q-gastro,0002023,Anal atresia,http://purl.obolibrary.org/obo/hp.owl,
+v000026,Anal stenosis/atresia (blockage of intestines near the anus where the stool comes out),ihq,q-gastro,q-gastro,0002025,Anal stenosis,http://purl.obolibrary.org/obo/hp.owl,
+v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),ihq,q-gastro,q-gastro,0002032,Esophageal atresia,http://purl.obolibrary.org/obo/hp.owl,
+v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),ihq,q-gastro,q-gastro,0001044,esophageal atresia,http://purl.obolibrary.org/obo/mondo.owl,
+v000027,Esophageal atresia (swallowing tube is blocked) or tracheoesophageal fistula (swallowing tube connects to windpipe),ihq,q-gastro,q-gastro,0002575,Tracheoesophageal fistula,http://purl.obolibrary.org/obo/hp.owl,
+v000028,Hirschsprung disease (the gut doesn't move the stool and becomes enlarged inside),ihq,q-gastro,q-gastro,0018309,Hirschsprung disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000029,Chronic constipation,ihq,q-gastro,q-gastro,0012450,Chronic constipation,http://purl.obolibrary.org/obo/hp.owl,
+v000030,Dysphagia (difficulty swallowing),ihq,q-gastro,q-gastro,0002015,Dysphagia,http://purl.obolibrary.org/obo/hp.owl,
+v000031,"Aspiration (inhalation of oral secretions, food, water, or gastric contents into the lower airways, which can lead to pneumonia)",ihq,q-gastro,q-gastro,0002835,Aspiration,http://purl.obolibrary.org/obo/hp.owl,
+v000032,Celiac disease (gluten or wheat intolerance),ihq,q-gastro,q-gastro,0002608,Celiac disease,http://purl.obolibrary.org/obo/hp.owl,
+v000032,Celiac disease (gluten or wheat intolerance),ihq,q-gastro,q-gastro,0005130,celiac disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000033,Other feeding problem,ihq,q-gastro,q-gastro,0025031,Abnormality of the digestive system,http://purl.obolibrary.org/obo/hp.owl,
+v000033,Other feeding problem,ihq,q-gastro,q-gastro,0004335,digestive system disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000034,Chronic diarrhea,ihq,q-gastro,q-gastro,0002028,Chronic diarrhea,http://purl.obolibrary.org/obo/hp.owl,
+v000034,Chronic diarrhea,ihq,q-gastro,q-gastro,0044751,chronic diarrheal disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000035,Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns),ihq,q-gastro,q-gastro,0002021,Pyloric stenosis,http://purl.obolibrary.org/obo/hp.owl,
+v000035,Pyloric stenosis (blockage of intestines just below the stomach causing projectile vomiting in newborns),ihq,q-gastro,q-gastro,0001561,pyloric stenosis,http://purl.obolibrary.org/obo/mondo.owl,
+v000036,Gastroesophageal reflux (GERD acid reflux),ihq,q-gastro,q-gastro,0002020,Gastroesophageal reflux,http://purl.obolibrary.org/obo/hp.owl,
+v000036,Gastroesophageal reflux (GERD acid reflux),ihq,q-gastro,q-gastro,0007186,gastroesophageal reflux disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000037,Irritable bowel syndrome (IBS),ihq,q-gastro,q-gastro,0005052,irritable bowel syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000038,Peptic ulcers,ihq,q-gastro,q-gastro,0004398,Peptic ulcer,http://purl.obolibrary.org/obo/hp.owl,
+v000038,Peptic ulcers,ihq,q-gastro,q-gastro,0004247,peptic ulcer disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000039,Gallstones,ihq,q-gastro,q-gastro,0001081,Cholelithiasis,http://purl.obolibrary.org/obo/hp.owl,
+v000039,Gallstones,ihq,q-gastro,q-gastro,0005346,gallstones,http://purl.obolibrary.org/obo/mondo.owl,
+v000040,Hemorrhoids,ihq,q-gastro,q-gastro,0004872,hemorrhoid,http://purl.obolibrary.org/obo/mondo.owl,
+v000041,Diverticulitis or diverticulosis,ihq,q-gastro,q-gastro,0004235,diverticulitis,http://purl.obolibrary.org/obo/mondo.owl,
+v000042,Colorectal carcinoma (cancer of the bowel),ihq,q-gastro,q-gastro,0024331,colorectal carcinoma,http://purl.obolibrary.org/obo/mondo.owl,
+v000043,Inflammatory bowel disease (Crohn's disease or ulcerative colitis),ihq,q-gastro,q-gastro,0005265,inflammatory bowel disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000044,Unsure,ihq,q-gastro,q-gastro,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000044,Unsure,ihq,q-gastro,q-gastro,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000044,Unsure,ihq,q-gastro,q-gastro,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000045,Other,ihq,q-gastro,q-gastro,other,Other,http://hl7.org/fhir/administrative-gender,
+v000045,Other,ihq,q-gastro,q-gastro,0025031,Abnormality of the digestive system,http://purl.obolibrary.org/obo/hp.owl,
+v000045,Other,ihq,q-gastro,q-gastro,0004335,digestive system disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000052,Unsure,ihq,q-gastro-surgery,q-gastro-surgery,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000052,Unsure,ihq,q-gastro-surgery,q-gastro-surgery,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000052,Unsure,ihq,q-gastro-surgery,q-gastro-surgery,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000053,Other,ihq,q-gastro-surgery,q-gastro-surgery,other,Other,http://hl7.org/fhir/administrative-gender,
+0,0,ihq,q000008,q000008,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+0,0,ihq,q000008,q000008,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+1,1,ihq,q000008,q000008,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+1,1,ihq,q000008,q000008,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+2,2,ihq,q000008,q000008,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+2,2,ihq,q000008,q000008,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000008,q000008,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000008,q000008,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000008,q000008,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000008,q000008,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000008,q000008,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000008,q000008,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000054,No,ihq,q-dental,q-dental,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000055,Alopecia areata (loss of hair on scalp at a young age),ihq,q-dental,q-dental,0002232,Patchy alopecia,http://purl.obolibrary.org/obo/hp.owl,
+v000055,Alopecia areata (loss of hair on scalp at a young age),ihq,q-dental,q-dental,0005340,alopecia areata,http://purl.obolibrary.org/obo/mondo.owl,
+v000056,Folliculitis (red rash where the hair comes out of the skin),ihq,q-dental,q-dental,0025084,Folliculitis,http://purl.obolibrary.org/obo/hp.owl,
+v000056,Folliculitis (red rash where the hair comes out of the skin),ihq,q-dental,q-dental,0006552,folliculitis,http://purl.obolibrary.org/obo/mondo.owl,
+v000057,Vitiligo (white patches of skin without any pigment),ihq,q-dental,q-dental,0001045,Vitiligo,http://purl.obolibrary.org/obo/hp.owl,
+v000057,Vitiligo (white patches of skin without any pigment),ihq,q-dental,q-dental,0008661,vitiligo,http://purl.obolibrary.org/obo/mondo.owl,
+v000061,Other skin problems,ihq,q-dental,q-dental,0000951,Abnormality of the skin,http://purl.obolibrary.org/obo/hp.owl,
+v000061,Other skin problems,ihq,q-dental,q-dental,0005093,skin disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000062,Unsure,ihq,q-dental,q-dental,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000062,Unsure,ihq,q-dental,q-dental,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000062,Unsure,ihq,q-dental,q-dental,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+q000009,Has the participant ever been diagnosed with any form of seizures or epilepsy?,ihq,,ihq,0001250,Seizure,http://purl.obolibrary.org/obo/hp.owl,
+q000009,Has the participant ever been diagnosed with any form of seizures or epilepsy?,ihq,,ihq,0005027,epilepsy,http://purl.obolibrary.org/obo/mondo.owl,
+No,No,ihq,q000009,q000009,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000009,q000009,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000009,q000009,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000009,q000009,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000009,q000009,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000009,q000009,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000009,q000009,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000009,q000009,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000009,q000009,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000009,q000009,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000063,No,ihq,q-neurologic,q-neurologic,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000064,"Regression or loss of previously attained skills (speech-language, social, self-help or motor skills)",ihq,q-neurologic,q-neurologic,0002376,Developmental regression,http://purl.obolibrary.org/obo/hp.owl,
+v000065,Swallowing disorder (required a gastrostomy tube or nasogastric tube for more than 1 month),ihq,q-neurologic,q-neurologic,0002015,Dysphagia,http://purl.obolibrary.org/obo/hp.owl,
+v000066,Cerebral palsy,ihq,q-neurologic,q-neurologic,0100021,Cerebral palsy,http://purl.obolibrary.org/obo/hp.owl,
+v000066,Cerebral palsy,ihq,q-neurologic,q-neurologic,0006497,cerebral palsy,http://purl.obolibrary.org/obo/mondo.owl,
+v000067,Stroke,ihq,q-neurologic,q-neurologic,0001297,Stroke,http://purl.obolibrary.org/obo/hp.owl,
+v000067,Stroke,ihq,q-neurologic,q-neurologic,0005098,stroke disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000068,Brain malformation,ihq,q-neurologic,q-neurologic,0012443,Abnormality of brain morphology,http://purl.obolibrary.org/obo/hp.owl,
+v000069,Unsure,ihq,q-neurologic,q-neurologic,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000069,Unsure,ihq,q-neurologic,q-neurologic,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000069,Unsure,ihq,q-neurologic,q-neurologic,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000070,Other,ihq,q-neurologic,q-neurologic,other,Other,http://hl7.org/fhir/administrative-gender,
+v000070,Other,ihq,q-neurologic,q-neurologic,0000707,Abnormality of the nervous system,http://purl.obolibrary.org/obo/hp.owl,
+v000070,Other,ihq,q-neurologic,q-neurologic,0005071,nervous system disorder,http://purl.obolibrary.org/obo/mondo.owl,
+No,No,ihq,q000010,q000010,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000010,q000010,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000010,q000010,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000010,q000010,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000010,q000010,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000010,q000010,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000010,q000010,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000010,q000010,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000010,q000010,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000010,q000010,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000072,Sleep apnea,ihq,q-sleep,q-sleep,0010535,Sleep apnea,http://purl.obolibrary.org/obo/hp.owl,
+v000072,Sleep apnea,ihq,q-sleep,q-sleep,0005296,sleep apnea syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000073,Sleep-disordered breathing,ihq,q-sleep,q-sleep,0010535,Sleep apnea,http://purl.obolibrary.org/obo/hp.owl,
+v000073,Sleep-disordered breathing,ihq,q-sleep,q-sleep,0005296,sleep apnea syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000074,Snoring,ihq,q-sleep,q-sleep,0025267,Snoring,http://purl.obolibrary.org/obo/hp.owl,
+v000075,Narcolepsy,ihq,q-sleep,q-sleep,0030050,Narcolepsy,http://purl.obolibrary.org/obo/hp.owl,
+v000075,Narcolepsy,ihq,q-sleep,q-sleep,0021107,narcolepsy,http://purl.obolibrary.org/obo/mondo.owl,
+v000076,Restless legs syndrome,ihq,q-sleep,q-sleep,0012452,Restless legs,http://purl.obolibrary.org/obo/hp.owl,
+v000076,Restless legs syndrome,ihq,q-sleep,q-sleep,0005391,restless legs syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000077,Excessive daytime sleepiness,ihq,q-sleep,q-sleep,0001262,Excessive daytime somnolence,http://purl.obolibrary.org/obo/hp.owl,
+v000078,Insomnia (difficulty falling asleep or staying asleep),ihq,q-sleep,q-sleep,0100785,HP:0100785,http://purl.obolibrary.org/obo/hp.owl,
+v000078,Insomnia (difficulty falling asleep or staying asleep),ihq,q-sleep,q-sleep,0013600,Insomnia,http://purl.obolibrary.org/obo/mondo.owl,
+v000079,Unsure,ihq,q-sleep,q-sleep,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000079,Unsure,ihq,q-sleep,q-sleep,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000079,Unsure,ihq,q-sleep,q-sleep,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000080,Other,ihq,q-sleep,q-sleep,other,Other,http://hl7.org/fhir/administrative-gender,
+No,No,ihq,q000011,q000011,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000011,q000011,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000011,q000011,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000011,q000011,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000011,q000011,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000011,q000011,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000011,q000011,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000011,q000011,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000011,q000011,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000011,q000011,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000082,Atlanto-axial instability or (neck spine is weak or unstable),ihq,q-skeletal,q-skeletal,0003467,Atlantoaxial instability,http://purl.obolibrary.org/obo/hp.owl,
+v000083,Cervical spine degeneration (pain or numbness in the neck or extremities from weakness in the neck bones),ihq,q-skeletal,q-skeletal,0008480,Cervical spondylosis,http://purl.obolibrary.org/obo/hp.owl,
+v000084,Osteopenia (low bone mineral density),ihq,q-skeletal,q-skeletal,0000938,Osteopenia,http://purl.obolibrary.org/obo/hp.owl,
+v000085,"Osteoporosis (weak, brittle bones that are easy to break)",ihq,q-skeletal,q-skeletal,0000939,Osteoporosis,http://purl.obolibrary.org/obo/hp.owl,
+v000085,"Osteoporosis (weak, brittle bones that are easy to break)",ihq,q-skeletal,q-skeletal,0005298,osteoporosis,http://purl.obolibrary.org/obo/mondo.owl,
+v000086,Fractures (broken bones),ihq,q-skeletal,q-skeletal,0020110,Bone fracture,http://purl.obolibrary.org/obo/hp.owl,
+v000086,Fractures (broken bones),ihq,q-skeletal,q-skeletal,0005315,bone fracture,http://purl.obolibrary.org/obo/mondo.owl,
+v000087,Arthritis,ihq,q-skeletal,q-skeletal,0001369,Arthritis,http://purl.obolibrary.org/obo/hp.owl,
+v000087,Arthritis,ihq,q-skeletal,q-skeletal,0006816,arthropathy,http://purl.obolibrary.org/obo/mondo.owl,
+v000087,Arthritis,ihq,q-skeletal,q-skeletal,0003040,Arthropathy,http://purl.obolibrary.org/obo/hp.owl,
+v000087,Arthritis,ihq,q-skeletal,q-skeletal,0006816,arthropathy,http://purl.obolibrary.org/obo/mondo.owl,
+v000088,Unsure,ihq,q-skeletal,q-skeletal,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000088,Unsure,ihq,q-skeletal,q-skeletal,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000088,Unsure,ihq,q-skeletal,q-skeletal,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000089,Other,ihq,q-skeletal,q-skeletal,other,Other,http://hl7.org/fhir/administrative-gender,
+v000089,Other,ihq,q-skeletal,q-skeletal,0033127,Abnormality of the musculoskeletal system,http://purl.obolibrary.org/obo/hp.owl,
+v000089,Other,ihq,q-skeletal,q-skeletal,0002081,musculoskeletal system disease,http://purl.obolibrary.org/obo/mondo.owl,
+q000012,"Has the participant been diagnosed with any form of leukemia, or transient myeloproliferative disorder (TMD, also known as transient abnormal myelopoiesis or transient leukemia), or a leukemoid reaction?",ihq,,ihq,0001909,Leukemia,http://purl.obolibrary.org/obo/hp.owl,
+q000012,"Has the participant been diagnosed with any form of leukemia, or transient myeloproliferative disorder (TMD, also known as transient abnormal myelopoiesis or transient leukemia), or a leukemoid reaction?",ihq,,ihq,0005059,leukemia,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000012,q000012,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000012,q000012,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000012,q000012,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000012,q000012,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000012,q000012,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000012,q000012,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000091,Diagnosed with breast cancer,ihq,q-cancer,q-cancer,0007254,breast cancer,http://purl.obolibrary.org/obo/mondo.owl,
+v000092,Diagnosed with cervical cancer (for females),ihq,q-cancer,q-cancer,0002974,cervical cancer,http://purl.obolibrary.org/obo/mondo.owl,
+v000093,Diagnosed with ovarian cancer (for females),ihq,q-cancer,q-cancer,0008170,ovarian cancer,http://purl.obolibrary.org/obo/mondo.owl,
+v000094,Diagnosed with testicular cancer (for males),ihq,q-cancer,q-cancer,0005447,testicular cancer,http://purl.obolibrary.org/obo/mondo.owl,
+v000095,Diagnosed with prostate cancer (for males),ihq,q-cancer,q-cancer,0008315,prostate cancer,http://purl.obolibrary.org/obo/mondo.owl,
+v000096,Diagnosed with cancer other than leukemia during childhood,ihq,q-cancer,q-cancer,0002664,Neoplasm,http://purl.obolibrary.org/obo/hp.owl,
+v000096,Diagnosed with cancer other than leukemia during childhood,ihq,q-cancer,q-cancer,0006517,childhood malignant neoplasm,http://purl.obolibrary.org/obo/mondo.owl,
+v000097,Diagnosed with other adulthood cancer not named above,ihq,q-cancer,q-cancer,0002664,Neoplasm,http://purl.obolibrary.org/obo/hp.owl,
+v000097,Diagnosed with other adulthood cancer not named above,ihq,q-cancer,q-cancer,0004992,cancer,http://purl.obolibrary.org/obo/mondo.owl,
+v000098,Unsure,ihq,q-cancer,q-cancer,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000098,Unsure,ihq,q-cancer,q-cancer,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000098,Unsure,ihq,q-cancer,q-cancer,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000099,Other,ihq,q-cancer,q-cancer,other,Other,http://hl7.org/fhir/administrative-gender,
+v000099,Other,ihq,q-cancer,q-cancer,0002664,Neoplasm,http://purl.obolibrary.org/obo/hp.owl,
+v000099,Other,ihq,q-cancer,q-cancer,0004992,cancer,http://purl.obolibrary.org/obo/mondo.owl,
+q000013,Has the participant ever been diagnosed with COVID-19 (novel coronavirus disease)?,ihq,,ihq,0100096,COVID-19,http://purl.obolibrary.org/obo/mondo.owl,
+No,No,ihq,q000013,q000013,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000013,q000013,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000013,q000013,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000013,q000013,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000013,q000013,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000013,q000013,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000013,q000013,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000013,q000013,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000013,q000013,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000013,q000013,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000014,q000014,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000014,q000014,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000014,q000014,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000014,q000014,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000014,q000014,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000014,q000014,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000014,q000014,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000014,q000014,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000014,q000014,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000014,q000014,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",ihq,q-thyroid,q-thyroid,0000821,Hypothyroidism,http://purl.obolibrary.org/obo/hp.owl,
+v000101,"Hypothyroidism (low thyroid function) high TSH, low T4 levels",ihq,q-thyroid,q-thyroid,0005420,hypothyroidism,http://purl.obolibrary.org/obo/mondo.owl,
+v000102,"Subclinical or compensated hypothyroidism (hyperthyrotropinemia) high TSH, normal T4 levels",ihq,q-thyroid,q-thyroid,0008223,Compensated hypothyroidism,http://purl.obolibrary.org/obo/hp.owl,
+v000103,"Hyperthyroidism (overactive thyroid) low TSH,  high T4 levels",ihq,q-thyroid,q-thyroid,0000836,Hyperthyroidism,http://purl.obolibrary.org/obo/hp.owl,
+v000103,"Hyperthyroidism (overactive thyroid) low TSH,  high T4 levels",ihq,q-thyroid,q-thyroid,0004425,hyperthyroidism,http://purl.obolibrary.org/obo/mondo.owl,
+v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),ihq,q-thyroid,q-thyroid,0000872,Hashimoto thyroiditis,http://purl.obolibrary.org/obo/hp.owl,
+v000104,Hashimoto thyroiditis (immune system attacks thyroid gland which stops making T4),ihq,q-thyroid,q-thyroid,0007699,Hashimoto thyroiditis,http://purl.obolibrary.org/obo/mondo.owl,
+v000107,Unsure,ihq,q-thyroid,q-thyroid,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000107,Unsure,ihq,q-thyroid,q-thyroid,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000107,Unsure,ihq,q-thyroid,q-thyroid,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000108,Other,ihq,q-thyroid,q-thyroid,other,Other,http://hl7.org/fhir/administrative-gender,
+v000108,Other,ihq,q-thyroid,q-thyroid,0000820,Abnormality of the thyroid gland,http://purl.obolibrary.org/obo/hp.owl,
+v000108,Other,ihq,q-thyroid,q-thyroid,0003240,thyroid gland disease,http://purl.obolibrary.org/obo/mondo.owl,
+q000015,Has the participant ever been diagnosed with diabetes?,ihq,,ihq,0000819,Diabetes mellitus,http://purl.obolibrary.org/obo/hp.owl,
+q000015,Has the participant ever been diagnosed with diabetes?,ihq,,ihq,0005015,diabetes mellitus,http://purl.obolibrary.org/obo/mondo.owl,
+No,No,ihq,q000015,q000015,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000015,q000015,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000015,q000015,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000015,q000015,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000015,q000015,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000015,q000015,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000015,q000015,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000015,q000015,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000015,q000015,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000015,q000015,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+q000016,Has participant ever been diagnosed with celiac disease (gluten or wheat intolerance)?,ihq,,ihq,0002608,Celiac disease,http://purl.obolibrary.org/obo/hp.owl,
+q000016,Has participant ever been diagnosed with celiac disease (gluten or wheat intolerance)?,ihq,,ihq,0005130,celiac disease,http://purl.obolibrary.org/obo/mondo.owl,
+No,No,ihq,q000016,q000016,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000016,q000016,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000016,q000016,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000016,q000016,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000016,q000016,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000016,q000016,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000016,q000016,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000016,q000016,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000016,q000016,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000016,q000016,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000110,Calcium deficiency,ihq,q-metabolic,q-metabolic,0002901,Hypocalcemia,http://purl.obolibrary.org/obo/hp.owl,
+v000111,Obesity,ihq,q-metabolic,q-metabolic,0001513,Obesity,http://purl.obolibrary.org/obo/hp.owl,
+v000111,Obesity,ihq,q-metabolic,q-metabolic,0011122,obesity disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000112,Delayed/late puberty,ihq,q-metabolic,q-metabolic,0000823,Delayed puberty,http://purl.obolibrary.org/obo/hp.owl,
+v000113,Growth hormone deficiency,ihq,q-metabolic,q-metabolic,0000824,Decreased response to growth hormone stimuation test,http://purl.obolibrary.org/obo/hp.owl,
+v000115,Hypoglycemia (low blood sugar),ihq,q-metabolic,q-metabolic,0001943,Hypoglycemia,http://purl.obolibrary.org/obo/hp.owl,
+v000115,Hypoglycemia (low blood sugar),ihq,q-metabolic,q-metabolic,0004946,hypoglycemia,http://purl.obolibrary.org/obo/mondo.owl,
+v000117,Cushing's disease,ihq,q-metabolic,q-metabolic,0009050,Cushing disease due to pituitary adenoma,http://purl.obolibrary.org/obo/mondo.owl,
+v000118,Precocious/early puberty,ihq,q-metabolic,q-metabolic,0000826,Precocious puberty,http://purl.obolibrary.org/obo/hp.owl,
+v000119,Vitamin D deficiency,ihq,q-metabolic,q-metabolic,0100512,Low levels of vitamin D,http://purl.obolibrary.org/obo/hp.owl,
+v000119,Vitamin D deficiency,ihq,q-metabolic,q-metabolic,0100471,vitamin D deficiency,http://purl.obolibrary.org/obo/mondo.owl,
+v000120,"Metabolic syndrome (combination of at least 2-3 of the following:  high blood pressure, high blood sugar, unhealthy cholesterol levels, and increased abdominal fat)",ihq,q-metabolic,q-metabolic,0004955,metabolic syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,ihq,q-metabolic,q-metabolic,0002725,Systemic lupus erythematosus,http://purl.obolibrary.org/obo/hp.owl,
+v000121,Systemic Lupus Erythematosus (SLE) or other autoimmune disease,ihq,q-metabolic,q-metabolic,0007915,systemic lupus erythematosus,http://purl.obolibrary.org/obo/mondo.owl,
+v000122,Unsure,ihq,q-metabolic,q-metabolic,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000122,Unsure,ihq,q-metabolic,q-metabolic,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000122,Unsure,ihq,q-metabolic,q-metabolic,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000123,Other,ihq,q-metabolic,q-metabolic,other,Other,http://hl7.org/fhir/administrative-gender,
+v000123,Other,ihq,q-metabolic,q-metabolic,0002960,Autoimmunity,http://purl.obolibrary.org/obo/hp.owl,
+v000123,Other,ihq,q-metabolic,q-metabolic,0007179,autoimmune disease,http://purl.obolibrary.org/obo/mondo.owl,
+v000123,Other,ihq,q-metabolic,q-metabolic,0000818,Abnormality of the endocrine system,http://purl.obolibrary.org/obo/hp.owl,
+v000123,Other,ihq,q-metabolic,q-metabolic,0005151,endocrine system disease,http://purl.obolibrary.org/obo/mondo.owl,
+No,No,ihq,q000017,q000017,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000017,q000017,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000017,q000017,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000017,q000017,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000017,q000017,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000017,q000017,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000017,q000017,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000017,q000017,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000017,q000017,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000017,q000017,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000018,q000018,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000018,q000018,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000018,q000018,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000018,q000018,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000018,q000018,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000018,q000018,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000125,Transient hearing loss (hearing loss went away),ihq,q-hearing-loss,q-hearing-loss,0000365,Hearing impairment,http://purl.obolibrary.org/obo/hp.owl,
+v000125,Transient hearing loss (hearing loss went away),ihq,q-hearing-loss,q-hearing-loss,0005365,hearing loss disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000126,Conductive hearing loss,ihq,q-hearing-loss,q-hearing-loss,0000365,Hearing impairment,http://purl.obolibrary.org/obo/hp.owl,
+v000126,Conductive hearing loss,ihq,q-hearing-loss,q-hearing-loss,0005365,hearing loss disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000127,Mixed hearing loss,ihq,q-hearing-loss,q-hearing-loss,0000365,Hearing impairment,http://purl.obolibrary.org/obo/hp.owl,
+v000127,Mixed hearing loss,ihq,q-hearing-loss,q-hearing-loss,0005365,hearing loss disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000128,Sensorineural hearing loss (permanent nerve hearing loss),ihq,q-hearing-loss,q-hearing-loss,0000365,Hearing impairment,http://purl.obolibrary.org/obo/hp.owl,
+v000128,Sensorineural hearing loss (permanent nerve hearing loss),ihq,q-hearing-loss,q-hearing-loss,0005365,hearing loss disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000129,Hearing loss - unknown type,ihq,q-hearing-loss,q-hearing-loss,0000365,Hearing impairment,http://purl.obolibrary.org/obo/hp.owl,
+v000129,Hearing loss - unknown type,ihq,q-hearing-loss,q-hearing-loss,0005365,hearing loss disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000130,Unsure,ihq,q-hearing-loss,q-hearing-loss,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000130,Unsure,ihq,q-hearing-loss,q-hearing-loss,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000130,Unsure,ihq,q-hearing-loss,q-hearing-loss,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000131,Other,ihq,q-hearing-loss,q-hearing-loss,other,Other,http://hl7.org/fhir/administrative-gender,
+v000131,Other,ihq,q-hearing-loss,q-hearing-loss,0000365,Hearing impairment,http://purl.obolibrary.org/obo/hp.owl,
+v000131,Other,ihq,q-hearing-loss,q-hearing-loss,0005365,hearing loss disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000139,Unsure,ihq,q-hearing-treatment,q-hearing-treatment,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000139,Unsure,ihq,q-hearing-treatment,q-hearing-treatment,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000139,Unsure,ihq,q-hearing-treatment,q-hearing-treatment,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000140,Other,ihq,q-hearing-treatment,q-hearing-treatment,other,Other,http://hl7.org/fhir/administrative-gender,
+Unsure,Unsure,ihq,q000019,q000019,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000019,q000019,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000019,q000019,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000019,q000019,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000019,q000019,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000019,q000019,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000020,q000020,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000020,q000020,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000020,q000020,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000020,q000020,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000020,q000020,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000020,q000020,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000020,q000020,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000020,q000020,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000020,q000020,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000020,q000020,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000142,Cataract,ihq,q-vision,q-vision,0000518,Cataract,http://purl.obolibrary.org/obo/hp.owl,
+v000142,Cataract,ihq,q-vision,q-vision,0005129,cataract (disease),http://purl.obolibrary.org/obo/mondo.owl,
+v000143,Strabismus (eye turns in or out),ihq,q-vision,q-vision,0000486,Strabismus,http://purl.obolibrary.org/obo/hp.owl,
+v000143,Strabismus (eye turns in or out),ihq,q-vision,q-vision,0003432,strabismus,http://purl.obolibrary.org/obo/mondo.owl,
+v000144,Amblyopia (lazy eye),ihq,q-vision,q-vision,0000646,Amblyopia,http://purl.obolibrary.org/obo/hp.owl,
+v000144,Amblyopia (lazy eye),ihq,q-vision,q-vision,0001020,amblyopia (disease),http://purl.obolibrary.org/obo/mondo.owl,
+v000145,Nearsighted (myopia),ihq,q-vision,q-vision,0000545,Myopia,http://purl.obolibrary.org/obo/hp.owl,
+v000145,Nearsighted (myopia),ihq,q-vision,q-vision,0001384,myopia,http://purl.obolibrary.org/obo/mondo.owl,
+v000146,Farsighted (hyperopia),ihq,q-vision,q-vision,0000540,Hypermetropia,http://purl.obolibrary.org/obo/hp.owl,
+v000146,Farsighted (hyperopia),ihq,q-vision,q-vision,0004891,hyperopia,http://purl.obolibrary.org/obo/mondo.owl,
+v000147,Astigmatism (blurry vision),ihq,q-vision,q-vision,0000483,Astigmatism,http://purl.obolibrary.org/obo/hp.owl,
+v000147,Astigmatism (blurry vision),ihq,q-vision,q-vision,0011284,astigmatism (disease),http://purl.obolibrary.org/obo/mondo.owl,
+v000148,Ptosis (droopy eyelid),ihq,q-vision,q-vision,0000508,Ptosis,http://purl.obolibrary.org/obo/hp.owl,
+v000148,Ptosis (droopy eyelid),ihq,q-vision,q-vision,0000728,ptosis,http://purl.obolibrary.org/obo/mondo.owl,
+v000149,Lacrimal duct stenosis (blockage of tear duct),ihq,q-vision,q-vision,0000579,Nasolacrimal duct obstruction,http://purl.obolibrary.org/obo/hp.owl,
+v000150,Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision),ihq,q-vision,q-vision,0000563,Keratoconus,http://purl.obolibrary.org/obo/hp.owl,
+v000150,Other corneal problem or keratoconus (eye covering is cone-shaped and causes double vision),ihq,q-vision,q-vision,0015486,keratoconus (disease),http://purl.obolibrary.org/obo/mondo.owl,
+v000152,Blindness,ihq,q-vision,q-vision,0000618,Blindness,http://purl.obolibrary.org/obo/hp.owl,
+v000152,Blindness,ihq,q-vision,q-vision,0001941,blindness (disorder),http://purl.obolibrary.org/obo/mondo.owl,
+v000153,Glaucoma,ihq,q-vision,q-vision,0000501,Glaucoma,http://purl.obolibrary.org/obo/hp.owl,
+v000153,Glaucoma,ihq,q-vision,q-vision,0005041,glaucoma (disease),http://purl.obolibrary.org/obo/mondo.owl,
+v000154,Retinal detachment,ihq,q-vision,q-vision,0000541,Retinal detachment,http://purl.obolibrary.org/obo/hp.owl,
+v000154,Retinal detachment,ihq,q-vision,q-vision,0008375,retinal detachment,http://purl.obolibrary.org/obo/mondo.owl,
+v000155,"Presbyopia (""old eyes"" requiring magnifying lenses or reading glasses)",ihq,q-vision,q-vision,0001330,presbyopia,http://purl.obolibrary.org/obo/mondo.owl,
+v000156,Unsure,ihq,q-vision,q-vision,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000156,Unsure,ihq,q-vision,q-vision,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000156,Unsure,ihq,q-vision,q-vision,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000157,Other,ihq,q-vision,q-vision,other,Other,http://hl7.org/fhir/administrative-gender,
+v000157,Other,ihq,q-vision,q-vision,0000478,Abnormality of the eye,http://purl.obolibrary.org/obo/hp.owl,
+v000157,Other,ihq,q-vision,q-vision,0024458,disease of visual system,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000021,q000021,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000021,q000021,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000021,q000021,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000021,q000021,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000021,q000021,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000021,q000021,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),ihq,q-behavioral,q-behavioral,0007018,Attention deficit hyperactivity disorder,http://purl.obolibrary.org/obo/hp.owl,
+v000159,Attention Deficit Disorder (ADD) or Attention Deficit Hyperactivity Disorder (ADHD),ihq,q-behavioral,q-behavioral,0007743,attention deficit-hyperactivity disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000160,Autism or Autism Spectrum Disorder (ASD),ihq,q-behavioral,q-behavioral,0000717,Autism,http://purl.obolibrary.org/obo/hp.owl,
+v000160,Autism or Autism Spectrum Disorder (ASD),ihq,q-behavioral,q-behavioral,0005260,autism,http://purl.obolibrary.org/obo/mondo.owl,
+v000161,Anxiety disorder,ihq,q-behavioral,q-behavioral,0000739,Anxiety,http://purl.obolibrary.org/obo/hp.owl,
+v000161,Anxiety disorder,ihq,q-behavioral,q-behavioral,0005618,anxiety disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000162,Depression,ihq,q-behavioral,q-behavioral,0000716,Depression,http://purl.obolibrary.org/obo/hp.owl,
+v000162,Depression,ihq,q-behavioral,q-behavioral,0002050,depressive disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000163,Conduct or disruptive behavior disorder,ihq,q-behavioral,q-behavioral,0005352,conduct disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000164,Regression (loss of previously stable functional skills),ihq,q-behavioral,q-behavioral,0002376,Developmental regression,http://purl.obolibrary.org/obo/hp.owl,
+v000165,Adjustment disorder,ihq,q-behavioral,q-behavioral,0003265,adjustment disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000166,Obsessive-Compulsive Disorder (OCD),ihq,q-behavioral,q-behavioral,0000722,Obsessive-compulsive behavior,http://purl.obolibrary.org/obo/hp.owl,
+v000166,Obsessive-Compulsive Disorder (OCD),ihq,q-behavioral,q-behavioral,0008114,obsessive-compulsive disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000167,Oppositional defiant disorder,ihq,q-behavioral,q-behavioral,0010865,Oppositional defiant disorder,http://purl.obolibrary.org/obo/hp.owl,
+v000167,Oppositional defiant disorder,ihq,q-behavioral,q-behavioral,0000495,oppositional defiant disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000168,Bipolar/manic depression,ihq,q-behavioral,q-behavioral,0007302,Bipolar affective disorder,http://purl.obolibrary.org/obo/hp.owl,
+v000168,Bipolar/manic depression,ihq,q-behavioral,q-behavioral,0004985,bipolar disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000169,Panic attacks,ihq,q-behavioral,q-behavioral,0025269,Panic attack,http://purl.obolibrary.org/obo/hp.owl,
+v000169,Panic attacks,ihq,q-behavioral,q-behavioral,0005383,panic disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000170,Schizophrenia,ihq,q-behavioral,q-behavioral,0100753,Schizophrenia,http://purl.obolibrary.org/obo/hp.owl,
+v000170,Schizophrenia,ihq,q-behavioral,q-behavioral,0005090,schizophrenia,http://purl.obolibrary.org/obo/mondo.owl,
+v000172,Eating disorder,ihq,q-behavioral,q-behavioral,0005451,eating disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000173,Intermittent explosive disorder,ihq,q-behavioral,q-behavioral,0001521,intermittent explosive disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000174,Suicidal thoughts or plans,ihq,q-behavioral,q-behavioral,0031589,Suicidal ideation,http://purl.obolibrary.org/obo/hp.owl,
+v000175,Unsure,ihq,q-behavioral,q-behavioral,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000175,Unsure,ihq,q-behavioral,q-behavioral,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000175,Unsure,ihq,q-behavioral,q-behavioral,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000176,Other,ihq,q-behavioral,q-behavioral,other,Other,http://hl7.org/fhir/administrative-gender,
+v000176,Other,ihq,q-behavioral,q-behavioral,0000708,Behavioral abnormality,http://purl.obolibrary.org/obo/hp.owl,
+v000176,Other,ihq,q-behavioral,q-behavioral,0002025,psychiatric disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000178,Global developmental delay,ihq,q-learning,q-learning,0001263,Global developmental delay,http://purl.obolibrary.org/obo/hp.owl,
+v000179,Intellectual disability,ihq,q-learning,q-learning,0001249,Intellectual disability,http://purl.obolibrary.org/obo/hp.owl,
+v000179,Intellectual disability,ihq,q-learning,q-learning,0001071,Intellectual disability,http://purl.obolibrary.org/obo/mondo.owl,
+v000180,Language delay: difficulty understanding what others are saying as well as those of the same age,ihq,q-learning,q-learning,0001276,expressive language disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000181,Speech delay: difficulty speaking as clearly as those of the same age,ihq,q-learning,q-learning,0000750,Delayed speech and language development,http://purl.obolibrary.org/obo/hp.owl,
+v000182,Mixed receptive and expressive language impairment,ihq,q-learning,q-learning,0001568,mixed receptive-expressive language disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000184,Auditory processing disorder (difficulty recognizing and interpreting sounds),ihq,q-learning,q-learning,0024422,auditory perceptual disorders,http://purl.obolibrary.org/obo/mondo.owl,
+v000185,Verbal apraxia/dyspraxia (difficulty saying what he/she intends correctly and consistently),ihq,q-learning,q-learning,0011098,Speech apraxia,http://purl.obolibrary.org/obo/hp.owl,
+v000187,Hearing loss,ihq,q-learning,q-learning,0000365,Hearing impairment,http://purl.obolibrary.org/obo/hp.owl,
+v000187,Hearing loss,ihq,q-learning,q-learning,0005365,hearing loss disorder,http://purl.obolibrary.org/obo/mondo.owl,
+v000188,Unsure,ihq,q-learning,q-learning,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000188,Unsure,ihq,q-learning,q-learning,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000188,Unsure,ihq,q-learning,q-learning,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000189,Other,ihq,q-learning,q-learning,other,Other,http://hl7.org/fhir/administrative-gender,
+v000189,Other,ihq,q-learning,q-learning,0004681,learning disability,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000022,q000022,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000022,q000022,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000022,q000022,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000022,q000022,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000022,q000022,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000022,q000022,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000023,q000023,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000023,q000023,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000023,q000023,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000023,q000023,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000023,q000023,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000023,q000023,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000024,q000024,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000024,q000024,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000024,q000024,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000024,q000024,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000024,q000024,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000024,q000024,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000025,q000025,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000025,q000025,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000025,q000025,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000025,q000025,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000025,q000025,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000025,q000025,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+q000026,"Has the participant ever been diagnosed with Dementia, Alzheimer's disease, or cognitive decline?",ihq,,ihq,0000726,Dementia,http://purl.obolibrary.org/obo/hp.owl,
+q000026,"Has the participant ever been diagnosed with Dementia, Alzheimer's disease, or cognitive decline?",ihq,,ihq,0001627,dementia,http://purl.obolibrary.org/obo/mondo.owl,
+No,No,ihq,q000026,q000026,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000026,q000026,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000026,q000026,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000026,q000026,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000026,q000026,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000026,q000026,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000026,q000026,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000026,q000026,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000027,q000027,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000027,q000027,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000027,q000027,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000027,q000027,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000027,q000027,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000027,q000027,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000027,q000027,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000027,q000027,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000027,q000027,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000027,q000027,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000028,q000028,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000028,q000028,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000028,q000028,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000028,q000028,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000028,q000028,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000028,q000028,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000028,q000028,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000028,q000028,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000028,q000028,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000028,q000028,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000029,q000029,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000029,q000029,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000029,q000029,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000029,q000029,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000029,q000029,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000029,q000029,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000029,q000029,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000029,q000029,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000029,q000029,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000029,q000029,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000030,q000030,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+No,No,ihq,q000030,q000030,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000030,q000030,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Yes,Yes,ihq,q000030,q000030,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000030,q000030,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000030,q000030,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000030,q000030,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000030,q000030,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000030,q000030,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000030,q000030,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+0,0,ihq,q000031,q000031,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+0,0,ihq,q000031,q000031,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+1,1,ihq,q000031,q000031,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+1,1,ihq,q000031,q000031,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+2,2,ihq,q000031,q000031,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+2,2,ihq,q000031,q000031,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000031,q000031,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000031,q000031,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000031,q000031,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000031,q000031,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000031,q000031,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000031,q000031,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000198,Unsure,ihq,q-living-situation,q-living-situation,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000198,Unsure,ihq,q-living-situation,q-living-situation,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+v000198,Unsure,ihq,q-living-situation,q-living-situation,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+v000199,Other,ihq,q-living-situation,q-living-situation,other,Other,http://hl7.org/fhir/administrative-gender,
+Unsure,Unsure,ihq,q000032,q000032,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000032,q000032,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000032,q000032,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000032,q000032,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000032,q000032,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000032,q000032,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000033,q000033,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000033,q000033,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000033,q000033,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000033,q000033,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000033,q000033,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000033,q000033,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000034,q000034,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000034,q000034,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000034,q000034,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000034,q000034,0008608,Down Syndrome,http://purl.obolibrary.org/obo/mondo.owl,
+Unsure,Unsure,ihq,q000034,q000034,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
+Unsure,Unsure,ihq,q000034,q000034,unconfirmed,Unconfirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status,
