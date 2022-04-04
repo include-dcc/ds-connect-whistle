@@ -1,0 +1,79 @@
+
+//CODES NEED CURRIES
+
+def VsExpansion(study, code) {
+    code: code.code;
+    display: code.display;
+
+    // if (code.system?) {
+    //     system: code.system;
+    // } else {
+    //     system: VocabularyURL(study.id, code.table, code.parent);
+    // }
+}
+
+def VsInclude(study, code_group) {
+    if (code_group.table_name?) {
+        if (code_group.parent_varname?) {
+            system: VocabularyURL(study.id, code_group.table_name,code_group.parent_varname);
+        } else {
+            system: VocabularyURL(study.id, code_group.table_name, "");
+        }
+    } else {
+        system: code_group.system;
+    }
+    concept[]: VsExpansion(study, code_group.codes[]);
+}
+
+def BuildHarmonyValueSet(study, code_groups, vs_name) {
+
+    meta.tag[]: StudyMeta(study);
+    identifier[]: Key_Identifier(study, "ValueSet", $StrCat(study.id, ".cm-valueset.", vs_name));
+    identifier[0].use: "official";
+    name: BuildVariableTerminologyId(study.id, "concept-map-vs", vs_name);
+    title: $StrCat("ValueSet for values associated with ", vs_name, " codes in data harmonization from study, ", study.id, ".");
+    url: VocabularyURL(study.id, "concept-map-vs", $StrCat(vs_name, "-VS"));
+
+    compose.include[]: VsInclude(study, code_groups[]);
+
+    status: "active";
+    publisher: "INCLUDE FHIR Working Group";
+    resourceType: "ValueSet";
+}
+
+def BuildHarmonyTarget(study, target) {
+    code: target.code;
+    display: target.display;
+    equivalence: "equivalent";
+}
+
+def BuildHarmonyElement(study, element) {
+    code: element.code;
+    display: element.display;
+    target[]: BuildHarmonyTarget(study, element.target[]);
+}
+
+def BuildHarmonyMapping(study, mapping) {
+    source: VocabularyURL(study.id, mapping.table, mapping.parent);
+    target: mapping.target;
+    element[]: BuildHarmonyElement(study, mapping.element[]);
+}
+
+def BuildHarmonyConceptMap(study, harmony) {
+    meta.tag[]: StudyMeta(study);
+    identifier: Key_Identifier(study, "ConceptMap", $StrCat(study.id, ".concept-map"));
+    identifier.use: "official";
+    status: "active";
+    purpose: "Represent transformations applied to the HTP dataset";
+    url:  $StrCat("https://nih-ncpi.github.io/ncpi-fhir-ig/data-dictionary/conceptmap/", study.id, "/data-to-public");
+    sourceUri: VocabularyURL(study.id, "concept-map-vs", $StrCat("sources", "-VS"));
+    targetUri: VocabularyURL(study.id, "concept-map-vs", $StrCat("targets", "-VS"));
+    group[]: BuildHarmonyMapping(study, harmony.mappings[])
+    resourceType: "ConceptMap";
+}
+
+def ProcessDDHarmony(study, harmony_data) {
+    out harmony: BuildHarmonyValueSet(study, harmony_data.source_codes[*], "sources");
+    out harmony: BuildHarmonyValueSet(study, harmony_data.target_codes[*], "targets");
+    out harmony: BuildHarmonyConceptMap(study, harmony_data);
+}
