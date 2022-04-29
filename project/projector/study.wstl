@@ -13,6 +13,8 @@ def Study(study) {
     description: study.desc;
     status: "completed"
     meta.tag[]: StudyMeta(study);
+    meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-study-summary-ig/StructureDefinition/ncpi-research-study";
+
     
     enrollment[0]: Reference_Key_Identifier(study, "Group", study.id);
     identifier[0].use (if ~study.accession?): "official";
