@@ -173,12 +173,18 @@ def Transform_DSC_Dataset_min(resource) {
 // Transform the ds-connect dataset 
 def Transform_DSC_Dataset(resource) {
     if resource.study? {
-        $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
-        $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
+        $this: ProcessStudy(resource.study);
+
+        if resource.code-systems? {
+            $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
+        }
+
+        if resource.study.study.data-dictionary? {
+            $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
+        }
         if resource.demo? {
             $this: ProcessParticipant(resource.study, resource.demo[]);
             $this: ProcessGroup(resource.study, resource.demo[*]);
-            $this: ProcessStudy(resource.study);
             $this: ProcessResearchSubject(resource.study, resource.demo[]);
 
             var familyids: $Unique(resource.demo[*].parent_id);

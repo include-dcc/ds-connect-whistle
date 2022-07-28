@@ -112,7 +112,6 @@ def AtAtRegistrationObservation(study, subject) {
         focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "demo", "age_at_registration"));
         code.text: HarmonizedLocalDisplay("age_at_registration", "demo");
         code.coding[]: HarmonizeMapped("age_at_registration", "demo");
-        code.coding[]: LocalCodeSystemReference(study.id, "demo", "age_at_registration");
         
         var subref: Reference_Key_Identifier(study, "Patient", subject_id);
         _valueDateTime.extension[0]: AgeAtExtension(study, subref, age_at, "years");
@@ -132,7 +131,6 @@ def TraitObservation(study, subject, varname, value, tablename) {
     focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, tablename, varname));
     code.text: HarmonizedLocalDisplay(varname, tablename);
     code.coding[]: HarmonizeMapped(varname, tablename);
-    code.coding[]: LocalCodeSystemReference(study.id, tablename, varname);
 
     valueCodeableConcept.coding[]: HarmonizeMapped(value, varname);
     valueCodeableConcept.text: value;

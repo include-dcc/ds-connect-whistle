@@ -64,7 +64,6 @@ def Condition(study, questionnaire, qcode, qvalue, note) {
 
             code.text: qvalue;
             code.coding[]: coding;
-            code.coding[]: LocalCodeSystemReference(study.id, "ihq", qcode);
             note[].text: note;
 
             onsetString (if qcode = "q000001"): questionnaire.q000002;
@@ -124,7 +123,7 @@ def ValueBasedCondition(study, questionnaire, varcode, qv) {
 
         code.text: HarmonizedLocalDisplay(qcode, varcode);
         code.coding[]: formal_code;
-        code.coding[]: LocalCodeSystemReference(study.id, varcode, qcode);
+        code.coding[]: HarmonizeMapped(varcode, "ihq");
 
         resourceType: "Condition";
     }
@@ -145,7 +144,7 @@ def ValueBasedCondition(study, questionnaire, varcode, qv) {
 def ObservationComponent(study, tablename, qcode, answer) {
     if (answer.value?) {
         code.coding[]: HarmonizeMapped(answer.code, qcode);
-        code.coding[]: LocalVarCodeSystemReference(study.id, "ihq", qcode, answer.code);
+        code.coding[]: HarmonizeMapped(qcode, tablename);
         code.text: HarmonizedLocalDisplay(answer.code, qcode);
         valueString: answer.value;
     }
@@ -177,7 +176,6 @@ def ComplexObservation(study, questionnaire, qcode, qvalue) {
     focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", qcode));
     code.text: HarmonizedLocalDisplay(qcode, "ihq");
     code.coding[]: HarmonizeMapped(qcode, "ihq");
-    code.coding[]: LocalCodeSystemReference(study.id, "ihq", qcode);
     component[]: ObservationComponent(study, "ihq", qcode, qvalue[]);
     status: "final";
     resourceType: "Observation";
@@ -207,7 +205,6 @@ def ObservationCheckbox(study, questionnaire, table_name, qcode, answer) {
     if ($IsNotNil(answer.value)) {
         var subject_id: questionnaire.patient_id;
         var age_at: questionnaire.age_at_survey_time;
-        var localcs: LocalCodeSystemReference(study.id, qcode, qcoding);
 
         meta.tag[]: StudyMeta(study);
         
@@ -218,9 +215,8 @@ def ObservationCheckbox(study, questionnaire, table_name, qcode, answer) {
 
         code.text: HarmonizedLocalDisplay(qcode, table_name);
         code.coding[]: HarmonizeMapped(qcode, table_name);
-        code.coding[]: LocalCodeSystemReference(study.id, table_name, qcode);
         valueCodeableConcept.text: HarmonizedLocalDisplay(qcoding, qcode);
-        valueCodeableConcept.coding[]: localcs;
+        valueCodeableConcept.coding[]: HarmonizeMapped(qcoding, qcode);
 
         status: "final";
         resourceType: "Observation";
@@ -249,7 +245,6 @@ def BasicObservation(study, questionnaire, qcode, qvalue) {
     focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", qcode));
     code.text: HarmonizedLocalDisplay(qcode, "ihq");
     code.coding[]: HarmonizeMapped(qcode, "ihq");
-    code.coding[]: LocalCodeSystemReference(study.id, "ihq", qcode);
     valueCodeableConcept.text: qvalue;
     valueCodeableConcept.coding[]: ValueCodeableConcept(study.id, "ihq", qcode, qvalue, qvalue);
     status: "final";
@@ -280,12 +275,14 @@ def AtAtSurveyObservation(study, questionnaire) {
         focus[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "ihq", "age_at_survey_time"));
         code.text: HarmonizedLocalDisplay("age_at_survey_time", "ihq");
         code.coding[]: HarmonizeMapped("age_at_survey_time", "ihq");
-        code.coding[]: LocalCodeSystemReference(study.id, "ihq", "age_at_survey_time");
         
         var subref: Reference_Key_Identifier(study, "Patient", subject_id);
         _valueDateTime.extension[0]: AgeAtExtension(study, subref, age_at, "years");
         status: "final";
         resourceType: "Observation";
+    } else {
+        hippocampus: "Delay";
+        code.coding[]: HarmonizeMapped("age_at_survey_time", "ihq");
     }
 }
 
