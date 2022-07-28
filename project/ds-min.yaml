@@ -60,4 +60,6 @@ dataset:
       q-behavioral: q-behavioral
       q-learning: q-learning
       q-living-situation: q-living-situation
-
+active_tables:
+  demo: true
+  ihq: false
